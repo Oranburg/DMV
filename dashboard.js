@@ -184,6 +184,11 @@ document.addEventListener("DOMContentLoaded", () => {
     els.resultsSummary.textContent = "Failed to load required JSON files.";
     els.schemaStatus.textContent = "Load error: check JSON file names and structure.";
   });
+  if (els.seeAllBtn) {
+    els.seeAllBtn.addEventListener("click", () => {
+      document.querySelector(".controls-panel").scrollIntoView({ behavior: "smooth" });
+    });
+  }
 });
 
 function cacheElements() {
@@ -232,6 +237,9 @@ function cacheElements() {
   els.compareBody = document.getElementById("compareBody");
 
   els.propertyCardTemplate = document.getElementById("propertyCardTemplate");
+  els.topPicksSection = document.getElementById("topPicksSection");
+  els.topPicksList = document.getElementById("topPicksList");
+  els.seeAllBtn = document.getElementById("seeAllBtn");
 }
 
 async function init() {
@@ -747,7 +755,9 @@ function renderWeightEditor() {
   });
 }
 
-function render() {
+  // Top Picks logic: show shortlist at top, hide main grid if shortlist is visible
+  renderTopPicks();
+
   const filtered = applyFilters(state.properties);
   const sorted = sortProperties(filtered);
 
@@ -759,6 +769,31 @@ function render() {
   els.maxBudgetValue.textContent = formatCurrency(state.filters.maxMonthlyBudget);
 
   document.querySelector(`input[name="costMode"][value="${state.showAllInMonthly ? "allIn" : "base"}"]`).checked = true;
+}
+
+function renderTopPicks() {
+  if (!els.topPicksSection || !els.topPicksList) return;
+  // Select top 3 by score
+  const picks = [...state.properties]
+    .sort((a, b) => computeScore(b) - computeScore(a))
+    .slice(0, 3);
+  els.topPicksList.innerHTML = "";
+  picks.forEach((property) => {
+    const card = document.createElement("div");
+    card.className = "top-pick-card";
+    card.innerHTML = `
+      <h3>${property.name}</h3>
+      <p>${property.address}</p>
+      <p><strong>${formatCurrency(computeCostModel(property).allInMonthly)}</strong> /mo</p>
+      <button class="button-secondary" data-pick-id="${property.id}">View Details</button>
+    `;
+    card.querySelector("button").addEventListener("click", () => {
+      // Scroll to property in main list and highlight
+      document.querySelector(".main-grid").scrollIntoView({ behavior: "smooth" });
+      // Optionally: could open modal/details here
+    });
+    els.topPicksList.appendChild(card);
+  });
 }
 
 function applyFilters(properties) {

@@ -1,3 +1,39 @@
+/* Top Picks Section */
+.top-picks-panel {
+  margin-bottom: 2rem;
+  background: #f8fafc;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.top-picks-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.top-pick-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  padding: 1rem 1.25rem;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.top-pick-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+.top-pick-card p {
+  margin: 0.15rem 0;
+  font-size: 0.98rem;
+}
+.top-pick-card button {
+  margin-top: 0.5rem;
+}
 :root {
   --bg: #f4f6f3;
   --panel: #fbfcfa;
