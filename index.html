@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Family Housing Research Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="panel app-header">
+        <div>
+          <p class="eyebrow">DC / Maryland Rental Decision Support</p>
+          <h1 id="appTitle">Family Housing Research Dashboard</h1>
+          <p id="appSubtitle" class="subhead">Evidence-aware comparison for DMV rental decisions</p>
+        </div>
+
+        <div class="mode-group" role="group" aria-label="Monthly cost mode">
+          <label class="toggle-chip">
+            <input type="radio" name="costMode" value="allIn" checked />
+            <span id="allInLabel">All-in monthly</span>
+          </label>
+          <label class="toggle-chip">
+            <input type="radio" name="costMode" value="base" />
+            <span id="baseModeLabel">Base rent only</span>
+          </label>
+        </div>
+      </header>
+
+      <main class="main-grid">
+        <aside class="panel controls-panel" aria-label="Filters and scoring controls">
+          <section class="control-section">
+            <h2>Filters</h2>
+
+            <label class="stacked-field" for="maxBudgetRange">
+              <span>Max budget</span>
+              <output id="maxBudgetValue" for="maxBudgetRange">$5,500</output>
+            </label>
+            <input id="maxBudgetRange" type="range" min="2500" max="7000" step="50" />
+
+            <div class="field-grid">
+              <label class="stacked-field" for="bedroomModeSelect">
+                <span>Bedroom filter</span>
+                <select id="bedroomModeSelect">
+                  <option value="3only">3BR only</option>
+                  <option value="3plus">3+ BR</option>
+                </select>
+              </label>
+
+              <label class="stacked-field" for="minBathroomsInput">
+                <span>Minimum baths</span>
+                <input id="minBathroomsInput" type="number" min="1" max="4" step="0.5" />
+              </label>
+            </div>
+
+            <div class="check-group" id="unitTypeGroup">
+              <label><input type="checkbox" id="typeApartment" /> Apartment</label>
+              <label><input type="checkbox" id="typeTownhouse" /> Townhouse</label>
+            </div>
+
+            <div class="check-group tight">
+              <label><input type="checkbox" id="twoCarOnly" /> Two-car workable only</label>
+              <label><input type="checkbox" id="confirmedInventoryOnly" /> Confirmed inventory only</label>
+              <label><input type="checkbox" id="confirmedEVOnly" /> Confirmed EV only</label>
+              <label><input type="checkbox" id="likelyEruvOnly" /> Likely-or-better eruv only</label>
+              <label><input type="checkbox" id="toddlerOnly" /> Toddler-friendly only</label>
+              <label><input type="checkbox" id="poolOnly" /> Pool only</label>
+              <label><input type="checkbox" id="hideUncertain" /> Hide highly uncertain</label>
+              <label><input type="checkbox" id="recentOnly" /> Recently verified only</label>
+              <label><input type="checkbox" id="savedOnly" /> Saved shortlist only</label>
+            </div>
+
+            <label class="stacked-field" for="recentDaysInput">
+              <span>Recent window (days)</span>
+              <input id="recentDaysInput" type="number" min="1" max="180" step="1" />
+            </label>
+          </section>
+
+          <section class="control-section">
+            <h2>Sorting</h2>
+            <label class="stacked-field" for="sortSelect">
+              <span>Sort by</span>
+              <select id="sortSelect"></select>
+            </label>
+          </section>
+
+          <section class="control-section">
+            <h2>Scoring</h2>
+            <label class="checkline">
+              <input type="checkbox" id="scoringEnabled" checked />
+              Enable score-based ranking
+            </label>
+
+            <label class="stacked-field" for="scorePresetSelect">
+              <span>Weight preset</span>
+              <select id="scorePresetSelect"></select>
+            </label>
+
+            <div id="weightEditor" class="weight-editor"></div>
+            <p class="small muted" id="scoreExplain">Score is transparent: each factor contributes using visible weights.</p>
+          </section>
+
+          <section class="control-section">
+            <h2>Research Checklist</h2>
+            <ul id="globalChecklist" class="checklist"></ul>
+          </section>
+
+          <section class="control-section contract-status">
+            <h2>Data Contract</h2>
+            <p id="schemaStatus" class="small muted">Schema status unavailable.</p>
+          </section>
+        </aside>
+
+        <section class="panel results-panel" aria-live="polite">
+          <div class="results-header">
+            <div>
+              <p class="eyebrow">Candidate Set</p>
+              <p id="resultsSummary" class="summary-line">Loading...</p>
+            </div>
+          </div>
+
+          <div id="propertyList" class="property-grid"></div>
+
+          <div id="emptyState" class="empty-state" hidden>
+            <h3>No properties match these filters</h3>
+            <p>Relax one or two strict filters or switch to base-rent mode to inspect outliers.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="compareTray" class="compare-tray" hidden>
+      <div class="tray-inner">
+        <div class="tray-left">
+          <p id="compareCount" class="tray-title">0 selected for comparison</p>
+          <div id="comparePills" class="pill-row"></div>
+        </div>
+        <div class="tray-actions">
+          <button id="openCompareBtn" type="button">Open comparison</button>
+          <button id="clearCompareBtn" class="button-secondary" type="button">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <dialog id="compareDialog" class="compare-dialog">
+      <form method="dialog" class="compare-dialog-inner">
+        <header class="compare-header">
+          <div>
+            <p class="eyebrow">Side-by-side comparison</p>
+            <h2>Decision Matrix</h2>
+          </div>
+          <button id="closeCompareBtn" type="submit" class="button-secondary">Close</button>
+        </header>
+
+        <div class="compare-table-wrap">
+          <table>
+            <thead>
+              <tr id="compareHead"></tr>
+            </thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </form>
+    </dialog>
+
+    <template id="propertyCardTemplate">
+      <article class="property-card">
+        <header class="property-head">
+          <div>
+            <p class="property-meta" data-field="meta"></p>
+            <h3 data-field="name"></h3>
+            <p class="property-address" data-field="address"></p>
+          </div>
+          <div class="head-actions">
+            <button type="button" data-action="save" class="button-secondary">Save</button>
+            <button type="button" data-action="compare">Compare</button>
+          </div>
+        </header>
+
+        <section class="cost-block">
+          <p class="eyebrow">Modeled monthly</p>
+          <p class="total" data-field="displayTotal"></p>
+          <ul class="cost-lines" data-field="costBreakdown"></ul>
+          <div class="assumption-box" data-field="assumptions"></div>
+        </section>
+
+        <section class="metric-grid" data-field="metrics"></section>
+        <section class="badge-row" data-field="flags"></section>
+
+        <section class="confidence-panel">
+          <h4>Field confidence</h4>
+          <div class="confidence-grid" data-field="confidence"></div>
+        </section>
+
+        <details class="accordion" open>
+          <summary>Evidence and caveats</summary>
+          <div class="evidence-wrap" data-field="evidence"></div>
+        </details>
+
+        <details class="accordion">
+          <summary>Tasks and notes</summary>
+          <div class="tasks-wrap" data-field="tasks"></div>
+          <label class="stacked-field" data-field="noteField">
+            <span>Property notes</span>
+            <textarea rows="4" data-field="notes"></textarea>
+          </label>
+        </details>
+      </article>
+    </template>
+
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>
