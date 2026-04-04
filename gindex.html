@@ -1,0 +1,551 @@
+import React, { useState, useMemo } from 'react';
+import { 
+  Home, 
+  MapPin, 
+  ShieldCheck, 
+  Zap, 
+  Briefcase, 
+  School,
+  Waves,
+  CheckCircle2,
+  XCircle,
+  TrendingUp,
+  Info,
+  ArrowUpDown,
+  Filter,
+  Eye,
+  Settings2,
+  Navigation,
+  ExternalLink,
+  ChevronUp,
+  AlertCircle,
+  Droplets,
+  Phone,
+  Ruler,
+  Calendar,
+  User,
+  Train,
+  ChevronDown,
+  Heart,
+  Wallet,
+  TreeDeciduous
+} from 'lucide-react';
+
+const App = () => {
+  // --- STATE ---
+  const [selectedProps, setSelectedProps] = useState([]);
+  const [showUtilities, setShowUtilities] = useState(true);
+  const [isCompareOpen, setIsCompareOpen] = useState(false);
+  const [callNotes, setCallNotes] = useState({});
+  const [sortBy, setSortBy] = useState('familyScore');
+
+  // Talia's Weights for Scoring (0-10 Importance)
+  const [weights, setWeights] = useState({
+    price: 8,
+    bermanCommute: 10,
+    cuaCommute: 6,
+    eruvConfidence: 9,
+    toddlerSpace: 9,
+    amenities: 4
+  });
+
+  const [filters, setFilters] = useState({
+    minBaths: 2,
+    mustHaveEruv: false,
+    mustHaveEV: false,
+    maxBudget: 5500,
+  });
+
+  // --- CONSTANTS ---
+  const TAX_PENALTY = 165; 
+
+  // --- DATA MODEL ---
+  const properties = [
+    {
+      id: 'falkland',
+      name: 'Falkland Chase',
+      location: 'Silver Spring',
+      type: 'Townhouse',
+      baseRent: { value: 2680, confidence: 'Confirmed' },
+      baths: 2,
+      sqft: 1278,
+      parking: { cost: 150, confidence: 'Likely' },
+      utilities: { water: 60, electric: 100, gas: 0, internet: 80 },
+      eruv: { status: 'Likely', community: 'Woodside / Shepherd Park', note: 'Inside 2026 boundary map.' },
+      ev: { status: 'Confirmed', note: 'Dedicated ChargePoint stations in 16th St lot.' },
+      commute: { driveCUA: 18, transitCUA: 22, driveBerman: 18, kms: 14 },
+      amenities: { pool: false, playground: true, toddlerFit: 10 },
+      unitSpecifics: 'TH03 floor plan is multi-level; entries off 16th st.',
+      sourceUrl: 'https://www.falklandchaseapartments.com/floorplans/th03'
+    },
+    {
+      id: 'colesville',
+      name: 'Colesville Towers',
+      location: 'Silver Spring',
+      type: 'Apartment',
+      baseRent: { value: 2699, confidence: 'Confirmed' },
+      baths: 2,
+      sqft: 1340,
+      parking: { cost: 150, confidence: 'Needs Call' },
+      utilities: { water: 60, electric: 0, gas: 0, internet: 80 }, 
+      eruv: { status: 'Confirmed', community: 'Woodside / Shepherd Park', note: 'Explicitly in Woodside Eruv guide.' },
+      ev: { status: 'Needs Call', note: 'Public chargers nearby; building stalls unknown.' },
+      commute: { driveCUA: 18, transitCUA: 20, driveBerman: 20, kms: 15 },
+      amenities: { pool: true, playground: true, toddlerFit: 7 },
+      unitSpecifics: '1,340 sq ft 3BR units; check high-floor availability.',
+      sourceUrl: 'https://www.colesvilletowers.com/amenities'
+    },
+    {
+      id: 'glenhaven',
+      name: 'Glen Haven',
+      location: 'Wheaton',
+      type: 'Townhouse',
+      baseRent: { value: 2790, confidence: 'Confirmed' },
+      baths: 2.5,
+      sqft: 1730,
+      parking: { cost: 0, confidence: 'Confirmed' },
+      utilities: { water: 70, electric: 120, gas: 40, internet: 80 },
+      eruv: { status: 'Likely', community: 'Kemp Mill / Silver Spring', note: 'South of Randolph Rd.' },
+      ev: { status: 'Needs Call', note: 'No dedicated L2 stations confirmed.' },
+      commute: { driveCUA: 26, transitCUA: 35, driveBerman: 10, kms: 8 },
+      amenities: { pool: false, playground: true, toddlerFit: 9 },
+      unitSpecifics: 'Military-priority; check civilian waitlist.',
+      sourceUrl: 'https://www.apartments.com/glen-haven-wheaton-md'
+    },
+    {
+      id: 'ava',
+      name: 'AVA Wheaton',
+      location: 'Wheaton',
+      type: 'Both',
+      baseRent: { value: 3050, confidence: 'Confirmed' },
+      baths: 2,
+      sqft: 1334,
+      parking: { cost: 275, confidence: 'Confirmed' },
+      utilities: { water: 60, electric: 110, gas: 0, internet: 0 }, 
+      extraFees: 90, 
+      eruv: { status: 'Confirmed', community: 'Kemp Mill / Silver Spring' },
+      ev: { status: 'Confirmed', note: 'Avalon Go stalls in basement.' },
+      commute: { driveCUA: 24, transitCUA: 30, driveBerman: 12, kms: 10 },
+      amenities: { pool: true, playground: false, toddlerFit: 5 },
+      unitSpecifics: 'C1T Floorplan is the townhome style.',
+      sourceUrl: 'https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/'
+    },
+    {
+      id: 'blairs',
+      name: 'The Blairs',
+      location: 'Silver Spring',
+      type: 'Apartment',
+      baseRent: { value: 3300, confidence: 'Confirmed' },
+      baths: 2,
+      sqft: 1450,
+      parking: { cost: 200, confidence: 'Confirmed' },
+      utilities: { water: 60, electric: 100, gas: 0, internet: 80 },
+      eruv: { status: 'Confirmed', community: 'Woodside / Shepherd Park' },
+      ev: { status: 'Confirmed', note: 'Tower Co ChargePoint setup.' },
+      commute: { driveCUA: 18, transitCUA: 22, driveBerman: 18, kms: 14 },
+      amenities: { pool: false, playground: true, toddlerFit: 7 },
+      unitSpecifics: 'Blair East 3BR is usually the largest.',
+      sourceUrl: 'https://www.blairapartments.com/floorplans'
+    },
+    {
+      id: 'pearl',
+      name: 'The Pearl',
+      location: 'Silver Spring',
+      type: 'Apartment',
+      baseRent: { value: 4180, confidence: 'Confirmed' },
+      baths: 2,
+      sqft: 1414,
+      parking: { cost: 400, confidence: 'Confirmed' },
+      utilities: { water: 70, electric: 130, gas: 0, internet: 80 },
+      eruv: { status: 'Confirmed', community: 'Woodside / Shepherd Park' },
+      ev: { status: 'Confirmed', note: 'Premium density of chargers.' },
+      commute: { driveCUA: 20, transitCUA: 25, driveBerman: 20, kms: 15 },
+      amenities: { pool: true, playground: true, toddlerFit: 8 },
+      unitSpecifics: 'Ultra-luxury finishes; wellness focus.',
+      sourceUrl: 'https://www.liveatthepearl.com/floorplans'
+    }
+  ];
+
+  // --- SCORING ENGINE ---
+  const getMonthlyTotal = (p) => {
+    let total = p.baseRent.value + p.parking.cost + TAX_PENALTY + (p.extraFees || 0);
+    if (showUtilities) total += Object.values(p.utilities).reduce((sum, v) => sum + v, 0);
+    return total;
+  };
+
+  const calculateFamilyScore = (p) => {
+    const total = getMonthlyTotal(p);
+    
+    // Normalize Price (0-100, 2500 is 100, 5500 is 0)
+    const priceScore = Math.max(0, Math.min(100, (5500 - total) / (5500 - 2500) * 100));
+    
+    // Normalize Berman Commute (0-100, 10m is 100, 40m is 0)
+    const bermanScore = Math.max(0, Math.min(100, (40 - p.commute.driveBerman) / (40 - 10) * 100));
+    
+    // Normalize Seth's Commute (Blend of best option, 15m is 100, 45m is 0)
+    const bestCUA = Math.min(p.commute.driveCUA, p.commute.transitCUA);
+    const cuaScore = Math.max(0, Math.min(100, (45 - bestCUA) / (45 - 15) * 100));
+    
+    // Eruv & Amenity Bonuses
+    const eruvScore = p.eruv.status === 'Confirmed' ? 100 : p.eruv.status === 'Likely' ? 70 : 30;
+    const toddlerScore = p.amenities.toddlerFit * 10;
+    const amenityScore = (p.amenities.pool ? 100 : 0);
+
+    const weightedTotal = 
+      (priceScore * weights.price) + 
+      (bermanScore * weights.bermanCommute) + 
+      (cuaScore * weights.cuaCommute) + 
+      (eruvScore * weights.eruvConfidence) + 
+      (toddlerScore * weights.toddlerSpace) + 
+      (amenityScore * weights.amenities);
+
+    const totalPossibleWeight = Object.values(weights).reduce((a, b) => a + b, 0) * 100;
+    if (totalPossibleWeight === 0) return 0;
+    
+    return Math.round((weightedTotal / totalPossibleWeight) * 100);
+  };
+
+  const filteredAndSortedProps = useMemo(() => {
+    let result = properties.filter(p => {
+      if (p.baths < filters.minBaths) return false;
+      if (filters.mustHaveEruv && p.eruv.status !== 'Confirmed') return false;
+      if (filters.mustHaveEV && p.ev.status !== 'Confirmed') return false;
+      if (getMonthlyTotal(p) > filters.maxBudget) return false;
+      return true;
+    });
+
+    return result.sort((a, b) => {
+      if (sortBy === 'familyScore') return calculateFamilyScore(b) - calculateFamilyScore(a);
+      if (sortBy === 'price') return getMonthlyTotal(a) - getMonthlyTotal(b);
+      if (sortBy === 'berman') return a.commute.driveBerman - b.commute.driveBerman;
+      return 0;
+    });
+  }, [filters, sortBy, showUtilities, weights]);
+
+  // --- COMPONENTS ---
+  const ConfidenceBadge = ({ field }) => {
+    const colors = {
+      'Confirmed': 'bg-emerald-100 text-emerald-800 border-emerald-200',
+      'Likely': 'bg-blue-100 text-blue-800 border-blue-200',
+      'Needs Call': 'bg-amber-100 text-amber-800 border-amber-200'
+    };
+    return (
+      <span className={`px-2 py-0.5 rounded text-[10px] font-black border uppercase tracking-wider ${colors[field.status] || colors['Needs Call']}`}>
+        {field.status}
+      </span>
+    );
+  };
+
+  const WeightIcon = ({ id }) => {
+    switch(id) {
+      case 'bermanCommute': return <School size={14}/>;
+      case 'toddlerSpace': return <TreeDeciduous size={14} className="text-emerald-500" />;
+      case 'eruvConfidence': return <ShieldCheck size={14}/>;
+      case 'price': return <Wallet size={14}/>;
+      case 'cuaCommute': return <Briefcase size={14}/>;
+      case 'amenities': return <Waves size={14}/>;
+      default: return null;
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 pb-32">
+      {/* Header */}
+      <nav className="bg-white border-b border-slate-200 sticky top-0 z-50 px-6 py-4 shadow-sm">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex items-center gap-4">
+            <div className="bg-slate-900 p-2.5 rounded-2xl text-white shadow-xl">
+              <User size={28} />
+            </div>
+            <div>
+              <h1 className="text-2xl font-black tracking-tight">Oranburg Family Decision Engine</h1>
+              <p className="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em]">April 2026 Housing Planner</p>
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-3">
+            <button 
+              onClick={() => setShowUtilities(!showUtilities)}
+              className={`px-5 py-2.5 rounded-2xl text-xs font-bold transition flex items-center gap-2 border shadow-sm ${showUtilities ? 'bg-blue-600 text-white border-blue-700' : 'bg-white text-slate-600 border-slate-200'}`}
+            >
+              <Droplets size={14} /> {showUtilities ? 'Total Monthly' : 'Base + Fixed'}
+            </button>
+            <button 
+              onClick={() => setIsCompareOpen(!isCompareOpen)}
+              className={`px-5 py-2.5 rounded-2xl text-xs font-bold transition flex items-center gap-2 border shadow-sm ${selectedProps.length > 0 ? 'bg-slate-900 text-white border-slate-800' : 'bg-slate-100 text-slate-400 cursor-not-allowed'}`}
+              disabled={selectedProps.length === 0}
+            >
+              <Eye size={14} /> Compare Matrix ({selectedProps.length})
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <main className="max-w-7xl mx-auto px-6 py-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+          {/* Talia's Scoring Weights */}
+          <div className="lg:col-span-4 bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-200">
+            <h3 className="text-sm font-black uppercase tracking-widest text-slate-800 mb-6 flex items-center gap-2">
+              <Heart className="text-rose-500" size={16} /> Talia's Importance Weights
+            </h3>
+            <div className="space-y-6">
+              {[
+                { id: 'bermanCommute', label: 'Berman Commute' },
+                { id: 'toddlerSpace', label: 'Zeeva Play Space' },
+                { id: 'eruvConfidence', label: 'Eruv Confidence' },
+                { id: 'price', label: 'Monthly Cost' },
+                { id: 'cuaCommute', label: "Seth's Commute" },
+                { id: 'amenities', label: 'Pool/Gym' },
+              ].map(w => (
+                <div key={w.id} className="space-y-2">
+                  <div className="flex justify-between items-center text-[11px] font-bold">
+                    <span className="flex items-center gap-1.5 text-slate-600">
+                      <WeightIcon id={w.id} /> {w.label}
+                    </span>
+                    <span className="text-blue-600">{weights[w.id]}</span>
+                  </div>
+                  <input 
+                    type="range" min="0" max="10" 
+                    value={weights[w.id]} 
+                    onChange={(e) => setWeights({...weights, [w.id]: parseInt(e.target.value)})}
+                    className="w-full h-1 bg-slate-100 rounded-lg appearance-none accent-blue-600 cursor-pointer"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Decision Filters */}
+          <div className="lg:col-span-8 bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-200 flex flex-col justify-between">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <div className="space-y-6">
+                <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Hard Filters</h4>
+                <div className="grid grid-cols-1 gap-3">
+                  {[
+                    { id: 'mustHaveEruv', label: 'Confirmed Eruv Only' },
+                    { id: 'mustHaveEV', label: 'Confirmed EV Access' },
+                    { id: 'mustHavePool', label: 'Must Have Pool' }
+                  ].map(f => (
+                    <button
+                      key={f.id}
+                      onClick={() => setFilters(prev => ({ ...prev, [f.id]: !prev[f.id] }))}
+                      className={`px-4 py-3 rounded-2xl text-xs font-bold transition text-left border ${filters[f.id] ? 'bg-blue-600 text-white border-blue-700' : 'bg-slate-50 text-slate-500 border-slate-100'}`}
+                    >
+                      {filters[f.id] ? '✓ ' : '+ '} {f.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Targeting</h4>
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-[11px] font-bold">
+                      <span className="text-slate-500 uppercase">Max Budget</span>
+                      <span className="text-blue-600">${filters.maxBudget}</span>
+                    </div>
+                    <input type="range" min="3000" max="6000" step="100" value={filters.maxBudget} onChange={(e) => setFilters(f => ({...f, maxBudget: parseInt(e.target.value)}))} className="w-full h-1.5 bg-slate-100 rounded-lg appearance-none accent-blue-600" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-[11px] font-bold text-slate-500 uppercase">Sort Order</label>
+                    <select 
+                      value={sortBy} 
+                      onChange={(e) => setSortBy(e.target.value)}
+                      className="w-full p-3 bg-slate-50 border border-slate-100 rounded-xl text-xs font-bold text-slate-700 outline-none"
+                    >
+                      <option value="familyScore">By Scaled Family Score</option>
+                      <option value="price">By Lowest Price</option>
+                      <option value="berman">By Talia's Drive to Berman</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 pt-8 border-t border-slate-100 flex items-center justify-between text-slate-400">
+              <div className="flex items-center gap-2">
+                <div className="bg-emerald-500 w-2.5 h-2.5 rounded-full animate-pulse" />
+                <span className="text-xs font-bold tracking-tight">Modeling {filteredAndSortedProps.length} Results</span>
+              </div>
+              <div className="text-[10px] font-black uppercase tracking-widest bg-slate-100 px-3 py-1 rounded-full">
+                {weights.bermanCommute > 8 ? "Prioritizing Talia/Zeeva Commute" : "Prioritizing Balanced Living"}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredAndSortedProps.map(prop => {
+            const total = getMonthlyTotal(prop);
+            const score = calculateFamilyScore(prop);
+            const isSelected = selectedProps.includes(prop.id);
+
+            return (
+              <div 
+                key={prop.id}
+                className={`bg-white rounded-[3rem] border transition-all duration-300 relative flex flex-col group ${isSelected ? 'border-blue-500 ring-8 ring-blue-500/5 shadow-2xl' : 'border-slate-200 hover:border-slate-300 shadow-sm hover:shadow-xl'}`}
+              >
+                {/* Scaled Score Circle */}
+                <div className="absolute top-8 right-8 text-center bg-slate-900 text-white w-14 h-14 rounded-full flex flex-col items-center justify-center shadow-lg">
+                  <span className="text-[8px] font-black uppercase">Score</span>
+                  <span className="text-lg font-black leading-none">{score}</span>
+                </div>
+
+                <div className="p-10 pt-12">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{prop.type}</span>
+                    <ConfidenceBadge field={prop.baseRent} />
+                  </div>
+                  <h2 className="text-2xl font-black text-slate-900 leading-tight mb-8 pr-12">{prop.name}</h2>
+
+                  <div className="mb-10">
+                    <div className="text-5xl font-black text-slate-900 tracking-tighter">
+                      ${total.toLocaleString()}
+                    </div>
+                    <div className="flex items-center justify-between mt-2">
+                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Monthly Cash Out</span>
+                      <span className="text-[10px] font-bold text-slate-400">{prop.sqft} sq ft</span>
+                    </div>
+                  </div>
+
+                  {/* Commute Table */}
+                  <div className="bg-slate-50 rounded-3xl p-6 mb-8 border border-slate-100 space-y-4">
+                    <div className="flex justify-between items-center">
+                      <span className="text-[10px] font-black text-slate-400 uppercase flex items-center gap-1.5"><School size={12}/> Drive to Berman</span>
+                      <span className="text-sm font-black text-slate-700">{prop.commute.driveBerman}m</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-[10px] font-black text-slate-400 uppercase flex items-center gap-1.5"><Briefcase size={12}/> Drive to CUA (Seth)</span>
+                      <span className="text-sm font-black text-slate-700">{prop.commute.driveCUA}m</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-[10px] font-black text-slate-400 uppercase flex items-center gap-1.5"><Train size={12}/> Transit to CUA (Seth)</span>
+                      <span className="text-sm font-black text-slate-700">{prop.commute.transitCUA}m</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3 mb-8">
+                    <div className="flex justify-between items-center">
+                      <span className="text-xs font-bold text-slate-500">Eruv: {prop.eruv.community}</span>
+                      <ConfidenceBadge field={prop.eruv} />
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-xs font-bold text-slate-500">EV Station Ready</span>
+                      <ConfidenceBadge field={prop.ev} />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-auto border-t border-slate-100 p-8 flex flex-col gap-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-4">
+                      {prop.amenities.pool && <Waves size={20} className="text-cyan-500" />}
+                      {prop.amenities.playground && <TreeDeciduous size={20} className="text-emerald-500" />}
+                    </div>
+                    <button 
+                      onClick={() => toggleSelection(prop.id)}
+                      className={`px-6 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-widest transition shadow-sm ${isSelected ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
+                    >
+                      {isSelected ? 'Selected' : 'Compare'}
+                    </button>
+                  </div>
+                  <div className="text-xs text-slate-600 font-medium italic leading-relaxed">
+                    "{prop.notes}"
+                  </div>
+                  <textarea 
+                    className="w-full p-3 bg-slate-50 rounded-2xl text-[11px] text-slate-600 border border-slate-100 focus:ring-2 focus:ring-blue-500 outline-none resize-none h-14"
+                    placeholder="Call notes..."
+                    value={callNotes[prop.id] || ''}
+                    onChange={(e) => setCallNotes({...callNotes, [prop.id]: e.target.value})}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </main>
+
+      {/* Compare Modal */}
+      {isCompareOpen && (
+        <div className="fixed inset-0 bg-slate-900/95 z-[100] p-6 md:p-12 backdrop-blur-md overflow-y-auto">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex justify-between items-center mb-10">
+              <h2 className="text-3xl font-black text-white tracking-tighter">Family Comparison Matrix</h2>
+              <button onClick={() => setIsCompareOpen(false)} className="bg-white/20 text-white p-3 rounded-full hover:bg-white/30 transition"><XCircle size={28} /></button>
+            </div>
+            
+            <div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden overflow-x-auto">
+              <table className="w-full text-left border-collapse min-w-[900px]">
+                <thead className="bg-slate-50 border-b border-slate-100">
+                  <tr>
+                    <th className="p-8 text-[10px] font-black uppercase text-slate-400 tracking-[0.2em]">Metric</th>
+                    {selectedProps.map(id => (
+                      <th key={id} className="p-8 text-xl font-black text-slate-900 border-l border-slate-100">
+                        {properties.find(p => p.id === id).name}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { label: 'Family Score', fn: (p) => <span className="text-blue-600 font-black text-lg">{calculateFamilyScore(p)}</span> },
+                    { label: 'Monthly Total', fn: (p) => <span className="font-black">${getMonthlyTotal(p).toLocaleString()}</span> },
+                    { label: 'Type / Layout', fn: (p) => p.type },
+                    { label: 'Beds/Baths', fn: (p) => `${3}BR / ${p.baths}BA` },
+                    { label: 'Drive to Berman', fn: (p) => `${p.commute.driveBerman} mins` },
+                    { label: 'Seth: Drive to CUA', fn: (p) => `${p.commute.driveCUA} mins` },
+                    { label: 'Seth: Transit to CUA', fn: (p) => `${p.commute.transitCUA} mins` },
+                    { label: 'Eruv Community', fn: (p) => p.eruv.community },
+                    { label: 'Stroller Score', fn: (p) => p.amenities.toddlerFit },
+                    { label: 'Call Log', fn: (p) => callNotes[p.id] || "No notes yet." }
+                  ].map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}>
+                      <td className="p-8 font-black text-[10px] uppercase text-slate-400 tracking-widest">{row.label}</td>
+                      {selectedProps.map(id => (
+                        <td key={id} className="p-8 text-sm font-bold text-slate-700 border-l border-slate-100">
+                          {row.fn(properties.find(p => p.id === id))}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Verification Legend */}
+      <footer className="max-w-7xl mx-auto mt-20 p-12 bg-slate-900 rounded-[3.5rem] text-white shadow-2xl relative overflow-hidden mx-6">
+        <div className="absolute top-0 right-0 p-12 opacity-5">
+          <ShieldCheck size={200} />
+        </div>
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <h4 className="font-black text-blue-400 uppercase text-xs tracking-widest mb-4">Scoring Logic</h4>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              Family scores are <strong>scaled 0-100</strong>. High weights on Berman drive reflect the daily reality of school runs with Zeeva. Low weights on amenities reduce the "lure" of luxury features over practical space.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-black text-blue-400 uppercase text-xs tracking-widest mb-4">Commute Parameters</h4>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              <strong>Drive to Berman:</strong> AM Peak travel to Arctic Ave. <br/>
+              <strong>CUA (Seth):</strong> Modeled for both driving and Metro. Driving is traveling against peak inbound traffic.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-black text-blue-400 uppercase text-xs tracking-widest mb-4">Final Audits</h4>
+            <p className="text-slate-400 text-sm leading-relaxed">
+              Confirm <strong>2-car parking</strong> specifically at Colesville Towers. Confirm <strong>TH03 availability</strong> at Falkland Chase for April 2026.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default App;

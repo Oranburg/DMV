@@ -1,0 +1,627 @@
+[
+  {
+    "id": "falkland",
+    "name": "Falkland Chase",
+    "address": "8305 16th St, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 12,
+    "unitType": ["Apartment", "Townhouse"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1278,
+    "pricing": {
+      "baseRent": 2680,
+      "parking": 150,
+      "utilities": {
+        "water": 60,
+        "electric": 100,
+        "gas": 0,
+        "internet": 80
+      },
+      "mandatoryFees": 0,
+      "taxDelta": 165,
+      "estimatedAllIn": 3235,
+      "confidence": "Likely",
+      "assumptions": [
+        "Estimated utility costs are modeled rather than confirmed per lease.",
+        "Parking assumes a workable two-car arrangement but should be verified with leasing."
+      ]
+    },
+    "confidence": {
+      "inventory": "Confirmed",
+      "pricing": "Likely",
+      "eruv": "Likely",
+      "ev": "Needs Verification",
+      "parking": "Likely",
+      "commute": "Likely",
+      "familyFit": "Likely"
+    },
+    "community": {
+      "eruvStatus": "Likely",
+      "eruvNotes": "Silver Spring / Woodside area looks favorable but should be checked against the current map.",
+      "synagogueProximity": "Silver Spring / Woodside corridor",
+      "kmsDriveMin": 14
+    },
+    "commute": {
+      "cuaLaw": 18,
+      "berman": 18,
+      "confidence": "Likely"
+    },
+    "amenities": {
+      "pool": false,
+      "gym": false,
+      "playground": true,
+      "outdoorSpace": true,
+      "evCharging": false
+    },
+    "family": {
+      "toddlerFriendly": true,
+      "strollerFriendly": true,
+      "officePotential": true,
+      "twoCarWorkable": true
+    },
+    "evidence": {
+      "inventory": [
+        {
+          "label": "TH03 floor plan",
+          "url": "https://www.falklandchaseapartments.com/floorplans/th03",
+          "checkedAt": "2026-04-04",
+          "note": "Official floor plan evidence for 3BR inventory."
+        },
+        {
+          "label": "Floor plans overview",
+          "url": "https://www.falklandchaseapartments.com/floorplans",
+          "checkedAt": "2026-04-04",
+          "note": "Official site shows apartments and townhomes with 3-bedroom options."
+        }
+      ],
+      "pricing": [
+        {
+          "label": "Available units",
+          "url": "https://www.falklandchaseapartments.com/availableunits",
+          "checkedAt": "2026-04-04",
+          "note": "Use for live pricing validation."
+        }
+      ],
+      "eruv": [
+        {
+          "label": "Ohev Sholom eruv page",
+          "url": "https://www.ohevdc.org/eruv",
+          "checkedAt": "2026-04-04",
+          "note": "Area-level eruv reference, not address-specific certification."
+        }
+      ],
+      "ev": [],
+      "commute": []
+    },
+    "notes": [
+      "Strong family-space candidate.",
+      "Likely one of the better toddler-friendly options."
+    ],
+    "tasks": [
+      "Confirm 2-car parking configuration.",
+      "Ask whether on-site EV charging exists today.",
+      "Verify current 3BR availability and lease term."
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "id": "colesville",
+    "name": "Colesville Towers",
+    "address": "Address needs verification - Colesville Towers, Silver Spring, MD",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 9,
+    "unitType": ["Apartment"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1340,
+    "pricing": {
+      "baseRent": 2699,
+      "parking": 150,
+      "utilities": {
+        "water": 60,
+        "electric": 0,
+        "gas": 0,
+        "internet": 80
+      },
+      "mandatoryFees": 0,
+      "taxDelta": 165,
+      "estimatedAllIn": 3154,
+      "confidence": "Likely",
+      "assumptions": [
+        "Water and internet are modeled from prior listings.",
+        "Two-car parking practicality is not yet confirmed lease-by-lease."
+      ]
+    },
+    "confidence": {
+      "inventory": "Confirmed",
+      "pricing": "Likely",
+      "eruv": "Likely",
+      "ev": "Needs Verification",
+      "parking": "Likely",
+      "commute": "Likely",
+      "familyFit": "Likely"
+    },
+    "community": {
+      "eruvStatus": "Likely",
+      "eruvNotes": "Woodside/Silver Spring area appears favorable but still requires boundary verification.",
+      "synagogueProximity": "Silver Spring / Woodside corridor",
+      "kmsDriveMin": 15
+    },
+    "commute": {
+      "cuaLaw": 18,
+      "berman": 20,
+      "confidence": "Likely"
+    },
+    "amenities": {
+      "pool": true,
+      "gym": true,
+      "playground": true,
+      "outdoorSpace": false,
+      "evCharging": false
+    },
+    "family": {
+      "toddlerFriendly": true,
+      "strollerFriendly": true,
+      "officePotential": true,
+      "twoCarWorkable": true
+    },
+    "evidence": {
+      "inventory": [
+        {
+          "label": "Official floor plans",
+          "url": "https://www.colesvilletowers.com/floorplans",
+          "checkedAt": "2026-04-04",
+          "note": "Official source indicating 3BR layouts exist."
+        }
+      ],
+      "pricing": [
+        {
+          "label": "Amenities and utilities page",
+          "url": "https://www.colesvilletowers.com/amenities",
+          "checkedAt": "2026-04-04",
+          "note": "Use for utility and building feature assumptions."
+        }
+      ],
+      "eruv": [
+        {
+          "label": "Ohev Sholom eruv page",
+          "url": "https://www.ohevdc.org/eruv",
+          "checkedAt": "2026-04-04",
+          "note": "Area-level reference; verify exact address inclusion."
+        }
+      ],
+      "ev": [],
+      "commute": []
+    },
+    "notes": [
+      "Strong value candidate in current sample.",
+      "Address and EV specifics need direct confirmation."
+    ],
+    "tasks": [
+      "Confirm exact street address and unit stack.",
+      "Confirm two-car parking availability in writing.",
+      "Ask whether resident EV charging exists on-site."
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "id": "glenhaven",
+    "name": "Glen Haven",
+    "address": "Address needs verification - Glen Haven, Wheaton, MD",
+    "neighborhood": "Wheaton",
+    "metroStation": "Wheaton",
+    "walkToMetroMin": 8,
+    "unitType": ["Apartment", "Townhouse"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1300,
+    "pricing": {
+      "baseRent": 2790,
+      "parking": 0,
+      "utilities": {
+        "water": 70,
+        "electric": 120,
+        "gas": 40,
+        "internet": 80
+      },
+      "mandatoryFees": 0,
+      "taxDelta": 165,
+      "estimatedAllIn": 3265,
+      "confidence": "Estimated",
+      "assumptions": [
+        "Pricing and availability may vary because listing sources include military-focused inventory.",
+        "Utilities are modeled from third-party listing assumptions."
+      ]
+    },
+    "confidence": {
+      "inventory": "Confirmed",
+      "pricing": "Estimated",
+      "eruv": "Likely",
+      "ev": "Needs Verification",
+      "parking": "Likely",
+      "commute": "Likely",
+      "familyFit": "Likely"
+    },
+    "community": {
+      "eruvStatus": "Likely",
+      "eruvNotes": "Kemp Mill-oriented geography looks favorable but should be map-verified.",
+      "synagogueProximity": "Kemp Mill / Wheaton corridor",
+      "kmsDriveMin": 8
+    },
+    "commute": {
+      "cuaLaw": 26,
+      "berman": 10,
+      "confidence": "Likely"
+    },
+    "amenities": {
+      "pool": false,
+      "gym": false,
+      "playground": true,
+      "outdoorSpace": true,
+      "evCharging": false
+    },
+    "family": {
+      "toddlerFriendly": true,
+      "strollerFriendly": true,
+      "officePotential": true,
+      "twoCarWorkable": true
+    },
+    "evidence": {
+      "inventory": [
+        {
+          "label": "Apartments.com listing",
+          "url": "https://www.apartments.com/glen-haven-wheaton-md/lep52zg/",
+          "checkedAt": "2026-04-04",
+          "note": "Third-party listing indicates 3BR stock."
+        },
+        {
+          "label": "RentCafe listing",
+          "url": "https://www.rentcafe.com/military/md/wheaton/wram/default.aspx",
+          "checkedAt": "2026-04-04",
+          "note": "Useful for inventory checks; confirm leasing channel and eligibility."
+        }
+      ],
+      "pricing": [
+        {
+          "label": "Apartments.com listing",
+          "url": "https://www.apartments.com/glen-haven-wheaton-md/lep52zg/",
+          "checkedAt": "2026-04-04",
+          "note": "Pricing should be treated as modeled until direct leasing confirmation."
+        }
+      ],
+      "eruv": [
+        {
+          "label": "Kemp Mill community page",
+          "url": "https://www.kmsynagogue.org/about-the-kemp-mill-community.html",
+          "checkedAt": "2026-04-04",
+          "note": "Community-level context only; verify exact boundaries."
+        }
+      ],
+      "ev": [],
+      "commute": []
+    },
+    "notes": [
+      "Best modeled Berman commute among current options.",
+      "Potentially high upside if civilian inventory is available."
+    ],
+    "tasks": [
+      "Confirm civilian lease eligibility and waitlist process.",
+      "Confirm exact unit address and parking setup.",
+      "Confirm current rent quote and lease terms."
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "id": "ava",
+    "name": "AVA Wheaton",
+    "address": "2425 Blueridge Ave, Silver Spring, MD 20902",
+    "neighborhood": "Wheaton",
+    "metroStation": "Wheaton",
+    "walkToMetroMin": 3,
+    "unitType": ["Apartment"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1334,
+    "pricing": {
+      "baseRent": 3050,
+      "parking": 275,
+      "utilities": {
+        "water": 60,
+        "electric": 110,
+        "gas": 0,
+        "internet": 0
+      },
+      "mandatoryFees": 90,
+      "taxDelta": 165,
+      "estimatedAllIn": 3750,
+      "confidence": "Likely",
+      "assumptions": [
+        "Mandatory tech fee is included in modeled costs.",
+        "Utility estimates are modeled and not guaranteed by a specific lease."
+      ]
+    },
+    "confidence": {
+      "inventory": "Confirmed",
+      "pricing": "Likely",
+      "eruv": "Likely",
+      "ev": "Confirmed",
+      "parking": "Confirmed",
+      "commute": "Likely",
+      "familyFit": "Likely"
+    },
+    "community": {
+      "eruvStatus": "Likely",
+      "eruvNotes": "Wheaton location appears favorable for Kemp Mill-oriented living but should still be checked against current boundaries.",
+      "synagogueProximity": "Kemp Mill / Wheaton corridor",
+      "kmsDriveMin": 10
+    },
+    "commute": {
+      "cuaLaw": 24,
+      "berman": 12,
+      "confidence": "Likely"
+    },
+    "amenities": {
+      "pool": true,
+      "gym": true,
+      "playground": false,
+      "outdoorSpace": false,
+      "evCharging": true
+    },
+    "family": {
+      "toddlerFriendly": false,
+      "strollerFriendly": true,
+      "officePotential": true,
+      "twoCarWorkable": true
+    },
+    "evidence": {
+      "inventory": [
+        {
+          "label": "Official AVA page",
+          "url": "https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/",
+          "checkedAt": "2026-04-04",
+          "note": "Official source for 3+ bedroom inventory."
+        }
+      ],
+      "pricing": [
+        {
+          "label": "Official AVA page",
+          "url": "https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/",
+          "checkedAt": "2026-04-04",
+          "note": "Starting prices and parking should be rechecked live."
+        }
+      ],
+      "eruv": [
+        {
+          "label": "Kemp Mill community page",
+          "url": "https://www.kmsynagogue.org/about-the-kemp-mill-community.html",
+          "checkedAt": "2026-04-04",
+          "note": "Community context only, not parcel-level certification."
+        }
+      ],
+      "ev": [
+        {
+          "label": "Official AVA page",
+          "url": "https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/",
+          "checkedAt": "2026-04-04",
+          "note": "Strongest EV support among currently reviewed buildings."
+        }
+      ],
+      "commute": []
+    },
+    "notes": [
+      "Best transit access in current sample.",
+      "Strong EV confidence but weaker toddler space fit."
+    ],
+    "tasks": [
+      "Confirm whether a current 3BR is actually available now.",
+      "Confirm two-car parking rules and EV stall access.",
+      "Ask about toddler play space and stroller logistics."
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "id": "blairs",
+    "name": "The Blairs",
+    "address": "1401 Blair Mill Rd, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 6,
+    "unitType": ["Apartment"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1378,
+    "pricing": {
+      "baseRent": 3300,
+      "parking": 200,
+      "utilities": {
+        "water": 60,
+        "electric": 100,
+        "gas": 0,
+        "internet": 80
+      },
+      "mandatoryFees": 0,
+      "taxDelta": 165,
+      "estimatedAllIn": 3905,
+      "confidence": "Likely",
+      "assumptions": [
+        "Parking assumes the tandem option remains available.",
+        "Utilities are modeled."
+      ]
+    },
+    "confidence": {
+      "inventory": "Confirmed",
+      "pricing": "Likely",
+      "eruv": "Likely",
+      "ev": "Likely",
+      "parking": "Confirmed",
+      "commute": "Likely",
+      "familyFit": "Likely"
+    },
+    "community": {
+      "eruvStatus": "Likely",
+      "eruvNotes": "Downtown Silver Spring appears favorable but should be cross-checked with the latest map.",
+      "synagogueProximity": "Silver Spring / Woodside corridor",
+      "kmsDriveMin": 14
+    },
+    "commute": {
+      "cuaLaw": 18,
+      "berman": 18,
+      "confidence": "Likely"
+    },
+    "amenities": {
+      "pool": false,
+      "gym": true,
+      "playground": true,
+      "outdoorSpace": true,
+      "evCharging": true
+    },
+    "family": {
+      "toddlerFriendly": true,
+      "strollerFriendly": true,
+      "officePotential": true,
+      "twoCarWorkable": true
+    },
+    "evidence": {
+      "inventory": [
+        {
+          "label": "Official floor plans",
+          "url": "https://www.blairapartments.com/floorplans",
+          "checkedAt": "2026-04-04",
+          "note": "Official floor plan support for 3BR units."
+        }
+      ],
+      "pricing": [
+        {
+          "label": "RentCafe listing",
+          "url": "https://www.rentcafe.com/apartments/md/silver-spring/the-blairs/default.aspx",
+          "checkedAt": "2026-04-04",
+          "note": "Useful for live pricing checks."
+        }
+      ],
+      "eruv": [
+        {
+          "label": "Ohev Sholom eruv page",
+          "url": "https://www.ohevdc.org/eruv",
+          "checkedAt": "2026-04-04",
+          "note": "Area-level reference only."
+        }
+      ],
+      "ev": [],
+      "commute": []
+    },
+    "notes": [
+      "One of the more balanced options.",
+      "Good blend of commute, parking, and unit scale."
+    ],
+    "tasks": [
+      "Confirm tandem parking for two cars.",
+      "Confirm EV charger access for residents.",
+      "Check current 3BR turnover."
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "id": "pearl",
+    "name": "The Pearl",
+    "address": "Address needs verification - The Pearl, Silver Spring, MD",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 10,
+    "unitType": ["Apartment"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1546,
+    "pricing": {
+      "baseRent": 4180,
+      "parking": 400,
+      "utilities": {
+        "water": 70,
+        "electric": 130,
+        "gas": 0,
+        "internet": 80
+      },
+      "mandatoryFees": 0,
+      "taxDelta": 165,
+      "estimatedAllIn": 5025,
+      "confidence": "Likely",
+      "assumptions": [
+        "Current pricing can vary materially by available floor plan.",
+        "Utilities are modeled and should be lease-verified."
+      ]
+    },
+    "confidence": {
+      "inventory": "Confirmed",
+      "pricing": "Likely",
+      "eruv": "Likely",
+      "ev": "Likely",
+      "parking": "Confirmed",
+      "commute": "Likely",
+      "familyFit": "Likely"
+    },
+    "community": {
+      "eruvStatus": "Likely",
+      "eruvNotes": "Silver Spring corridor appears favorable but exact boundary should be verified.",
+      "synagogueProximity": "Silver Spring / Woodside corridor",
+      "kmsDriveMin": 15
+    },
+    "commute": {
+      "cuaLaw": 20,
+      "berman": 20,
+      "confidence": "Likely"
+    },
+    "amenities": {
+      "pool": true,
+      "gym": true,
+      "playground": true,
+      "outdoorSpace": false,
+      "evCharging": true
+    },
+    "family": {
+      "toddlerFriendly": true,
+      "strollerFriendly": true,
+      "officePotential": true,
+      "twoCarWorkable": true
+    },
+    "evidence": {
+      "inventory": [
+        {
+          "label": "Official floor plans",
+          "url": "https://www.liveatthepearl.com/floorplans",
+          "checkedAt": "2026-04-04",
+          "note": "Official source indicating current floor-plan inventory."
+        }
+      ],
+      "pricing": [
+        {
+          "label": "RentCafe listing",
+          "url": "https://www.rentcafe.com/apartments/md/silver-spring/the-pearl-2/default.aspx",
+          "checkedAt": "2026-04-04",
+          "note": "Use for spot checks and compare against official quotes."
+        }
+      ],
+      "eruv": [
+        {
+          "label": "Ohev Sholom eruv page",
+          "url": "https://www.ohevdc.org/eruv",
+          "checkedAt": "2026-04-04",
+          "note": "Area-level reference only."
+        }
+      ],
+      "ev": [],
+      "commute": []
+    },
+    "notes": [
+      "Premium option with highest modeled monthly cost.",
+      "Candidate if finish quality is worth the premium after budget review."
+    ],
+    "tasks": [
+      "Confirm exact address and current available stack.",
+      "Confirm total recurring monthly fees beyond rent and parking.",
+      "Confirm EV stall availability and waitlist policy."
+    ],
+    "lastVerified": "2026-04-04"
+  }
+]

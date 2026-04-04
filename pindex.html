@@ -1,0 +1,725 @@
+import React, { useMemo, useState } from 'react';
+import {
+  Home,
+  Filter,
+  ArrowUpDown,
+  Briefcase,
+  School,
+  Navigation,
+  Zap,
+  Waves,
+  ShieldCheck,
+  ExternalLink,
+  CheckCircle2,
+  ChevronUp,
+  Info,
+  Car,
+  Trees,
+  Bath,
+  Building2,
+  Wallet,
+  BadgeCheck,
+  AlertTriangle
+} from 'lucide-react';
+
+const STATUS_ORDER = {
+  Confirmed: 3,
+  Likely: 2,
+  'Needs Verification': 1,
+  Unknown: 0,
+};
+
+const fmt = new Intl.NumberFormat('en-US');
+const money = (n) => `$${fmt.format(Math.round(n))}`;
+const domain = (url) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return 'source';
+  }
+};
+
+const TAX_DELTA = 165;
+
+const properties = [
+  {
+    id: 'falkland',
+    name: 'Falkland Chase',
+    location: 'Silver Spring',
+    station: 'Silver Spring',
+    walkToMetroMin: 12,
+    type: ['Apartment', 'Townhouse'],
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 1278,
+    baseRent: 2680,
+    parkingMonthly: 150,
+    parkingSpaces: 2,
+    extraFees: 0,
+    utilities: { water: 60, electric: 100, gas: 0, internet: 80 },
+    statuses: {
+      inventory: 'Confirmed',
+      eruv: 'Likely',
+      ev: 'Needs Verification',
+      parking: 'Likely',
+      playground: 'Confirmed',
+    },
+    commute: { law: 18, berman: 18, kms: 14 },
+    amenities: { pool: false, gym: false, playground: true },
+    notes: 'Best outdoor-space candidate; official site supports 3BR townhome inventory.',
+    evidence: {
+      inventory: [
+        { label: 'TH03 floor plan', url: 'https://www.falklandchaseapartments.com/floorplans/th03' },
+        { label: 'Floor plans overview', url: 'https://www.falklandchaseapartments.com/floorplans' },
+      ],
+      eruv: [
+        { label: 'Shepherd Park / Woodside eruv overview', url: 'https://www.ohevdc.org/eruv' },
+      ],
+      pricing: [
+        { label: 'Available units', url: 'https://www.falklandchaseapartments.com/availableunits' },
+      ],
+    },
+  },
+  {
+    id: 'colesville',
+    name: 'Colesville Towers',
+    location: 'Silver Spring',
+    station: 'Silver Spring',
+    walkToMetroMin: 9,
+    type: ['Apartment'],
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 1340,
+    baseRent: 2699,
+    parkingMonthly: 150,
+    parkingSpaces: 2,
+    extraFees: 0,
+    utilities: { water: 60, electric: 0, gas: 0, internet: 80 },
+    statuses: {
+      inventory: 'Confirmed',
+      eruv: 'Likely',
+      ev: 'Needs Verification',
+      parking: 'Likely',
+      playground: 'Likely',
+    },
+    commute: { law: 18, berman: 20, kms: 15 },
+    amenities: { pool: true, gym: true, playground: true },
+    notes: 'Strong value case; utilities messaging is favorable but water is billed separately.',
+    evidence: {
+      inventory: [
+        { label: 'Official floor plans', url: 'https://www.colesvilletowers.com/floorplans' },
+      ],
+      pricing: [
+        { label: 'Amenities / utilities', url: 'https://www.colesvilletowers.com/amenities' },
+        { label: 'Management site', url: 'https://www.ross-companies.com/apartments/md/silver-spring/colesville-towers-apartments/default' },
+      ],
+      eruv: [
+        { label: 'Shepherd Park / Woodside eruv overview', url: 'https://www.ohevdc.org/eruv' },
+      ],
+    },
+  },
+  {
+    id: 'glenhaven',
+    name: 'Glen Haven',
+    location: 'Wheaton',
+    station: 'Wheaton',
+    walkToMetroMin: 8,
+    type: ['Apartment', 'Townhouse'],
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 1300,
+    baseRent: 2790,
+    parkingMonthly: 0,
+    parkingSpaces: 2,
+    extraFees: 0,
+    utilities: { water: 70, electric: 120, gas: 40, internet: 80 },
+    statuses: {
+      inventory: 'Confirmed',
+      eruv: 'Likely',
+      ev: 'Needs Verification',
+      parking: 'Likely',
+      playground: 'Confirmed',
+    },
+    commute: { law: 26, berman: 10, kms: 8 },
+    amenities: { pool: false, gym: false, playground: true },
+    notes: 'Best Berman commute; family layout looks promising, but civilian availability may fluctuate.',
+    evidence: {
+      inventory: [
+        { label: 'Apartments.com listing', url: 'https://www.apartments.com/glen-haven-wheaton-md/lep52zg/' },
+        { label: 'RentCafe listing', url: 'https://www.rentcafe.com/military/md/wheaton/wram/default.aspx' },
+      ],
+      eruv: [
+        { label: 'Kemp Mill community context', url: 'https://www.kmsynagogue.org/about-the-kemp-mill-community.html' },
+      ],
+    },
+  },
+  {
+    id: 'ava',
+    name: 'AVA Wheaton',
+    location: 'Wheaton',
+    station: 'Wheaton',
+    walkToMetroMin: 3,
+    type: ['Apartment'],
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 1334,
+    baseRent: 3050,
+    parkingMonthly: 275,
+    parkingSpaces: 2,
+    extraFees: 90,
+    utilities: { water: 60, electric: 110, gas: 0, internet: 0 },
+    statuses: {
+      inventory: 'Confirmed',
+      eruv: 'Likely',
+      ev: 'Confirmed',
+      parking: 'Confirmed',
+      playground: 'Needs Verification',
+    },
+    commute: { law: 24, berman: 12, kms: 10 },
+    amenities: { pool: true, gym: true, playground: false },
+    notes: 'Best transit access; strongest official EV support; mandatory tech fee should stay visible.',
+    evidence: {
+      inventory: [
+        { label: 'Official AVA page', url: 'https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/' },
+        { label: 'Zillow listing snapshot', url: 'https://www.zillow.com/apartments/wheaton-md/ava-wheaton/CjjCC2/' },
+      ],
+      ev: [
+        { label: 'Official AVA page', url: 'https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/' },
+      ],
+      eruv: [
+        { label: 'Kemp Mill community context', url: 'https://www.kmsynagogue.org/about-the-kemp-mill-community.html' },
+      ],
+    },
+  },
+  {
+    id: 'blairs',
+    name: 'The Blairs',
+    location: 'Silver Spring',
+    station: 'Silver Spring',
+    walkToMetroMin: 6,
+    type: ['Apartment'],
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 1378,
+    baseRent: 3300,
+    parkingMonthly: 200,
+    parkingSpaces: 2,
+    extraFees: 0,
+    utilities: { water: 60, electric: 100, gas: 0, internet: 80 },
+    statuses: {
+      inventory: 'Confirmed',
+      eruv: 'Likely',
+      ev: 'Likely',
+      parking: 'Confirmed',
+      playground: 'Likely',
+    },
+    commute: { law: 18, berman: 18, kms: 14 },
+    amenities: { pool: false, gym: true, playground: true },
+    notes: 'Balanced option with tandem-parking value and good walkability.',
+    evidence: {
+      inventory: [
+        { label: 'Official floor plans', url: 'https://www.blairapartments.com/floorplans' },
+      ],
+      pricing: [
+        { label: 'RentCafe listing', url: 'https://www.rentcafe.com/apartments/md/silver-spring/the-blairs/default.aspx' },
+      ],
+      eruv: [
+        { label: 'Shepherd Park / Woodside eruv overview', url: 'https://www.ohevdc.org/eruv' },
+      ],
+    },
+  },
+  {
+    id: 'pearl',
+    name: 'The Pearl',
+    location: 'Silver Spring',
+    station: 'Silver Spring',
+    walkToMetroMin: 10,
+    type: ['Apartment'],
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 1546,
+    baseRent: 4180,
+    parkingMonthly: 400,
+    parkingSpaces: 2,
+    extraFees: 0,
+    utilities: { water: 70, electric: 130, gas: 0, internet: 80 },
+    statuses: {
+      inventory: 'Confirmed',
+      eruv: 'Likely',
+      ev: 'Likely',
+      parking: 'Confirmed',
+      playground: 'Likely',
+    },
+    commute: { law: 20, berman: 20, kms: 15 },
+    amenities: { pool: true, gym: true, playground: true },
+    notes: 'Premium building; strongest finishes, but the price premium is real.',
+    evidence: {
+      inventory: [
+        { label: 'Official floor plans', url: 'https://www.liveatthepearl.com/floorplans' },
+      ],
+      pricing: [
+        { label: 'RentCafe listing', url: 'https://www.rentcafe.com/apartments/md/silver-spring/the-pearl-2/default.aspx' },
+      ],
+      eruv: [
+        { label: 'Shepherd Park / Woodside eruv overview', url: 'https://www.ohevdc.org/eruv' },
+      ],
+    },
+  },
+];
+
+function statusClass(status) {
+  return {
+    Confirmed: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+    Likely: 'bg-blue-100 text-blue-800 border-blue-200',
+    'Needs Verification': 'bg-amber-100 text-amber-800 border-amber-200',
+    Unknown: 'bg-slate-100 text-slate-700 border-slate-200',
+  }[status] || 'bg-slate-100 text-slate-700 border-slate-200';
+}
+
+function Badge({ status }) {
+  return (
+    <span className={`inline-flex items-center rounded-full border px-2 py-1 text-[11px] font-bold ${statusClass(status)}`}>
+      {status}
+    </span>
+  );
+}
+
+function scoreProperty(p, includeUtilities) {
+  const total = monthlyTotal(p, includeUtilities);
+  const priceScore = Math.max(0, 100 - (total - 2800) / 20);
+  const lawScore = Math.max(0, 100 - p.commute.law * 2.5);
+  const bermanScore = Math.max(0, 100 - p.commute.berman * 4);
+  const kmsScore = Math.max(0, 100 - p.commute.kms * 5);
+  const toddlerScore = (p.amenities.playground ? 20 : 0) + (p.type.includes('Townhouse') ? 15 : 0);
+  const confidenceScore =
+    STATUS_ORDER[p.statuses.inventory] * 8 +
+    STATUS_ORDER[p.statuses.eruv] * 6 +
+    STATUS_ORDER[p.statuses.ev] * 5 +
+    STATUS_ORDER[p.statuses.parking] * 4;
+
+  return Math.round(priceScore * 0.28 + lawScore * 0.18 + bermanScore * 0.24 + kmsScore * 0.08 + toddlerScore + confidenceScore);
+}
+
+function monthlyTotal(p, includeUtilities) {
+  const base = p.baseRent + p.parkingMonthly + TAX_DELTA + (p.extraFees || 0);
+  const utilities = includeUtilities ? Object.values(p.utilities).reduce((sum, n) => sum + n, 0) : 0;
+  return base + utilities;
+}
+
+function lineItems(p, includeUtilities) {
+  const rows = [
+    ['Base rent', p.baseRent],
+    ['Parking', p.parkingMonthly],
+    ['MD tax delta', TAX_DELTA],
+  ];
+  if (p.extraFees) rows.push(['Mandatory fees', p.extraFees]);
+  if (includeUtilities) {
+    Object.entries(p.utilities).forEach(([k, v]) => rows.push([k[0].toUpperCase() + k.slice(1), v]));
+  }
+  return rows;
+}
+
+export default function HousingPlannerApp() {
+  const [selected, setSelected] = useState([]);
+  const [compareOpen, setCompareOpen] = useState(false);
+  const [showUtilities, setShowUtilities] = useState(true);
+  const [sortBy, setSortBy] = useState('family');
+  const [filters, setFilters] = useState({
+    maxBudget: 5500,
+    townhouseOkay: true,
+    apartmentOkay: true,
+    confirmedInventoryOnly: true,
+    confirmedEVOnly: false,
+    likelyOrBetterEruv: true,
+    twoCarsOnly: true,
+    toddlerSpaceOnly: false,
+    poolOnly: false,
+  });
+
+  const filtered = useMemo(() => {
+    const items = properties.filter((p) => {
+      const matchesType =
+        (filters.townhouseOkay && p.type.includes('Townhouse')) ||
+        (filters.apartmentOkay && p.type.includes('Apartment'));
+      if (!matchesType) return false;
+      if (filters.confirmedInventoryOnly && p.statuses.inventory !== 'Confirmed') return false;
+      if (filters.confirmedEVOnly && p.statuses.ev !== 'Confirmed') return false;
+      if (filters.likelyOrBetterEruv && STATUS_ORDER[p.statuses.eruv] < STATUS_ORDER.Likely) return false;
+      if (filters.twoCarsOnly && p.parkingSpaces < 2) return false;
+      if (filters.toddlerSpaceOnly && !p.amenities.playground) return false;
+      if (filters.poolOnly && !p.amenities.pool) return false;
+      if (monthlyTotal(p, showUtilities) > filters.maxBudget) return false;
+      return true;
+    });
+
+    const sorted = [...items].sort((a, b) => {
+      if (sortBy === 'price') return monthlyTotal(a, showUtilities) - monthlyTotal(b, showUtilities);
+      if (sortBy === 'law') return a.commute.law - b.commute.law;
+      if (sortBy === 'berman') return a.commute.berman - b.commute.berman;
+      if (sortBy === 'kms') return a.commute.kms - b.commute.kms;
+      return scoreProperty(b, showUtilities) - scoreProperty(a, showUtilities);
+    });
+
+    return sorted;
+  }, [filters, showUtilities, sortBy]);
+
+  const selectedProps = selected
+    .map((id) => properties.find((p) => p.id === id))
+    .filter(Boolean);
+
+  const setFlag = (key) => setFilters((f) => ({ ...f, [key]: !f[key] }));
+  const toggleType = (value) => {
+    if (value === 'Apartment') setFilters((f) => ({ ...f, apartmentOkay: !f.apartmentOkay }));
+    if (value === 'Townhouse') setFilters((f) => ({ ...f, townhouseOkay: !f.townhouseOkay }));
+  };
+  const toggleSelected = (id) => {
+    setSelected((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : prev.length < 4 ? [...prev, id] : prev
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-50 text-slate-900">
+      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6">
+          <div className="flex items-center gap-3">
+            <div className="rounded-2xl bg-blue-600 p-2 text-white shadow-sm">
+              <Home size={22} />
+            </div>
+            <div>
+              <h1 className="text-xl font-black tracking-tight">DMV Family Housing Planner</h1>
+              <p className="text-sm text-slate-500">Safer comparisons for Red Line 3BR options.</p>
+            </div>
+          </div>
+
+          <button
+            onClick={() => setShowUtilities((v) => !v)}
+            className={`rounded-xl px-4 py-2 text-sm font-bold transition ${showUtilities ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-700'}`}
+          >
+            {showUtilities ? 'All-in monthly' : 'Base rent mode'}
+          </button>
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-7xl px-4 py-8 md:px-6">
+        <section className="mb-8 grid gap-6 lg:grid-cols-[1.8fr_1fr]">
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="mb-5 flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-slate-500">
+              <Filter size={14} /> Family filters
+            </div>
+
+            <div className="space-y-5">
+              <div className="flex flex-wrap gap-2">
+                {['Apartment', 'Townhouse'].map((kind) => {
+                  const active = kind === 'Apartment' ? filters.apartmentOkay : filters.townhouseOkay;
+                  return (
+                    <button
+                      key={kind}
+                      onClick={() => toggleType(kind)}
+                      className={`rounded-full border px-4 py-2 text-sm font-bold transition ${active ? 'border-slate-900 bg-slate-900 text-white' : 'border-slate-200 bg-white text-slate-600'}`}
+                    >
+                      {kind}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {[
+                  ['confirmedInventoryOnly', 'Confirmed 3BR'],
+                  ['confirmedEVOnly', 'Confirmed EV'],
+                  ['likelyOrBetterEruv', 'Likely+ eruv'],
+                  ['twoCarsOnly', '2-car workable'],
+                  ['toddlerSpaceOnly', 'Toddler space'],
+                  ['poolOnly', 'Pool only'],
+                ].map(([key, label]) => (
+                  <button
+                    key={key}
+                    onClick={() => setFlag(key)}
+                    className={`rounded-full border px-4 py-2 text-sm font-bold transition ${filters[key] ? 'border-blue-600 bg-blue-50 text-blue-700' : 'border-slate-200 bg-white text-slate-600'}`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+
+              <div>
+                <div className="mb-2 flex items-center justify-between text-sm">
+                  <span className="font-bold text-slate-700">Max monthly budget</span>
+                  <span className="font-black text-blue-700">{money(filters.maxBudget)}</span>
+                </div>
+                <input
+                  type="range"
+                  min="2800"
+                  max="6500"
+                  step="50"
+                  value={filters.maxBudget}
+                  onChange={(e) => setFilters((f) => ({ ...f, maxBudget: Number(e.target.value) }))}
+                  className="w-full accent-blue-600"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="mb-5 flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-slate-500">
+              <ArrowUpDown size={14} /> Sort
+            </div>
+            <div className="space-y-2">
+              {[
+                ['family', 'Best family fit'],
+                ['price', 'Lowest monthly'],
+                ['law', 'Shortest CUA commute'],
+                ['berman', 'Shortest Berman commute'],
+                ['kms', 'Closest to KMS'],
+              ].map(([id, label]) => (
+                <button
+                  key={id}
+                  onClick={() => setSortBy(id)}
+                  className={`flex w-full items-center justify-between rounded-2xl px-4 py-3 text-sm font-bold transition ${sortBy === id ? 'bg-slate-900 text-white' : 'bg-slate-50 text-slate-700 hover:bg-slate-100'}`}
+                >
+                  {label}
+                  {sortBy === id ? <CheckCircle2 size={16} /> : null}
+                </button>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-4 flex items-center justify-between text-sm text-slate-600">
+          <div>
+            Showing <span className="font-black text-slate-900">{filtered.length}</span> candidate{filtered.length === 1 ? '' : 's'}
+          </div>
+          <div className="rounded-full bg-slate-100 px-3 py-1 font-semibold">
+            Tax model includes {money(TAX_DELTA)} MD delta
+          </div>
+        </section>
+
+        <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {filtered.map((p) => {
+            const total = monthlyTotal(p, showUtilities);
+            const selectedNow = selected.includes(p.id);
+            const familyScore = scoreProperty(p, showUtilities);
+
+            return (
+              <article
+                key={p.id}
+                className={`overflow-hidden rounded-[28px] border bg-white shadow-sm transition ${selectedNow ? 'border-blue-500 ring-4 ring-blue-100' : 'border-slate-200 hover:border-slate-300 hover:shadow-lg'}`}
+              >
+                <div className="p-6">
+                  <div className="mb-5 flex items-start justify-between gap-3">
+                    <div>
+                      <div className="mb-2 flex flex-wrap items-center gap-2">
+                        <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-black uppercase tracking-wider text-slate-600">
+                          {p.type.join(' / ')}
+                        </span>
+                        <Badge status={p.statuses.inventory} />
+                      </div>
+                      <h2 className="text-2xl font-black leading-tight text-slate-900">{p.name}</h2>
+                      <p className="mt-1 text-sm text-slate-500">{p.location} · {p.station} · ~{p.walkToMetroMin} min walk</p>
+                    </div>
+
+                    <button
+                      onClick={() => toggleSelected(p.id)}
+                      className={`rounded-full p-2 ${selectedNow ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
+                      aria-label={selectedNow ? `Remove ${p.name} from comparison` : `Add ${p.name} to comparison`}
+                    >
+                      <CheckCircle2 size={18} />
+                    </button>
+                  </div>
+
+                  <div className="mb-6 flex items-end justify-between gap-4">
+                    <div>
+                      <div className="text-4xl font-black tracking-tight text-slate-900">{money(total)}</div>
+                      <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                        {showUtilities ? 'Estimated all-in monthly' : 'Base rent + fixed fees'}
+                      </div>
+                    </div>
+                    <div className="rounded-2xl bg-blue-50 px-3 py-2 text-right">
+                      <div className="text-[10px] font-black uppercase tracking-[0.18em] text-blue-600">Family score</div>
+                      <div className="text-xl font-black text-blue-900">{familyScore}</div>
+                    </div>
+                  </div>
+
+                  <div className="mb-6 grid grid-cols-3 gap-3 text-center">
+                    <div className="rounded-2xl bg-slate-50 p-3">
+                      <Briefcase className="mx-auto mb-1 text-slate-400" size={16} />
+                      <div className="text-[10px] font-black uppercase tracking-wider text-slate-400">CUA</div>
+                      <div className="text-sm font-black text-slate-800">{p.commute.law}m</div>
+                    </div>
+                    <div className="rounded-2xl bg-slate-50 p-3">
+                      <School className="mx-auto mb-1 text-slate-400" size={16} />
+                      <div className="text-[10px] font-black uppercase tracking-wider text-slate-400">Berman</div>
+                      <div className="text-sm font-black text-slate-800">{p.commute.berman}m</div>
+                    </div>
+                    <div className="rounded-2xl bg-slate-50 p-3">
+                      <Navigation className="mx-auto mb-1 text-slate-400" size={16} />
+                      <div className="text-[10px] font-black uppercase tracking-wider text-slate-400">KMS</div>
+                      <div className="text-sm font-black text-slate-800">{p.commute.kms}m</div>
+                    </div>
+                  </div>
+
+                  <div className="mb-6 grid grid-cols-2 gap-3 text-sm">
+                    <div className="rounded-2xl border border-slate-100 bg-slate-50 p-3">
+                      <div className="mb-1 flex items-center gap-2 font-bold text-slate-700"><Bath size={15} /> {p.bedrooms}BR / {p.bathrooms}BA</div>
+                      <div className="text-slate-500">~{fmt.format(p.squareFeet)} sq ft</div>
+                    </div>
+                    <div className="rounded-2xl border border-slate-100 bg-slate-50 p-3">
+                      <div className="mb-1 flex items-center gap-2 font-bold text-slate-700"><Car size={15} /> {p.parkingSpaces} cars</div>
+                      <div className="text-slate-500">Parking: {money(p.parkingMonthly)}</div>
+                    </div>
+                  </div>
+
+                  <div className="mb-6 space-y-3">
+                    <div className="flex items-center justify-between rounded-2xl border border-slate-100 px-3 py-3">
+                      <div className="flex items-center gap-2 text-sm font-bold text-slate-700"><ShieldCheck size={16} /> Eruv</div>
+                      <Badge status={p.statuses.eruv} />
+                    </div>
+                    <div className="flex items-center justify-between rounded-2xl border border-slate-100 px-3 py-3">
+                      <div className="flex items-center gap-2 text-sm font-bold text-slate-700"><Zap size={16} /> EV</div>
+                      <Badge status={p.statuses.ev} />
+                    </div>
+                    <div className="flex items-center justify-between rounded-2xl border border-slate-100 px-3 py-3">
+                      <div className="flex items-center gap-2 text-sm font-bold text-slate-700"><Trees size={16} /> Toddler space</div>
+                      <Badge status={p.statuses.playground} />
+                    </div>
+                    <div className="flex items-center justify-between rounded-2xl border border-slate-100 px-3 py-3">
+                      <div className="flex items-center gap-2 text-sm font-bold text-slate-700"><Building2 size={16} /> Pool / Gym</div>
+                      <div className="text-sm font-bold text-slate-600">{p.amenities.pool ? 'Pool' : 'No pool'} · {p.amenities.gym ? 'Gym' : 'No gym'}</div>
+                    </div>
+                  </div>
+
+                  <details className="group rounded-2xl bg-slate-50 p-4">
+                    <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-black text-slate-700">
+                      Evidence & cost breakdown
+                      <Info size={16} className="text-slate-400 group-open:rotate-180 transition" />
+                    </summary>
+
+                    <div className="mt-4 space-y-4 text-sm">
+                      <div className="rounded-2xl bg-white p-4">
+                        <div className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-slate-400">Monthly model</div>
+                        <div className="space-y-2">
+                          {lineItems(p, showUtilities).map(([label, value]) => (
+                            <div key={label} className="flex items-center justify-between">
+                              <span className="text-slate-500">{label}</span>
+                              <span className="font-bold text-slate-800">{money(value)}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="grid gap-3 md:grid-cols-2">
+                        {Object.entries(p.evidence).map(([key, items]) => (
+                          <div key={key} className="rounded-2xl bg-white p-4">
+                            <div className="mb-2 text-xs font-black uppercase tracking-[0.18em] text-slate-400">{key}</div>
+                            <div className="space-y-2">
+                              {items.map((item) => (
+                                <a
+                                  key={item.url}
+                                  href={item.url}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="flex items-center justify-between gap-3 rounded-xl border border-slate-100 px-3 py-2 text-slate-700 hover:bg-slate-50"
+                                >
+                                  <span className="truncate text-sm font-semibold">{item.label}</span>
+                                  <span className="flex items-center gap-1 text-xs text-blue-600">
+                                    {domain(item.url)} <ExternalLink size={12} />
+                                  </span>
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </details>
+                </div>
+
+                <div className="border-t border-slate-100 bg-slate-50 px-6 py-4 text-sm text-slate-600">
+                  <div className="font-semibold">{p.notes}</div>
+                </div>
+              </article>
+            );
+          })}
+        </section>
+      </main>
+
+      {selectedProps.length > 0 && (
+        <aside className={`fixed bottom-0 left-0 right-0 z-50 border-t-2 border-blue-500 bg-white shadow-[0_-10px_30px_rgba(15,23,42,0.12)] transition-all ${compareOpen ? 'h-[72vh]' : 'h-20'}`}>
+          <div className="mx-auto flex h-full max-w-7xl flex-col">
+            <button
+              onClick={() => setCompareOpen((v) => !v)}
+              className="flex items-center justify-between border-b border-slate-100 px-4 py-4 text-left md:px-6"
+            >
+              <div className="flex items-center gap-3">
+                <span className="rounded-full bg-blue-600 px-3 py-1 text-xs font-black text-white">{selectedProps.length} selected</span>
+                <span className="font-bold text-slate-800">Side-by-side comparison</span>
+              </div>
+              <ChevronUp className={`transition ${compareOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            <div className="flex-1 overflow-auto p-4 md:p-6">
+              <div className="min-w-[840px] overflow-hidden rounded-3xl border border-slate-200">
+                <table className="w-full text-sm">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="px-4 py-3 text-left font-black text-slate-500">Metric</th>
+                      {selectedProps.map((p) => (
+                        <th key={p.id} className="px-4 py-3 text-left font-black text-slate-800">{p.name}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['Monthly', (p) => money(monthlyTotal(p, showUtilities))],
+                      ['Type', (p) => p.type.join(' / ')],
+                      ['Beds / baths', (p) => `${p.bedrooms} / ${p.bathrooms}`],
+                      ['Metro walk', (p) => `${p.walkToMetroMin} min`],
+                      ['CUA', (p) => `${p.commute.law} min`],
+                      ['Berman', (p) => `${p.commute.berman} min`],
+                      ['KMS', (p) => `${p.commute.kms} min`],
+                      ['Eruv', (p) => p.statuses.eruv],
+                      ['EV', (p) => p.statuses.ev],
+                      ['Playground', (p) => p.statuses.playground],
+                      ['Parking', (p) => `${p.parkingSpaces} cars / ${money(p.parkingMonthly)}`],
+                      ['Score', (p) => scoreProperty(p, showUtilities)],
+                    ].map(([label, render]) => (
+                      <tr key={label} className="border-t border-slate-100">
+                        <td className="px-4 py-3 font-bold text-slate-500">{label}</td>
+                        {selectedProps.map((p) => (
+                          <td key={`${label}-${p.id}`} className="px-4 py-3 text-slate-800">{render(p)}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </aside>
+      )}
+
+      <footer className="mx-auto max-w-7xl px-4 pb-28 pt-8 md:px-6">
+        <div className="rounded-[32px] bg-slate-900 p-6 text-slate-200 md:p-8">
+          <div className="mb-4 flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-blue-300">
+            <AlertTriangle size={14} /> Modeling guardrails
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div>
+              <div className="mb-2 font-bold text-white">Evidence over vibes</div>
+              <p className="text-sm text-slate-400">Every card separates inventory, eruv, EV, and parking confidence so one strong fact does not imply every other fact is settled.</p>
+            </div>
+            <div>
+              <div className="mb-2 font-bold text-white">Costs are models</div>
+              <p className="text-sm text-slate-400">All-in monthly totals are estimates built from rent, parking, tax delta, and utility assumptions. They help ranking, not final underwriting.</p>
+            </div>
+            <div>
+              <div className="mb-2 font-bold text-white">Best use</div>
+              <p className="text-sm text-slate-400">Use this to narrow to 2-4 buildings, then call leasing offices to confirm unit availability, two-car parking, EV access, and lease-specific fees.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

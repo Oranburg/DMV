@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HousingPlannerDataset",
+  "description": "Dataset contract for DMV family housing research properties.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/property"
+  },
+  "$defs": {
+    "confidenceState": {
+      "type": "string",
+      "enum": [
+        "Confirmed",
+        "Likely",
+        "Estimated",
+        "Needs Verification",
+        "Unknown"
+      ]
+    },
+    "evidenceItem": {
+      "type": "object",
+      "required": ["label", "url", "checkedAt", "note"],
+      "properties": {
+        "label": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "checkedAt": { "type": "string", "format": "date" },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "evidenceArray": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/evidenceItem" }
+    },
+    "property": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "address",
+        "neighborhood",
+        "metroStation",
+        "walkToMetroMin",
+        "unitType",
+        "bedrooms",
+        "bathrooms",
+        "squareFeet",
+        "pricing",
+        "confidence",
+        "community",
+        "commute",
+        "amenities",
+        "family",
+        "evidence",
+        "lastVerified"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "neighborhood": { "type": "string" },
+        "metroStation": { "type": "string" },
+        "walkToMetroMin": { "type": "number" },
+        "unitType": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["Apartment", "Townhouse"] },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "bedrooms": { "type": "number" },
+        "bathrooms": { "type": "number" },
+        "squareFeet": { "type": "number" },
+        "pricing": {
+          "type": "object",
+          "required": [
+            "baseRent",
+            "parking",
+            "utilities",
+            "mandatoryFees",
+            "taxDelta",
+            "estimatedAllIn",
+            "confidence",
+            "assumptions"
+          ],
+          "properties": {
+            "baseRent": { "type": "number" },
+            "parking": { "type": "number" },
+            "utilities": {
+              "type": "object",
+              "required": ["water", "electric", "gas", "internet"],
+              "properties": {
+                "water": { "type": "number" },
+                "electric": { "type": "number" },
+                "gas": { "type": "number" },
+                "internet": { "type": "number" }
+              },
+              "additionalProperties": false
+            },
+            "mandatoryFees": { "type": "number" },
+            "taxDelta": { "type": "number" },
+            "estimatedAllIn": { "type": "number" },
+            "confidence": { "$ref": "#/$defs/confidenceState" },
+            "assumptions": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "confidence": {
+          "type": "object",
+          "required": ["inventory", "pricing", "eruv", "ev", "parking", "commute", "familyFit"],
+          "properties": {
+            "inventory": { "$ref": "#/$defs/confidenceState" },
+            "pricing": { "$ref": "#/$defs/confidenceState" },
+            "eruv": { "$ref": "#/$defs/confidenceState" },
+            "ev": { "$ref": "#/$defs/confidenceState" },
+            "parking": { "$ref": "#/$defs/confidenceState" },
+            "commute": { "$ref": "#/$defs/confidenceState" },
+            "familyFit": { "$ref": "#/$defs/confidenceState" }
+          },
+          "additionalProperties": false
+        },
+        "community": {
+          "type": "object",
+          "required": ["eruvStatus", "eruvNotes", "synagogueProximity", "kmsDriveMin"],
+          "properties": {
+            "eruvStatus": { "$ref": "#/$defs/confidenceState" },
+            "eruvNotes": { "type": "string" },
+            "synagogueProximity": { "type": "string" },
+            "kmsDriveMin": { "type": "number" }
+          },
+          "additionalProperties": false
+        },
+        "commute": {
+          "type": "object",
+          "required": ["cuaLaw", "berman", "confidence"],
+          "properties": {
+            "cuaLaw": { "type": "number" },
+            "berman": { "type": "number" },
+            "confidence": { "$ref": "#/$defs/confidenceState" }
+          },
+          "additionalProperties": false
+        },
+        "amenities": {
+          "type": "object",
+          "required": ["pool", "gym", "playground", "outdoorSpace", "evCharging"],
+          "properties": {
+            "pool": { "type": "boolean" },
+            "gym": { "type": "boolean" },
+            "playground": { "type": "boolean" },
+            "outdoorSpace": { "type": "boolean" },
+            "evCharging": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        },
+        "family": {
+          "type": "object",
+          "required": ["toddlerFriendly", "strollerFriendly", "officePotential", "twoCarWorkable"],
+          "properties": {
+            "toddlerFriendly": { "type": "boolean" },
+            "strollerFriendly": { "type": "boolean" },
+            "officePotential": { "type": "boolean" },
+            "twoCarWorkable": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        },
+        "evidence": {
+          "type": "object",
+          "required": ["inventory", "pricing", "eruv", "ev", "commute"],
+          "properties": {
+            "inventory": { "$ref": "#/$defs/evidenceArray" },
+            "pricing": { "$ref": "#/$defs/evidenceArray" },
+            "eruv": { "$ref": "#/$defs/evidenceArray" },
+            "ev": { "$ref": "#/$defs/evidenceArray" },
+            "commute": { "$ref": "#/$defs/evidenceArray" }
+          },
+          "additionalProperties": false
+        },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tasks": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "lastVerified": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
