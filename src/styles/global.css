@@ -844,6 +844,62 @@ a {
   filter: brightness(0.92);
 }
 
+/* ---------- feedback form ---------- */
+.feedback-open {
+  display: block;
+  width: 100%;
+  margin: var(--sp-6) 0 var(--sp-4);
+  min-height: var(--tap-min);
+  background: var(--c-surface);
+  border: 1px dashed var(--c-border);
+  border-radius: var(--radius-card);
+  color: var(--c-accent);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  padding: var(--sp-3);
+}
+
+.feedback-inline {
+  background: none;
+  border: none;
+  color: var(--c-accent);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  min-height: var(--tap-min);
+  padding: 0;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  margin-top: var(--sp-4);
+}
+
+.feedback-form input[type="text"] {
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-inner);
+  background: var(--c-surface);
+  padding: var(--sp-3);
+  font-size: var(--fs-base);
+  min-height: var(--tap-min);
+}
+
+.feedback-form .show-btn {
+  margin-top: var(--sp-3);
+}
+
+.feedback-done {
+  margin-top: var(--sp-5);
+  font-size: var(--fs-lg);
+  color: var(--c-good);
+}
+
+.feedback-error {
+  color: var(--c-warn);
+  font-size: var(--fs-sm);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

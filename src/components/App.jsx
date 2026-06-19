@@ -322,7 +322,7 @@ function UnitRow({ unit }) {
 
 const TYPE_LABEL = { apartment: "Apartment", condo: "Condo" };
 
-function BuildingCard({ entry, rank, mustFeatures, locations, mode, expanded, onToggle }) {
+function BuildingCard({ entry, rank, mustFeatures, locations, mode, expanded, onToggle, onFeedback }) {
   const { building, score, bestUnit } = entry;
   const photos = building.photos || [];
   const qualifying = entry.qualifyingUnits;
@@ -391,6 +391,9 @@ function BuildingCard({ entry, rank, mustFeatures, locations, mode, expanded, on
                   View live availability →
                 </a>
               )}
+              <button className="feedback-inline" type="button" onClick={onFeedback}>
+                Log what you learned →
+              </button>
             </div>
           </>
         )}
@@ -502,6 +505,81 @@ function RefineSheet({ config, factorState, setFactorState, typeState, setTypeSt
   );
 }
 
+/* ---------- feedback form (Web3Forms, same service as oranburg.law) ---------- */
+
+const WEB3FORMS_KEY = "1f621cd8-66ab-4b92-9f3c-1b3805e67a52";
+
+function FeedbackSheet({ place, onClose }) {
+  const [status, setStatus] = useState("idle");
+  const [form, setForm] = useState({ place: place || "", learned: "", prefs: "", contact: "" });
+  const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
+
+  async function submit(e) {
+    e.preventDefault();
+    setStatus("sending");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          from_name: "Penny's Apartment Finder",
+          subject: `Apartment note: ${form.place || "a place"}`,
+          place: form.place,
+          what_i_learned: form.learned,
+          preference_updates: form.prefs,
+          how_to_reach_me: form.contact,
+        }),
+      });
+      const j = await res.json();
+      setStatus(j.success ? "done" : "error");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  return (
+    <div className="sheet" role="dialog" aria-modal="true" aria-label="Tell us about a place">
+      <div className="sheet-scroll">
+        <div className="sheet-topbar">
+          <button className="sheet-x" onClick={onClose} aria-label="Close">✕</button>
+          <button className="sheet-done" onClick={onClose}>Close</button>
+        </div>
+        <h1 className="sheet-title">Tell us about a place</h1>
+        <p className="sheet-help">Log what you learned about a building or note a new preference. It goes to Seth, who updates the finder.</p>
+
+        {status === "done" ? (
+          <p className="feedback-done">Thank you. Your note was sent. Seth will fold it into the finder.</p>
+        ) : (
+          <form onSubmit={submit} className="feedback-form">
+            <label className="stacked-field">
+              <span>Which place?</span>
+              <input type="text" value={form.place} onChange={set("place")} placeholder="Building name" />
+            </label>
+            <label className="stacked-field">
+              <span>What did you learn?</span>
+              <textarea rows="4" value={form.learned} onChange={set("learned")} placeholder="What you saw, liked, disliked, asked the leasing office" />
+            </label>
+            <label className="stacked-field">
+              <span>Anything new about what you want?</span>
+              <textarea rows="3" value={form.prefs} onChange={set("prefs")} placeholder="A preference that changed, a new must-have, a deal-breaker" />
+            </label>
+            <label className="stacked-field">
+              <span>How to reach you (optional)</span>
+              <input type="text" value={form.contact} onChange={set("contact")} placeholder="Phone or email" />
+            </label>
+            <input type="checkbox" name="botcheck" className="sr-only" tabIndex="-1" autoComplete="off" />
+            {status === "error" && <p className="feedback-error">Something went wrong sending that. Try again, or text Seth directly.</p>}
+            <button className="show-btn" type="submit" disabled={status === "sending"}>
+              {status === "sending" ? "Sending..." : "Send to Seth"}
+            </button>
+          </form>
+        )}
+      </div>
+    </div>
+  );
+}
+
 /* ---------- root ---------- */
 
 export default function App({ config, buildings }) {
@@ -512,6 +590,7 @@ export default function App({ config, buildings }) {
   const [mode, setMode] = useState((config.filterDefaults && config.filterDefaults.distanceMode) || "walk");
   const [refineOpen, setRefineOpen] = useState(false);
   const [expandedId, setExpandedId] = useState(null);
+  const [feedback, setFeedback] = useState(null); // null = closed; string = open, prefilled place
 
   const [factorState, setFactorState] = useState(() => {
     const init = {};
@@ -567,10 +646,14 @@ export default function App({ config, buildings }) {
                 mode={mode}
                 expanded={expandedId === entry.building.id}
                 onToggle={() => setExpandedId((cur) => (cur === entry.building.id ? null : entry.building.id))}
+                onFeedback={() => setFeedback(entry.building.name)}
               />
             ))}
           </div>
         )}
+        <button className="feedback-open" onClick={() => setFeedback("")}>
+          Learned something about a place? Tell us →
+        </button>
       </main>
 
       <nav className="bottom-bar" aria-label="View controls">
@@ -600,6 +683,8 @@ export default function App({ config, buildings }) {
           onClose={() => setRefineOpen(false)}
         />
       )}
+
+      {feedback !== null && <FeedbackSheet place={feedback} onClose={() => setFeedback(null)} />}
     </>
   );
 }
