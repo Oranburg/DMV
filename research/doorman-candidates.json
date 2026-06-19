@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "note": "Candidate doorman/concierge buildings. The first batch below is SALVAGED from the discovery phase of run wf_b99634b5-171, which found these names before the verification+synthesis step failed on a session limit. They are unverified leads: discovery flagged a likely staffed lobby, but the must-haves (24h hours, balcony, in-unit laundry, 2BR/den) still need verification. See research/README.md for full provenance.",
+    "salvagedFrom": "wf_b99634b5-171 (2026-06-19, interrupted at session limit)",
+    "verificationStatus": "pending (re-run via scripts/verify-candidates.workflow.js)"
+  },
+  "buildings": [
+    { "name": "Pallas at Pike & Rose", "neighborhood": "North Bethesda", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Fenestra at The Square", "neighborhood": "North Bethesda (Pike & Rose)", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "The Henri at Pike & Rose", "neighborhood": "North Bethesda", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Bell at the Pike", "neighborhood": "North Bethesda", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Kite House at Pike & Rose", "neighborhood": "North Bethesda", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "The Hartley at Pike & Rose", "neighborhood": "North Bethesda", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "PerSei at Pike & Rose", "neighborhood": "North Bethesda", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "BLVD Ansel", "neighborhood": "Rockville (Pike & Rose area)", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "BLVD Forty Four", "neighborhood": "Rockville", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "The Met Rockville", "neighborhood": "Rockville Town Center", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Aurora Apartments", "neighborhood": "Rockville", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Galvan at Twinbrook", "neighborhood": "Rockville (Twinbrook)", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "The Alaire at Twinbrook", "neighborhood": "Rockville (Twinbrook)", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Victory Tower", "neighborhood": "Rockville", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Grosvenor Park I", "neighborhood": "North Bethesda (Grosvenor)", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Grosvenor Park II", "neighborhood": "North Bethesda (Grosvenor)", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Grosvenor Park III", "neighborhood": "North Bethesda (Grosvenor)", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Park Ritchie", "neighborhood": "Silver Spring", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Takoma Overlook", "neighborhood": "Takoma", "doormanStatus": "Likely staffed", "verified": false, "tenureNote": "condominium" },
+    { "name": "Gables Takoma Park", "neighborhood": "Takoma Park", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Takoma Central", "neighborhood": "Takoma", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "Willow & Maple", "neighborhood": "Takoma Park", "doormanStatus": "Likely staffed", "verified": false },
+    { "name": "The Vale at the Park", "neighborhood": "Silver Spring / Takoma", "doormanStatus": "Likely staffed", "verified": false }
+  ]
+}

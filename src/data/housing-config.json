@@ -27,7 +27,13 @@
     { "key": "quiet", "label": "Quiet, away from train noise", "kind": "scalar", "level": "building", "rule": "quiet", "default": { "on": true, "weight": 45 } },
     { "key": "synagogue", "label": "Close to Kemp Mill Synagogue", "kind": "scalar", "level": "building", "rule": "distanceSynagogue", "default": { "on": true, "weight": 40 } },
     { "key": "berman", "label": "Close to Berman Academy", "kind": "scalar", "level": "building", "rule": "distanceBerman", "default": { "on": false, "weight": 30 } },
-    { "key": "squareFeet", "label": "More square footage", "kind": "scalar", "level": "unit", "rule": "squareFeet", "default": { "on": true, "weight": 35 } }
+    { "key": "squareFeet", "label": "More square footage", "kind": "scalar", "level": "unit", "rule": "squareFeet", "default": { "on": true, "weight": 35 } },
+    { "key": "bathrooms", "label": "More bathrooms (a second or 1.5)", "kind": "scalar", "level": "unit", "rule": "bathrooms", "default": { "on": true, "weight": 25 } },
+    { "key": "wellMaintained", "label": "Well-kept, not run-down", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.wellMaintained", "default": { "on": true, "weight": 30 } },
+    { "key": "unitClimate", "label": "Heat & AC controlled in the unit", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.unitClimate", "default": { "on": true, "weight": 18 } },
+    { "key": "packageRoom", "label": "Package room", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.packageRoom", "default": { "on": true, "weight": 15 } },
+    { "key": "gym", "label": "Good exercise room", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.gym", "default": { "on": false, "weight": 15 } },
+    { "key": "view", "label": "Nice view (lower priority)", "kind": "feature", "level": "unit", "rule": "triBool", "path": "view", "default": { "on": false, "weight": 10 } }
   ],
   "mustValue": 101,
   "scoreScales": {

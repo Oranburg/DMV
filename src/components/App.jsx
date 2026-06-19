@@ -78,6 +78,9 @@ function scalarSub(rule, building, unit, S) {
       return lin(distanceFor(building, "berman", "drive"), S.bermanDriveBest, S.bermanDriveWorst);
     case "squareFeet":
       return linUp(unit.squareFeet, S.squareFeetFloor, S.squareFeetCeiling);
+    case "bathrooms":
+      // 1 bath => 0, 1.5 => 0.5, 2+ => 1 (Penny is open to 1 bath, prefers a second)
+      return unit.bathrooms == null ? null : clamp01((unit.bathrooms - 1) / 1);
     default:
       return null;
   }
