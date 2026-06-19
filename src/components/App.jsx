@@ -380,11 +380,18 @@ function BuildingCard({ entry, rank, mustFeatures, locations, mode, expanded, on
             <MapBox building={building} locations={locations} />
             <div className="units-head">Available units</div>
             {qualifying.length ? qualifying.map((u, i) => <UnitRow key={u.id || i} unit={u} />) : <div className="unit-spec">No qualifying units logged yet.</div>}
-            {building.leasingUrl && (
-              <a className="leasing-link" href={building.leasingUrl} target="_blank" rel="noopener">
-                View live availability →
-              </a>
-            )}
+            <div className="card-actions">
+              {building.phone && (
+                <a className="call-link" href={`tel:${String(building.phone).replace(/[^0-9+]/g, "")}`}>
+                  Call {building.phone}
+                </a>
+              )}
+              {building.leasingUrl && (
+                <a className="leasing-link" href={building.leasingUrl} target="_blank" rel="noopener">
+                  View live availability →
+                </a>
+              )}
+            </div>
           </>
         )}
 

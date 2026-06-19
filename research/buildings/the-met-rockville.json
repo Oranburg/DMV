@@ -1,0 +1,32 @@
+{
+  "name": "The Met Rockville",
+  "neighborhood": "Rockville Town Center",
+  "address": "255 N Washington St, Rockville, MD 20850",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.themetrockville.com/",
+  "photoUrl": "https://res.cloudinary.com/g5-assets-cld/image/upload/x_393,y_0,h_1333,w_1000,c_crop/q_auto,f_auto,fl_lossy,g_center,h_800,w_600/g5/g5-c-5cjpuxdo1-hercules-real-estate-services-multi/g5-cl-1mzxwcr4iu-hercules-real-estate-services-multi-rockville-md/uploads/041_255_NORTH_WASHINGTON_STREET__216612_300575_gb41fb.jpg",
+  "approxRentRange": "$2,405-$2,880/mo for 2BR (925-1,118 sq ft); overall community $1,810-$3,935+",
+  "doormanStatus": "Likely staffed",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "2BR units range from 1 bath (925 sq ft D7 plan, $2,405) to 2 baths (1,005-1,118 sq ft D4/D1B plans, $2,520-$2,880). Two-story loft options also available.",
+  "notes": {
+    "management": "Jefferson Apartment Group; 275-unit mid-rise built approximately 2018; 6 stories",
+    "doormanDetail": "Concierge confirmed as an amenity; leasing office hours Mon-Fri 10am-6pm, Sat 10am-5pm, Sun 12pm-5pm; no source confirms 24-hour staffing",
+    "packageDetail": "Package receiving confirmed as listed amenity",
+    "climateDetail": "Air conditioning listed as in-unit feature; no indication of building-controlled HVAC",
+    "petDetail": "Dogs and cats welcome; max 2 pets; $250 refundable deposit per pet; $50/mo pet rent per pet; on-site pet salon",
+    "wellMaintainedDetail": "Mixed signals: newer building with premium-finish marketing, but reviewer complaints about cheap laminate flooring with bubbling gaps, roach and mouse sightings, and inadequate hot water. Pest control reportedly comes only once weekly. Positive reviews cite responsive maintenance staff and clean common areas. 'Unclear' is the honest read.",
+    "transitAccess": "Walking distance to Rockville Metro Station (Red Line)",
+    "promotionObserved": "4 months free parking if move-in by 6/30/26 (as of June 2026)",
+    "loftUnits": "1BR and 2BR two-story loft configurations available in addition to standard flats"
+  }
+}

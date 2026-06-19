@@ -813,6 +813,37 @@ a {
   accent-color: var(--c-accent);
 }
 
+/* ---------- call / actions ---------- */
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.call-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  min-height: var(--tap-min);
+  padding: 0 var(--sp-5);
+  background: var(--c-good);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--fs-base);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+}
+
+.call-link::before {
+  content: "\260E";
+  font-size: 1.1em;
+}
+
+.call-link:active {
+  filter: brightness(0.92);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -1,0 +1,55 @@
+{
+  "name": "Bell at the Pike",
+  "neighborhood": "North Bethesda, MD",
+  "address": "11550 Old Georgetown Road, North Bethesda, MD 20852",
+  "leasingUrl": "https://bellatthepike.securecafe.com/onlineleasing/bell-at-the-pike/guestlogin.aspx",
+  "photoUrl": "https://www.bellatthepike.com/wp-content/uploads/sites/255/2026/04/shoootin-photo-18-2000x1331.jpg",
+
+  "buildingType": "apartment",
+
+  "doormanStatus": "Daytime only",
+  "doormanNote": "Concierge desk on site; building website states 'daily' availability but lists office hours Mon-Fri 10AM-6PM, Sat 10AM-5PM. No evidence of 24-hour staffing.",
+
+  "has2BRor1BRDen": "Yes",
+  "has2BRor1BRDenNote": "23 distinct 2BR floor plans (989-1,596 sq ft) plus multiple 1BR+den plans (874-942 sq ft).",
+
+  "balcony": "Yes",
+  "balconyNote": "Many 2BR plans include a balcony; some plans (B2F, B2G, B2H, B2J, B2M, B2P, B2S, B2T) do not. Balcony availability depends on specific unit/plan chosen.",
+
+  "inUnitLaundry": "Yes",
+  "inUnitLaundryNote": "All units have an in-home washer and dryer per the building website.",
+
+  "elevator": "Yes",
+  "elevatorNote": "High-rise with elevators; resident reviews report frequent outages with 2 of 3 elevators regularly out of service.",
+
+  "petFriendly": "Yes",
+  "petFriendlyNote": "Cats and dogs welcome; breed restrictions apply.",
+
+  "pool": "Yes",
+  "poolNote": "Resort-style rooftop pool with views.",
+
+  "gym": "Yes",
+  "gymNote": "24/7 fitness center with cardio and strength equipment.",
+
+  "packageRoom": "Unclear",
+  "packageRoomNote": "Package receiving listed as a service; handled through concierge desk rather than dedicated automated lockers. Resident reviews note historic package theft issues.",
+
+  "unitClimate": "Unclear",
+  "unitClimateNote": "Rentable.co lists 'central air conditioning'; no source confirms whether thermostats are individually controlled per unit or building-managed.",
+
+  "wellMaintained": "No",
+  "wellMaintainedNote": "Rated 3.6/5 across 130 resident reviews. Recurring complaints: elevators frequently out of service (2 of 3 down at once), packages going missing, concierge staff inconsistent, maintenance staff entering units without notice. Not consistent with a well-maintained building.",
+
+  "bathroomsNote": "Almost all 2BR plans are 2 bed/2 bath; only plan B1A is 2 bed/1 bath.",
+
+  "approxRentRange": "$2,698-$4,154/month for 2BR (current listings as of June 2026; upper end of listed range reaches $6,600 for premium units)",
+
+  "sources": [
+    "https://www.bellatthepike.com/",
+    "https://www.bellatthepike.com/floor-plans/",
+    "https://www.bellatthepike.com/amenities/",
+    "https://www.rentable.co/north-bethesda-md/bell-at-the-pike",
+    "https://www.apartmentratings.com/md/north-bethesda/bell-at-the-pike_9199332346275157114/"
+  ],
+  "researchDate": "2026-06-19"
+}

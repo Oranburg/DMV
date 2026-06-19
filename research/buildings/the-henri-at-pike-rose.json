@@ -1,0 +1,37 @@
+{
+  "name": "The Henri at Pike & Rose",
+  "neighborhood": "North Bethesda, MD",
+  "address": "11870 Grand Park Avenue, North Bethesda, MD 20852",
+  "leasingUrl": "https://livethehenri.com/",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/9a0b602aee09bc8f52a1bf34b09e0fdb.jpg",
+
+  "buildingType": "apartment",
+
+  "doormanStatus": "Likely staffed",
+
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+
+  "wellMaintained": "No",
+
+  "bathroomsNote": "2BR units typically have 2 baths; one larger floor plan (B11D, 1,661 sq ft) has 3 baths.",
+
+  "approxRentRange": "$2,723-$3,207/mo for 2BR (as of late 2025; larger/premium units listed to $5,371)",
+
+  "notes": {
+    "management": "Managed by Greystar. Leasing office is frequently understaffed per reviews; residents report difficulty reaching management and slow maintenance response requiring multiple follow-up calls.",
+    "buildingCondition": "Multiple 2024-2025 reviews flag dirty hallway carpets consistently stained, urine in elevators, and reports that cleaning crews stopped vacuuming common areas regularly, leading to insect complaints.",
+    "hvac": "Uses Variable Refrigerant Flow (VRF) system billed as a usage-based utility; at least one resident reported inability to get unit below 70 degrees and management blocking an HVAC inspection. In-unit thermostat control is standard but VRF issues have been reported.",
+    "concierge": "A concierge/front desk exists and receives positive mentions in reviews (staff by name); one third-party listing (VeryApt) lists '24-Hour Front Desk' as an amenity, but no official source confirms 24-hour hours. Classified as Likely staffed.",
+    "petPolicy": "Up to 2 pets per unit, cats and dogs, 70 lb limit each, $50/mo pet rent per pet; breed restrictions apply (pit bulls, rottweilers, dobermans, chows, presa canarios, akitas, malamutes, wolf-hybrids).",
+    "pool": "12th-floor rooftop pool deck.",
+    "floorPlans": "Studios, Jr. 1BR, 1BR, 1BR+den, 2BR (some with dens). 2BR sizes range 1,091-1,661 sq ft."
+  }
+}

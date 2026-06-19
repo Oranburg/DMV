@@ -1,0 +1,58 @@
+{
+  "name": "PerSei at Pike & Rose",
+  "neighborhood": "North Bethesda, MD (Pike & Rose)",
+  "address": "900 PerSei Place, North Bethesda, MD 20852",
+  "buildingType": "apartment",
+  "notes_buildingType": "Boutique mid-rise rental community managed by Greystar; central leasing, not individually owned condos.",
+
+  "leasingUrl": "https://perseiapts.com/floorplans/",
+  "photoUrl": "https://perseiapts.com/assets/images/cache/Persei-JonahImages-header-kitchen1-10906d12709f59f388cc3c1eedbcd8e9.jpg",
+
+  "approxRentRange": "~$2,983 to $3,338/mo for 2BR (as of April to June 2026); 1BR from ~$1,816 to $2,372/mo",
+
+  "has2BRor1BRDen": "Yes",
+  "notes_units": "Offers 1BR, 2BR, and some 1BR+den and 2BR+den configurations. Floor plan codes include 2A, 2B, 2D variants.",
+
+  "bathroomsNote": "2BR units have 2 baths (confirmed: floor plan 2B.1 listed as 2 bed/2 bath, 1,177 sq ft at $3,338/mo).",
+
+  "balcony": "Yes",
+  "notes_balcony": "Balconies/patios listed as a standard unit feature across plans.",
+
+  "inUnitLaundry": "Yes",
+  "notes_laundry": "Washer/dryer included in unit across all floor plans.",
+
+  "elevator": "Yes",
+  "notes_elevator": "Elevator confirmed. Reviews note a side elevator was broken for an extended period (multiple months) as of 2024 to 2025, with slow resolution. Worth flagging.",
+
+  "petFriendly": "Yes",
+  "notes_pets": "Up to 2 pets; 70 lb weight limit per pet; $50/mo pet rent; $250 deposit. Breed restrictions include Pit Bulls, Rottweilers, Dobermans.",
+
+  "pool": "Yes",
+  "notes_pool": "Resort-style swimming pool listed as community amenity.",
+
+  "gym": "Yes",
+  "notes_gym": "State-of-the-art fitness center/studio listed.",
+
+  "packageRoom": "Yes",
+  "notes_packageRoom": "Package receiving confirmed as listed amenity. Reviews note the package room door has been stuck at times with no staff available after hours to assist.",
+
+  "doormanStatus": "Likely staffed",
+  "notes_doorman": "Greystar and the building's own site both advertise '24/7 Full-Service Concierge,' but resident reviews report no concierge on duty after business hours or on weekends. The '24/7' claim appears to refer to 24-hour maintenance availability, not a staffed front desk around the clock. Treating as 'Likely staffed' (daytime/business hours) rather than 'Confirmed 24h' given the conflicting evidence.",
+
+  "unitClimate": "Unclear",
+  "notes_climate": "Air conditioning is listed as a unit feature and in-unit HVAC is referenced, but no source explicitly confirms whether residents control their own thermostat independently or whether the building manages heating/cooling schedules.",
+
+  "wellMaintained": "Unclear",
+  "notes_wellMaintained": "The apartments themselves are consistently described as clean and modern (recent renovations, daily common-area cleaning). However, reviews flag an elevator out of service for months, a parking garage with persistent heat and odor issues, a sticky package room door, and poor management communication. The building reads as well-appointed but with some deferred infrastructure issues and uneven responsiveness.",
+
+  "sources": [
+    "https://perseiapts.com/",
+    "https://perseiapts.com/floorplans/",
+    "https://www.greystar.com/persei-at-pike-&-rose-north-bethesda-md/p_12070",
+    "https://www.apartmentlist.com/md/north-bethesda/per-sei-at-pike-and-rose",
+    "https://rentsift.com/rent-trends/persei-at-pike-and-rose",
+    "https://www.veryapt.com/ApartmentReview-a13091-persei-at-pike-and-rose-north-bethesda",
+    "https://modernmsg.com/persei-at-pike-rose"
+  ],
+  "researchDate": "2026-06-19"
+}

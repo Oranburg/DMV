@@ -62,6 +62,64 @@ function geocodable(address) {
   return address && !/confirm|needs verification/i.test(address);
 }
 
+// Public landmarks (anchors) and relevant Red Line / Metro stations, [lat, lon].
+const ANCHORS = {
+  synagogue: [39.0407, -77.0205], // Kemp Mill Synagogue
+  berman: [39.0739, -77.1196], // Berman Hebrew Academy
+};
+const METRO_STATIONS = [
+  { name: "Silver Spring", c: [38.9938, -77.0301] },
+  { name: "Wheaton", c: [39.0383, -77.0512] },
+  { name: "Forest Glen", c: [39.0151, -77.0428] },
+  { name: "Glenmont", c: [39.0613, -77.0533] },
+  { name: "Takoma", c: [38.9759, -77.0177] },
+  { name: "Rockville", c: [39.084, -77.1464] },
+  { name: "Twinbrook", c: [39.0623, -77.1209] },
+  { name: "North Bethesda", c: [39.0481, -77.113] },
+  { name: "Grosvenor-Strathmore", c: [39.0294, -77.1041] },
+  { name: "Bethesda", c: [38.9847, -77.0947] },
+  { name: "Medical Center", c: [38.9998, -77.0972] },
+  { name: "Friendship Heights", c: [38.9601, -77.0853] },
+];
+
+function haversineMi(a, b) {
+  const R = 3958.8;
+  const dLat = ((b[0] - a[0]) * Math.PI) / 180;
+  const dLon = ((b[1] - a[1]) * Math.PI) / 180;
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos((a[0] * Math.PI) / 180) * Math.cos((b[0] * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.asin(Math.sqrt(s));
+}
+
+function nearestStation(coords) {
+  return METRO_STATIONS.slice().sort((a, b) => haversineMi(coords, a.c) - haversineMi(coords, b.c))[0];
+}
+
+// Real driving minutes via the public OSRM demo server (no key). Returns null on failure.
+async function driveMinutes(from, to) {
+  const url = `https://router.project-osrm.org/route/v1/driving/${from[1]},${from[0]};${to[1]},${to[0]}?overview=false`;
+  const res = await fetch(url);
+  if (!res.ok) return null;
+  const j = await res.json();
+  const sec = j.routes && j.routes[0] && j.routes[0].duration;
+  return typeof sec === "number" ? Math.round(sec / 60) : null;
+}
+
+async function routeDistances(b) {
+  const station = nearestStation(b.coords);
+  const metroDrive = await driveMinutes(b.coords, station.c);
+  await sleep(250);
+  const synDrive = await driveMinutes(b.coords, ANCHORS.synagogue);
+  await sleep(250);
+  const berDrive = await driveMinutes(b.coords, ANCHORS.berman);
+  await sleep(250);
+  // Walk-to-Metro stays from sourced data (b.walkToMetroMin); driving routes are real-routed.
+  return {
+    metro: { drive: metroDrive, walk: typeof b.walkToMetroMin === "number" ? b.walkToMetroMin : null, station: station.name },
+    synagogue: { drive: synDrive },
+    berman: { drive: berDrive },
+  };
+}
+
 async function main() {
   const arr = JSON.parse(await readFile(DATA, "utf8"));
   if (!KEY) console.warn("No WALKSCORE_API_KEY set: will geocode only, scores stay pending.");
@@ -86,6 +144,10 @@ async function main() {
           console.log(`walkscore pending for ${b.name} (status ${s && s.status})`);
         }
         await sleep(300);
+      }
+      if (b.coords && (!b.distances || !b.distances.synagogue || b.distances.synagogue.drive == null)) {
+        b.distances = await routeDistances(b);
+        console.log(`routed ${b.name} -> metro ${b.distances.metro.drive}m drive (${b.distances.metro.station}), KMS ${b.distances.synagogue.drive}m, Berman ${b.distances.berman.drive}m`);
       }
     } catch (err) {
       console.warn(`error on ${b.name}: ${err.message}`);

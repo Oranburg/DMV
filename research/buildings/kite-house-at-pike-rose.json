@@ -1,0 +1,61 @@
+{
+  "name": "Kite House at The Parks",
+  "nameNote": "No building called 'Kite House at Pike & Rose' exists. The only 'Kite House' in the DC region is at The Parks at Historic Walter Reed in Northwest DC. This record covers that building. Pike & Rose (North Bethesda, MD) has no building by this name.",
+  "neighborhood": "The Parks at Walter Reed, Northwest Washington, DC (Shepherd Park / Brightwood / Takoma triangle)",
+  "address": "7175 12th Street NW, Washington, DC 20012",
+  "leasingUrl": "https://kitehousedc.com/",
+  "photoUrl": "https://kitehousedc.com/wp-content/uploads/Kitehousedc-2025-3-scaled.webp",
+
+  "buildingType": "condo",
+  "buildingTypeNote": "109-unit condominium for sale, developed by Hines/Triden/Urban Atlantic. Not a centrally managed rental building. Some owners rent individual units; Apartments.com shows occasional rentals from the building. Sale prices range from the low $400s to over $1M.",
+
+  "doormanStatus": "Likely staffed",
+  "doormanNote": "Concierge service is explicitly listed as a building amenity across multiple sources. Hours not stated anywhere in publicly available materials; no evidence of 24-hour staffing.",
+
+  "has2BRor1BRDen": "Yes",
+  "has2BRor1BRDenNote": "Building offers 1BR, 1BR+den, 2BR, 2BR+den, and 3BR configurations. 2BR/2BA units confirmed via Redfin listings (e.g., unit 602 at 1,111 sq ft listed at $679,900; unit 315 at 982 sq ft).",
+
+  "balcony": "Yes",
+  "balconyNote": "Multiple sources confirm 'most residences have either a private terrace or a private balcony.' Not universal across all units.",
+
+  "inUnitLaundry": "Yes",
+  "inUnitLaundryNote": "Apartment listing aggregators (ApartmentHomeLiving search data) cite in-unit washer/dryer. Building uses Bosch Energy Star appliances per developer materials, consistent with in-unit laundry.",
+
+  "elevator": "Yes",
+  "elevatorNote": "Confirmed in apartment listing data. Multi-story condominium building consistent with elevator presence.",
+
+  "petFriendly": "Yes",
+  "petFriendlyNote": "Dogs explicitly welcomed per multiple sources, including dog park on the campus. Breed restrictions and any size limits not specified in available materials.",
+
+  "pool": "No",
+  "poolNote": "No mention of a pool in any source reviewed, including the building's own website, developer press releases, and multiple listing aggregators. The campus (The Parks at Walter Reed) has outdoor gathering spaces but no pool identified for this building.",
+
+  "gym": "Yes",
+  "gymNote": "Premium fitness studio with a separate yoga and meditation room confirmed on the building website and in multiple press articles.",
+
+  "packageRoom": "Unclear",
+  "packageRoomNote": "Not mentioned in any source. Concierge service may handle packages, but no dedicated package room or locker system is described.",
+
+  "unitClimate": "Unclear",
+  "unitClimateNote": "No source addresses whether thermostats are individually controlled per unit or centrally managed by the building.",
+
+  "wellMaintained": "Unclear",
+  "wellMaintainedNote": "Building is relatively new (opened 2023). Developer materials and press coverage present it favorably. No resident reviews with deferred-maintenance complaints were found, but the unit count is small (109) and owner-occupied condos generate fewer aggregated reviews than large rental communities. Insufficient data for a confident assessment.",
+
+  "bathroomsNote": "2BR units are 2 bed/2 bath, confirmed by Redfin MLS listings for multiple units (602, 315, 506).",
+
+  "approxRentRange": "Unclear for 2BR. Sale prices for 2BR units: approximately $590,000-$680,000. Owner-rented units occasionally listed; 1BR rentals observed around $1,950-$2,400/month. No 2BR rental comps found in available data.",
+
+  "sources": [
+    "https://kitehousedc.com/",
+    "https://kitehousedc.com/floor-plans/",
+    "https://theparksdc.com/locations/kite-house/",
+    "https://urbanpace.com/properties/kite-house",
+    "https://dc.urbanturf.com/articles/blog/sales-begin-at-the-parks-at-walter-reeds-brand-new-condominium/19657",
+    "https://dc.urbanturf.com/articles/blog/a_first_look_inside_the_newest_condos_coming_to_the_parks_at_walter_reed/20553",
+    "https://dc.citycast.fm/3-questions/kite-house-the-parks-walter-reed",
+    "https://www.redfin.com/DC/Washington/7175-12th-St-NW-20012/unit-602/home/190705017",
+    "https://www.redfin.com/DC/Washington/7175-12th-St-NW-20012/unit-315/home/190337940"
+  ],
+  "researchDate": "2026-06-19"
+}

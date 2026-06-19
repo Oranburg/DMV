@@ -1,0 +1,57 @@
+{
+  "name": "Pallas at Pike & Rose (now Bell at the Pike)",
+  "neighborhood": "North Bethesda, MD (Pike & Rose district)",
+  "address": "11550 Old Georgetown Road, North Bethesda, MD 20852",
+  "leasingUrl": "https://www.bellatthepike.com/",
+  "photoUrl": "https://www.bellatthepike.com/wp-content/uploads/sites/255/2026/03/BellatthePike_TuscanUnitVirtualStaging_Mar2026_HighRes-4.jpg",
+
+  "buildingType": "apartment",
+  "notes_buildingType": "Single rental community, 19-story high-rise, managed by Greystar (formerly Bell Partners). 74 unique floor plans centrally managed. Not individually owned condos.",
+
+  "doormanStatus": "Daytime only",
+  "notes_doorman": "Concierge services confirmed (Abigail Michaels concierge program, controlled entry), but leasing/office hours are Mon-Fri 10AM-6PM, Sat 10AM-5PM, Sun closed. No evidence of 24-hour staffed lobby. One resident review noted 'inconsistent front desk coverage.'",
+
+  "has2BRor1BRDen": "Yes",
+  "notes_units": "Multiple 2BR floor plans (B2A through B2V, 989-1,596 sq ft). Several 1BR+den floor plans confirmed (A1O, A1P, A1Y, 874-1,010 sq ft). Also studios and 3BR.",
+
+  "balcony": "Yes",
+  "notes_balcony": "Balcony available on select floor plans, not all units. Floor plan B2R (1,289 sq ft 2BR) explicitly lists balcony; B2V (1,596 sq ft) lists dual balconies. Confirm with leasing which specific units have outdoor space.",
+
+  "inUnitLaundry": "Yes",
+  "notes_inUnitLaundry": "In-home washer/dryer included in all units per property website.",
+
+  "elevator": "Yes",
+  "notes_elevator": "19-story high-rise with controlled-entry elevators confirmed.",
+
+  "petFriendly": "Yes",
+  "notes_petFriendly": "Cats and dogs welcome, maximum two pets per unit. Breed restrictions apply; contact leasing for details.",
+
+  "pool": "Yes",
+  "notes_pool": "Resort-style rooftop pool with sun shelf and views.",
+
+  "gym": "Yes",
+  "notes_gym": "24/7 fitness center with cardio and strength equipment; yoga/Pilates studio also noted.",
+
+  "packageRoom": "Yes",
+  "notes_packageRoom": "Package receiving room confirmed by RentCafe listing and amenities page.",
+
+  "unitClimate": "Yes",
+  "notes_unitClimate": "Air conditioning listed as a unit feature. Individual in-unit climate control is standard for this building type and consistent with the property's luxury positioning, but the property materials do not explicitly address whether thermostats are individually controlled vs. building-managed. Marked Yes based on AC listed as unit feature.",
+
+  "wellMaintained": "Yes",
+  "notes_wellMaintained": "Premium finishes, natural stone lobby, metalwork and millwork highlighted. One resident praised the team for 'taking care of things so readily.' One review noted phone difficulty reaching management. Overall positioning is luxury/well-kept; no reports of deferred repairs.",
+
+  "bathroomsNote": "2BR units have 2 full baths; select larger plans (B2V at 1,596 sq ft) have 2.5 baths.",
+
+  "approxRentRange": "$3,186-$4,365/month for 2BR (RentCafe shows starting at $3,180; upper range ~$4,365 for larger plans; penthouse/premium units listed as high as $6,600)",
+
+  "dataAsOf": "2026-06-19",
+  "sources": [
+    "https://www.bellatthepike.com/",
+    "https://www.bellatthepike.com/floor-plans/",
+    "https://www.bellatthepike.com/amenities/",
+    "https://www.rentcafe.com/apartments/md/north-bethesda/bell-at-the-pike/default.aspx",
+    "https://www.apartmentlist.com/md/north-bethesda/bell-at-the-pike",
+    "https://www.greystar.com/blog/community-life-spotlight-pallas-pike-rose-north-bethesda-md"
+  ]
+}

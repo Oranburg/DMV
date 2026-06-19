@@ -1,0 +1,31 @@
+{
+  "name": "Aurora Apartments",
+  "neighborhood": "North Bethesda (Pike District) / Rockville postal area",
+  "address": "5401 McGrath Blvd, North Bethesda, MD 20852",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.aurora-apts.com/",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/9f9ed377a34049854475147c37bb7d1b.jpg",
+  "approxRentRange": "$2,494-$2,817/mo for 2BR (late 2025/2026 listings; upper outliers to ~$5,670 for premium units)",
+  "has2BRor1BRDen": "Yes",
+  "bathroomsNote": "All 2BR floor plans (C1-C5, 997-1,160 sqft) are 2 bed / 2 bath",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "doormanStatus": "Likely staffed",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "notes": {
+    "building": "18-story LEED-certified high-rise built 2015; 341 units; on-site Starbucks, golf simulator, rooftop terrace, dog park, bike storage.",
+    "doorman": "Concierge confirmed on-site; specific 24-hour staffing not documented. Management office hours posted (Mon/Wed-Fri 9-6, Sat 10-5, Sun 12-5, Tue closed) suggest coverage is not round-the-clock.",
+    "balcony": "Select units; not universal.",
+    "pets": "Cats and dogs allowed; max 75 lbs each; limit 1 pet per unit; $75/mo pet rent; breed restrictions include pit bulls, German Shepherds, Huskies.",
+    "packageRoom": "Package receiving confirmed as listed amenity.",
+    "unitClimate": "Individual heating and AC control per unit confirmed.",
+    "wellMaintained": "Marketing copy calls it award-winning with pristine grounds. Resident reviews are mixed: some praise attentive staff; others cite elevator-hall lighting out for extended periods and slow maintenance responses. Insufficient independent evidence to confirm or deny.",
+    "buildingType": "Single rental building under central management (not individually owned condos)."
+  }
+}

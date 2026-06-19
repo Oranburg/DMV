@@ -1,0 +1,46 @@
+{
+  "name": "Galvan at Twinbrook",
+  "neighborhood": "Twinbrook",
+  "address": "1801 Chapman Ave, Rockville, MD 20852",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.liveatgalvan.com/",
+  "photoUrl": "https://www.liveatgalvan.com/",
+  "approxRentRange": "$2,438-$2,822/mo for 2BR (912-1,109 sq ft); 1BR+den from $2,639/mo; overall community from ~$1,864/mo",
+  "doormanStatus": "Daytime only",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Unclear",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "All 2BR floor plans (B01 through B17, 912-1,109 sq ft) have 2 baths. 1BR+den (AD04, 886 sq ft) has 1 bath.",
+  "notes": {
+    "management": "RAM (acquired from JBG SMITH); modern industrial mixed-use building above Safeway grocery; directly across from Twinbrook Metro (Red Line)",
+    "doormanDetail": "Concierge confirmed as named amenity with named staff (Manny, Dawn, Ethan, Linda cited in reviews). Reviewer reports indicate evening-only shifts (~5-11 PM for concierge); leasing office Mon-Fri 9am-6pm, Sat 10am-5pm, Sun 12pm-5pm. No evidence of 24-hour staffing. One review noted management did not renew concierge contract. Classified as Daytime only pending confirmation from building directly.",
+    "balconyDetail": "Juliet balconies listed in marketing copy for select units; patio/balcony listed as in-unit amenity across listings",
+    "packageDetail": "Package receiving confirmed as listed amenity across multiple sources",
+    "climateDetail": "No source specifies whether HVAC is unit-controlled or building-controlled. Multiple listings list air conditioning as an amenity but do not distinguish central building system from in-unit thermostats. Marked Unclear.",
+    "elevatorDetail": "Elevator confirmed; reviewers note it goes out periodically, sometimes for 2+ weeks at a time",
+    "petDetail": "Cats and dogs welcome; specific fees and weight limits not found in scraped sources",
+    "wellMaintainedDetail": "Overall rating approximately 4.2/5 on maintenance surveys. Positive reviews cite prompt same-day or next-day maintenance response. Negative reviews cite recurring A/C disputes, elevator outages lasting weeks, and management quality decline after acquisition by RAM. Mixed picture; Unclear is the honest read.",
+    "floorPlans2BR": [
+      {"plan": "B01", "sqft": 912, "baths": 2, "startingRent": "$2,438/mo"},
+      {"plan": "B02", "sqft": 937, "baths": 2, "startingRent": "$2,548/mo"},
+      {"plan": "B13", "sqft": 1051, "baths": 2, "startingRent": "$2,629/mo"},
+      {"plan": "B08", "sqft": 1026, "baths": 2, "startingRent": "$2,738/mo"},
+      {"plan": "B07", "sqft": 1013, "baths": 2, "startingRent": "$2,777/mo"},
+      {"plan": "B17", "sqft": 1109, "baths": 2, "startingRent": "$2,822/mo"}
+    ],
+    "floorPlans1BRDen": [
+      {"plan": "AD04 Den", "sqft": 886, "baths": 1, "startingRent": "$2,639/mo"}
+    ],
+    "transitAccess": "Directly across from Twinbrook Metro Station (Red Line); Safeway in building",
+    "parking": "No parking available on-site",
+    "leaseTerm": "3-15 month lease terms",
+    "incomeRequirement": "3x monthly rent in household income"
+  }
+}
