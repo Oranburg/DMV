@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+import App from "../components/App.jsx";
+import config from "../data/housing-config.json";
+import buildings from "../data/housing-properties.json";
+
+const title = config?.appText?.title || "Apartment Search";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <App client:load config={config} buildings={buildings} />
+  </body>
+</html>

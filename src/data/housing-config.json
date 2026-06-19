@@ -1,0 +1,73 @@
+{
+  "appText": {
+    "title": "Apartment Search",
+    "subtitle": "Doorman buildings near Metro, ranked by what matters most",
+    "buildingTypeHeading": "Building type",
+    "buildingTypeHelp": "Apartment means one rental building under central management. Condo means individually owned units rented by their owners.",
+    "factorsHeading": "What matters to you",
+    "factorsHelp": "Turn on what you care about, then slide to say how much. Slide all the way to Must have to hide anything without it."
+  },
+  "buildingTypes": {
+    "options": [
+      { "key": "apartment", "label": "Apartment (central management)", "default": true },
+      { "key": "condo", "label": "Condo (owner-rented)", "default": true }
+    ]
+  },
+  "factors": [
+    { "key": "space", "label": "2 bedrooms, or 1BR + den", "kind": "feature", "level": "unit", "rule": "spaceFloor", "default": { "on": true, "must": true } },
+    { "key": "doorman", "label": "24-hour doorman or concierge", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.doorman", "default": { "on": true, "must": true } },
+    { "key": "balcony", "label": "Balcony", "kind": "feature", "level": "unit", "rule": "triBool", "path": "balcony", "default": { "on": true, "must": true } },
+    { "key": "inUnitLaundry", "label": "In-unit laundry", "kind": "feature", "level": "unit", "rule": "triBool", "path": "inUnitLaundry", "default": { "on": true, "must": true } },
+    { "key": "elevator", "label": "Elevator in the building", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.elevator", "default": { "on": true, "weight": 60 } },
+    { "key": "petFriendly", "label": "Pet-friendly (for a small dog)", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.petFriendly", "default": { "on": true, "weight": 45 } },
+    { "key": "pool", "label": "Pool (for summer visits)", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.pool", "default": { "on": false, "weight": 30 } },
+    { "key": "playground", "label": "Playground nearby", "kind": "feature", "level": "building", "rule": "triBool", "path": "building.playground", "default": { "on": false, "weight": 20 } },
+    { "key": "cost", "label": "Lower monthly cost", "kind": "scalar", "level": "unit", "rule": "cost", "default": { "on": true, "weight": 70 } },
+    { "key": "metroWalk", "label": "Short walk to Metro", "kind": "scalar", "level": "building", "rule": "metroWalk", "default": { "on": true, "weight": 55 } },
+    { "key": "quiet", "label": "Quiet, away from train noise", "kind": "scalar", "level": "building", "rule": "quiet", "default": { "on": true, "weight": 45 } },
+    { "key": "synagogue", "label": "Close to Kemp Mill Synagogue", "kind": "scalar", "level": "building", "rule": "distanceSynagogue", "default": { "on": true, "weight": 40 } },
+    { "key": "berman", "label": "Close to Berman Academy", "kind": "scalar", "level": "building", "rule": "distanceBerman", "default": { "on": false, "weight": 30 } },
+    { "key": "squareFeet", "label": "More square footage", "kind": "scalar", "level": "unit", "rule": "squareFeet", "default": { "on": true, "weight": 35 } }
+  ],
+  "mustValue": 101,
+  "scoreScales": {
+    "costFloor": 1500,
+    "costCeiling": 6000,
+    "metroWalkBest": 2,
+    "metroWalkWorst": 20,
+    "quietBest": 5,
+    "quietWorst": 1,
+    "synagogueDriveBest": 4,
+    "synagogueDriveWorst": 30,
+    "bermanDriveBest": 4,
+    "bermanDriveWorst": 30,
+    "squareFeetFloor": 700,
+    "squareFeetCeiling": 1600
+  },
+  "locations": [
+    { "key": "synagogue", "label": "Kemp Mill Synagogue" },
+    { "key": "berman", "label": "Berman Academy" },
+    { "key": "metro", "label": "Closest Metro" }
+  ],
+  "filterDefaults": {
+    "distanceMode": "walk"
+  },
+  "noiseScale": [
+    { "key": 5, "label": "Very quiet" },
+    { "key": 4, "label": "Quiet" },
+    { "key": 3, "label": "Some street/rail noise" },
+    { "key": 2, "label": "Noticeable noise" },
+    { "key": 1, "label": "Loud (next to tracks or a busy road)" }
+  ],
+  "legacyFactors": {
+    "note": "Kept on purpose. These were the original family-relocation factors. They are not shown in the UI, but the data fields and scoring logic stay so any can be switched back on later.",
+    "weights": {
+      "cuaCommute": 0.17,
+      "bermanCommute": 0.21,
+      "eruvConfidence": 0.08,
+      "evConfidence": 0.06,
+      "toddlerFriendliness": 0.08,
+      "twoCarWorkable": 0.05
+    }
+  }
+}

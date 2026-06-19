@@ -1,0 +1,538 @@
+[
+  {
+    "id": "falkland",
+    "name": "Falkland Chase",
+    "address": "8305 16th St, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 12,
+    "familyDriveMin": 14,
+    "leasingUrl": "https://www.falklandchaseapartments.com/availableunits",
+    "building": {
+      "doorman": null,
+      "doormanNote": "24/7 lobby staffing not yet confirmed; garden-style community, may not have a concierge.",
+      "elevator": null,
+      "pool": false,
+      "gym": false,
+      "playground": true,
+      "outdoorSpace": true,
+      "petPolicy": "Not yet confirmed."
+    },
+    "units": [
+      {
+        "id": "falkland-th03",
+        "label": "TH03 townhome, 3BR / 2BA",
+        "bedrooms": 3,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1278,
+        "balcony": null,
+        "inUnitLaundry": null,
+        "availability": "Verify current availability on the leasing page.",
+        "pricing": {
+          "baseRent": 2680,
+          "parking": 150,
+          "utilities": {
+            "water": 60,
+            "electric": 100,
+            "gas": 0,
+            "internet": 80
+          },
+          "mandatoryFees": 0,
+          "estimatedAllIn": 3070,
+          "assumptions": [
+            "Utility costs are modeled, not confirmed per lease.",
+            "Parking quoted as a flat monthly figure; confirm with leasing."
+          ]
+        }
+      }
+    ],
+    "legacy": {
+      "commute": {
+        "cuaLaw": 18,
+        "berman": 18
+      },
+      "eruv": "Likely",
+      "ev": "Needs Verification",
+      "toddlerFriendly": true,
+      "twoCarWorkable": true
+    },
+    "sources": [
+      {
+        "label": "TH03 floor plan",
+        "url": "https://www.falklandchaseapartments.com/floorplans/th03",
+        "checkedAt": "2026-04-04",
+        "note": "Official 3BR townhome floor plan."
+      },
+      {
+        "label": "Available units",
+        "url": "https://www.falklandchaseapartments.com/availableunits",
+        "checkedAt": "2026-04-04",
+        "note": "Live pricing and availability."
+      }
+    ],
+    "notes": [
+      "Carried over from the earlier search; balcony, in-unit laundry, and lobby staffing all need confirming for this list."
+    ],
+    "tasks": [
+      "Confirm whether the building has 24-hour lobby staff.",
+      "Confirm a private balcony on the available unit.",
+      "Confirm in-unit washer and dryer."
+    ],
+    "lastVerified": "2026-04-04",
+    "buildingType": "apartment",
+    "scores": {
+      "walk": 88,
+      "transit": 85,
+      "bike": 68,
+      "wsLink": "https://www.walkscore.com/score/8305-16th-St-Silver-Spring-MD-20910/lat=38.9927536/lng=-77.0365373/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "coords": [
+      38.9927536,
+      -77.0365373
+    ]
+  },
+  {
+    "id": "colesville",
+    "name": "Colesville Towers",
+    "address": "Colesville Towers, Silver Spring, MD (confirm exact address)",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 9,
+    "familyDriveMin": 15,
+    "leasingUrl": "https://www.colesvilletowers.com/floorplans",
+    "building": {
+      "doorman": null,
+      "doormanNote": "High-rise; front-desk or concierge coverage plausible but not yet confirmed for 24 hours.",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": true,
+      "outdoorSpace": false,
+      "petPolicy": "Not yet confirmed."
+    },
+    "units": [
+      {
+        "id": "colesville-3br",
+        "label": "3BR / 2BA",
+        "bedrooms": 3,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1340,
+        "balcony": null,
+        "inUnitLaundry": null,
+        "availability": "Verify current availability on the leasing page.",
+        "pricing": {
+          "baseRent": 2699,
+          "parking": 150,
+          "utilities": {
+            "water": 60,
+            "electric": 0,
+            "gas": 0,
+            "internet": 80
+          },
+          "mandatoryFees": 0,
+          "estimatedAllIn": 2989,
+          "assumptions": [
+            "Water and internet modeled from prior listings.",
+            "Some utilities may be included; confirm with leasing."
+          ]
+        }
+      }
+    ],
+    "legacy": {
+      "commute": {
+        "cuaLaw": 18,
+        "berman": 20
+      },
+      "eruv": "Likely",
+      "ev": "Needs Verification",
+      "toddlerFriendly": true,
+      "twoCarWorkable": true
+    },
+    "sources": [
+      {
+        "label": "Official floor plans",
+        "url": "https://www.colesvilletowers.com/floorplans",
+        "checkedAt": "2026-04-04",
+        "note": "Indicates 3BR layouts exist."
+      },
+      {
+        "label": "Amenities page",
+        "url": "https://www.colesvilletowers.com/amenities",
+        "checkedAt": "2026-04-04",
+        "note": "Building features and utilities."
+      }
+    ],
+    "notes": [
+      "High-rise with pool and gym; the most likely of the carried-over set to have lobby staff, but confirm the hours."
+    ],
+    "tasks": [
+      "Confirm exact street address and unit stack.",
+      "Confirm 24-hour concierge or doorman.",
+      "Confirm balcony and in-unit laundry on the available unit."
+    ],
+    "lastVerified": "2026-04-04",
+    "buildingType": "apartment",
+    "scores": {
+      "walk": null,
+      "transit": null,
+      "bike": null,
+      "wsLink": null
+    },
+    "coords": null
+  },
+  {
+    "id": "glenhaven",
+    "name": "Glen Haven",
+    "address": "Glen Haven, Wheaton, MD (confirm exact address)",
+    "neighborhood": "Wheaton",
+    "metroStation": "Wheaton",
+    "walkToMetroMin": 8,
+    "familyDriveMin": 8,
+    "leasingUrl": "https://www.apartments.com/glen-haven-wheaton-md/lep52zg/",
+    "building": {
+      "doorman": null,
+      "doormanNote": "Garden-style; a 24-hour concierge is unlikely here. Confirm before pursuing.",
+      "elevator": null,
+      "pool": false,
+      "gym": false,
+      "playground": true,
+      "outdoorSpace": true,
+      "petPolicy": "Not yet confirmed."
+    },
+    "units": [
+      {
+        "id": "glenhaven-3br",
+        "label": "3BR / 2BA",
+        "bedrooms": 3,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1300,
+        "balcony": null,
+        "inUnitLaundry": null,
+        "availability": "Some listings are military-focused; confirm civilian leasing.",
+        "pricing": {
+          "baseRent": 2790,
+          "parking": 0,
+          "utilities": {
+            "water": 70,
+            "electric": 120,
+            "gas": 40,
+            "internet": 80
+          },
+          "mandatoryFees": 0,
+          "estimatedAllIn": 3100,
+          "assumptions": [
+            "Pricing and availability vary; some inventory is military-focused.",
+            "Utilities modeled from third-party listings."
+          ]
+        }
+      }
+    ],
+    "legacy": {
+      "commute": {
+        "cuaLaw": 26,
+        "berman": 10
+      },
+      "eruv": "Likely",
+      "ev": "Needs Verification",
+      "toddlerFriendly": true,
+      "twoCarWorkable": true
+    },
+    "sources": [
+      {
+        "label": "Apartments.com listing",
+        "url": "https://www.apartments.com/glen-haven-wheaton-md/lep52zg/",
+        "checkedAt": "2026-04-04",
+        "note": "Third-party listing; confirm leasing channel."
+      }
+    ],
+    "notes": [
+      "Closest to family of the carried-over set, but garden-style and probably without a doorman. Likely fails the must-have."
+    ],
+    "tasks": [
+      "Confirm whether any 24-hour lobby staffing exists.",
+      "Confirm civilian lease eligibility.",
+      "Confirm balcony and in-unit laundry."
+    ],
+    "lastVerified": "2026-04-04",
+    "buildingType": "apartment",
+    "scores": {
+      "walk": null,
+      "transit": null,
+      "bike": null,
+      "wsLink": null
+    },
+    "coords": null
+  },
+  {
+    "id": "ava",
+    "name": "AVA Wheaton",
+    "address": "2425 Blueridge Ave, Silver Spring, MD 20902",
+    "neighborhood": "Wheaton",
+    "metroStation": "Wheaton",
+    "walkToMetroMin": 3,
+    "familyDriveMin": 10,
+    "leasingUrl": "https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/",
+    "building": {
+      "doorman": null,
+      "doormanNote": "Modern mid-rise; some AVA/Avalon buildings have front-desk hours but not always 24 hours. Confirm.",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": false,
+      "outdoorSpace": false,
+      "petPolicy": "Not yet confirmed."
+    },
+    "units": [
+      {
+        "id": "ava-3br",
+        "label": "3BR / 2BA",
+        "bedrooms": 3,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1334,
+        "balcony": null,
+        "inUnitLaundry": null,
+        "availability": "Verify a current 3BR is actually available.",
+        "pricing": {
+          "baseRent": 3050,
+          "parking": 275,
+          "utilities": {
+            "water": 60,
+            "electric": 110,
+            "gas": 0,
+            "internet": 0
+          },
+          "mandatoryFees": 90,
+          "estimatedAllIn": 3585,
+          "assumptions": [
+            "Mandatory tech/amenity fee included.",
+            "Utilities modeled, not guaranteed by a specific lease."
+          ]
+        }
+      }
+    ],
+    "legacy": {
+      "commute": {
+        "cuaLaw": 24,
+        "berman": 12
+      },
+      "eruv": "Likely",
+      "ev": "Confirmed",
+      "toddlerFriendly": false,
+      "twoCarWorkable": true
+    },
+    "sources": [
+      {
+        "label": "Official AVA page",
+        "url": "https://www.avaloncommunities.com/maryland/wheaton-apartments/ava-wheaton/",
+        "checkedAt": "2026-04-04",
+        "note": "Inventory, pricing, and amenities."
+      }
+    ],
+    "notes": [
+      "Best transit of the carried-over set (3-minute walk to Wheaton). Confirm whether lobby staffing reaches 24 hours."
+    ],
+    "tasks": [
+      "Confirm 24-hour concierge or doorman.",
+      "Confirm a current 3BR (or 2BR / den) is available.",
+      "Confirm balcony and in-unit laundry."
+    ],
+    "lastVerified": "2026-04-04",
+    "buildingType": "condo",
+    "scores": {
+      "walk": null,
+      "transit": null,
+      "bike": null,
+      "wsLink": null
+    },
+    "coords": null
+  },
+  {
+    "id": "blairs",
+    "name": "The Blairs",
+    "address": "1401 Blair Mill Rd, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 6,
+    "familyDriveMin": 14,
+    "leasingUrl": "https://www.blairapartments.com/floorplans",
+    "building": {
+      "doorman": null,
+      "doormanNote": "Large managed community; concierge plausible. Confirm 24-hour coverage.",
+      "elevator": true,
+      "pool": false,
+      "gym": true,
+      "playground": true,
+      "outdoorSpace": true,
+      "petPolicy": "Not yet confirmed."
+    },
+    "units": [
+      {
+        "id": "blairs-3br",
+        "label": "3BR / 2BA",
+        "bedrooms": 3,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1378,
+        "balcony": null,
+        "inUnitLaundry": null,
+        "availability": "Verify current 3BR turnover on the leasing page.",
+        "pricing": {
+          "baseRent": 3300,
+          "parking": 200,
+          "utilities": {
+            "water": 60,
+            "electric": 100,
+            "gas": 0,
+            "internet": 80
+          },
+          "mandatoryFees": 0,
+          "estimatedAllIn": 3740,
+          "assumptions": [
+            "Parking assumes the tandem option remains available.",
+            "Utilities modeled."
+          ]
+        }
+      }
+    ],
+    "legacy": {
+      "commute": {
+        "cuaLaw": 18,
+        "berman": 18
+      },
+      "eruv": "Likely",
+      "ev": "Likely",
+      "toddlerFriendly": true,
+      "twoCarWorkable": true
+    },
+    "sources": [
+      {
+        "label": "Official floor plans",
+        "url": "https://www.blairapartments.com/floorplans",
+        "checkedAt": "2026-04-04",
+        "note": "3BR floor plan support."
+      },
+      {
+        "label": "RentCafe listing",
+        "url": "https://www.rentcafe.com/apartments/md/silver-spring/the-blairs/default.aspx",
+        "checkedAt": "2026-04-04",
+        "note": "Live pricing checks."
+      }
+    ],
+    "notes": [
+      "Balanced option with elevator, gym, and good transit. Concierge coverage is the open question."
+    ],
+    "tasks": [
+      "Confirm 24-hour concierge or doorman.",
+      "Confirm balcony and in-unit laundry.",
+      "Check current 3BR or 2BR/den turnover."
+    ],
+    "lastVerified": "2026-04-04",
+    "buildingType": "apartment",
+    "scores": {
+      "walk": 86,
+      "transit": 86,
+      "bike": 72,
+      "wsLink": "https://www.walkscore.com/score/1401-Blair-Mill-Rd-Silver-Spring-MD-20910/lat=38.9900997/lng=-77.0323135/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "coords": [
+      38.9900997,
+      -77.0323135
+    ]
+  },
+  {
+    "id": "pearl",
+    "name": "The Pearl",
+    "address": "The Pearl, Silver Spring, MD (confirm exact address)",
+    "neighborhood": "Silver Spring",
+    "metroStation": "Silver Spring",
+    "walkToMetroMin": 10,
+    "familyDriveMin": 15,
+    "leasingUrl": "https://www.liveatthepearl.com/floorplans",
+    "building": {
+      "doorman": null,
+      "doormanNote": "Newer premium building; concierge is most plausible here. Confirm the hours.",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": true,
+      "outdoorSpace": false,
+      "petPolicy": "Not yet confirmed."
+    },
+    "units": [
+      {
+        "id": "pearl-3br",
+        "label": "3BR / 2BA",
+        "bedrooms": 3,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1546,
+        "balcony": null,
+        "inUnitLaundry": null,
+        "availability": "Verify current available stack and floor plan.",
+        "pricing": {
+          "baseRent": 4180,
+          "parking": 400,
+          "utilities": {
+            "water": 70,
+            "electric": 130,
+            "gas": 0,
+            "internet": 80
+          },
+          "mandatoryFees": 0,
+          "estimatedAllIn": 4860,
+          "assumptions": [
+            "Pricing varies materially by floor plan.",
+            "Utilities modeled; confirm per lease."
+          ]
+        }
+      }
+    ],
+    "legacy": {
+      "commute": {
+        "cuaLaw": 20,
+        "berman": 20
+      },
+      "eruv": "Likely",
+      "ev": "Likely",
+      "toddlerFriendly": true,
+      "twoCarWorkable": true
+    },
+    "sources": [
+      {
+        "label": "Official floor plans",
+        "url": "https://www.liveatthepearl.com/floorplans",
+        "checkedAt": "2026-04-04",
+        "note": "Current floor-plan inventory."
+      },
+      {
+        "label": "RentCafe listing",
+        "url": "https://www.rentcafe.com/apartments/md/silver-spring/the-pearl-2/default.aspx",
+        "checkedAt": "2026-04-04",
+        "note": "Spot checks against official quotes."
+      }
+    ],
+    "notes": [
+      "Premium and the largest unit of the set; the most likely to have a real concierge. Highest monthly cost."
+    ],
+    "tasks": [
+      "Confirm exact address and current available stack.",
+      "Confirm 24-hour concierge or doorman.",
+      "Confirm balcony and in-unit laundry, plus all recurring monthly fees."
+    ],
+    "lastVerified": "2026-04-04",
+    "buildingType": "condo",
+    "scores": {
+      "walk": null,
+      "transit": null,
+      "bike": null,
+      "wsLink": null
+    },
+    "coords": null
+  }
+]
