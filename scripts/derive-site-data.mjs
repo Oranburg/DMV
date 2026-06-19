@@ -112,7 +112,7 @@ function fromGemini(g) {
     coords: null,
     scores: { walk: null, transit: null, bike: null, wsLink: null },
     walkToMetroMin: g.metro,
-    distances: { metro: { walk: g.metro, drive: null }, synagogue: { drive: g.kmDrive }, berman: { drive: null } },
+    distances: { metro: { walk: g.metro, drive: null, station: "Silver Spring" }, synagogue: { drive: g.kmDrive }, berman: { drive: null } },
     building: {
       doorman: null,
       doormanStatus: "Likely staffed",

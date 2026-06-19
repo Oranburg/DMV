@@ -207,7 +207,12 @@ function DistanceCard({ building, locations, mode }) {
         const measured = typeof mins === "number";
         return (
           <div className="distance-row" key={loc.key}>
-            <span className="dest">{loc.label}</span>
+            <span className="dest">
+              {loc.label}
+              {loc.key === "metro" && building.distances?.metro?.station && (
+                <span className="dest-sub"> ({building.distances.metro.station})</span>
+              )}
+            </span>
             {measured ? (
               <span className="val tnum">{mins} min {mode}</span>
             ) : (
@@ -357,6 +362,12 @@ function BuildingCard({ entry, rank, mustFeatures, locations, mode, expanded, on
         </div>
 
         <h2 className="building-name">{building.name}</h2>
+        {(building.distances?.metro?.station || building.neighborhood) && (
+          <div className="metro-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" /><text x="12" y="16" textAnchor="middle" fontSize="13" fill="#fff" fontWeight="700">M</text></svg>
+            {building.distances?.metro?.station ? `${building.distances.metro.station} Metro` : building.neighborhood}
+          </div>
+        )}
         <div className="rent-range tnum">{rentLabel}</div>
 
         <WalkScores building={building} />

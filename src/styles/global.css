@@ -779,6 +779,29 @@ a {
   color: var(--c-ink-faint);
 }
 
+/* ---------- metro chip ---------- */
+.metro-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  align-self: flex-start;
+  background: var(--c-accent);
+  color: var(--c-on-accent);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--radius-pill);
+}
+
+.metro-chip svg {
+  flex: none;
+}
+
+.dest-sub {
+  color: var(--c-ink-faint);
+  font-weight: 400;
+}
+
 /* ---------- type chip ---------- */
 .type-chip {
   position: absolute;
