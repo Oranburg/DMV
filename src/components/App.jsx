@@ -180,14 +180,12 @@ function ScoreBadge({ label, value }) {
 
 function WalkScores({ building }) {
   const s = building.scores || {};
-  if (s.walk == null && s.transit == null && s.bike == null) {
-    return <div className="walkscore-pending">Walk Score pending (added when the address is scored).</div>;
+  if (s.walk == null) {
+    return <div className="walkscore-pending">Walk Score pending.</div>;
   }
   return (
     <div className="walkscore-row">
-      <ScoreBadge label="Walk" value={s.walk} />
-      <ScoreBadge label="Transit" value={s.transit} />
-      <ScoreBadge label="Bike" value={s.bike} />
+      <ScoreBadge label="Walk Score" value={s.walk} />
       {s.wsLink && (
         <a className="walkscore-link" href={s.wsLink} target="_blank" rel="noopener">
           What's nearby →
@@ -199,11 +197,12 @@ function WalkScores({ building }) {
 
 /* ---------- distance card ---------- */
 
-function DistanceCard({ building, locations, mode }) {
+function DistanceCard({ building, locations }) {
   return (
     <div className="distance-card">
       {locations.map((loc) => {
-        const mins = distanceFor(building, loc.key, mode);
+        const m = loc.mode || "walk";
+        const mins = distanceFor(building, loc.key, m);
         const measured = typeof mins === "number";
         return (
           <div className="distance-row" key={loc.key}>
@@ -214,7 +213,7 @@ function DistanceCard({ building, locations, mode }) {
               )}
             </span>
             {measured ? (
-              <span className="val tnum">{mins} min {mode}</span>
+              <span className="val tnum">{mins} min {m}</span>
             ) : (
               <span className="val missing">not yet measured</span>
             )}
@@ -327,7 +326,7 @@ function UnitRow({ unit }) {
 
 const TYPE_LABEL = { apartment: "Apartment", condo: "Condo" };
 
-function BuildingCard({ entry, rank, mustFeatures, locations, mode, expanded, onToggle, onFeedback }) {
+function BuildingCard({ entry, rank, mustFeatures, locations, expanded, onToggle, onFeedback }) {
   const { building, score, bestUnit } = entry;
   const photos = building.photos || [];
   const qualifying = entry.qualifyingUnits;
@@ -384,7 +383,7 @@ function BuildingCard({ entry, rank, mustFeatures, locations, mode, expanded, on
           </div>
         )}
 
-        <DistanceCard building={building} locations={locations} mode={mode} />
+        <DistanceCard building={building} locations={locations} />
 
         {expanded && (
           <>
@@ -598,7 +597,13 @@ export default function App({ config, buildings }) {
   const locations = config.locations || [];
   const scales = config.scoreScales || {};
 
-  const [mode, setMode] = useState((config.filterDefaults && config.filterDefaults.distanceMode) || "walk");
+  const [theme, setTheme] = useState(() => (typeof document !== "undefined" && document.documentElement.dataset.theme) || "light");
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    try {
+      localStorage.setItem("dmv-theme", theme);
+    } catch {}
+  }, [theme]);
   const [refineOpen, setRefineOpen] = useState(false);
   const [expandedId, setExpandedId] = useState(null);
   const [feedback, setFeedback] = useState(null); // null = closed; string = open, prefilled place
@@ -639,8 +644,17 @@ export default function App({ config, buildings }) {
     <>
       <main className="app">
         <header className="page-head">
-          <h1 className="page-title">{title}</h1>
-          <p className="match-count" aria-live="polite">{count} building{count === 1 ? "" : "s"} match</p>
+          <div>
+            <h1 className="page-title">{title}</h1>
+            <p className="match-count" aria-live="polite">{count} building{count === 1 ? "" : "s"} match</p>
+          </div>
+          <button
+            className="theme-toggle"
+            onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {theme === "dark" ? "☀" : "☾"}
+          </button>
         </header>
 
         {count === 0 ? (
@@ -654,7 +668,6 @@ export default function App({ config, buildings }) {
                 rank={i + 1}
                 mustFeatures={mustFeatures}
                 locations={locations}
-                mode={mode}
                 expanded={expandedId === entry.building.id}
                 onToggle={() => setExpandedId((cur) => (cur === entry.building.id ? null : entry.building.id))}
                 onFeedback={() => setFeedback(entry.building.name)}
@@ -669,16 +682,7 @@ export default function App({ config, buildings }) {
 
       <nav className="bottom-bar" aria-label="View controls">
         <div className="bottom-bar-inner">
-          <div className="segmented" role="radiogroup" aria-label="Show distances by">
-            <label>
-              <input type="radio" name="mode" value="walk" checked={mode === "walk"} onChange={() => setMode("walk")} />
-              <span>Walk</span>
-            </label>
-            <label>
-              <input type="radio" name="mode" value="drive" checked={mode === "drive"} onChange={() => setMode("drive")} />
-              <span>Drive</span>
-            </label>
-          </div>
+          <span className="bottom-hint">{count} building{count === 1 ? "" : "s"} match your must-haves</span>
           <button className="refine-btn" onClick={() => setRefineOpen(true)}>Refine ({count})</button>
         </div>
       </nav>

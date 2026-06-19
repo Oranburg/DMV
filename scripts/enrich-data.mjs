@@ -112,9 +112,12 @@ async function routeDistances(b) {
   await sleep(250);
   const berDrive = await driveMinutes(b.coords, ANCHORS.berman);
   await sleep(250);
-  // Walk-to-Metro stays from sourced data (b.walkToMetroMin); driving routes are real-routed.
+  // Walk-to-Metro: use sourced minutes if present, else estimate from straight-line
+  // distance to the nearest station at a walking pace (~22 min/mile).
+  const metroWalk =
+    typeof b.walkToMetroMin === "number" ? b.walkToMetroMin : Math.max(1, Math.round(haversineMi(b.coords, station.c) * 22));
   return {
-    metro: { drive: metroDrive, walk: typeof b.walkToMetroMin === "number" ? b.walkToMetroMin : null, station: station.name },
+    metro: { drive: metroDrive, walk: metroWalk, station: station.name },
     synagogue: { drive: synDrive },
     berman: { drive: berDrive },
   };
@@ -145,9 +148,14 @@ async function main() {
         }
         await sleep(300);
       }
-      if (b.coords && (!b.distances || !b.distances.synagogue || b.distances.synagogue.drive == null)) {
+      if (b.coords && (!b.distances || b.distances.synagogue?.drive == null || b.distances.berman?.drive == null || !b.distances.metro?.station)) {
         b.distances = await routeDistances(b);
         console.log(`routed ${b.name} -> metro ${b.distances.metro.drive}m drive (${b.distances.metro.station}), KMS ${b.distances.synagogue.drive}m, Berman ${b.distances.berman.drive}m`);
+      }
+      if (b.coords && b.distances && b.distances.metro && b.distances.metro.walk == null) {
+        const st = nearestStation(b.coords);
+        b.distances.metro.walk = Math.max(1, Math.round(haversineMi(b.coords, st.c) * 22));
+        console.log(`metro walk estimate ${b.name} -> ${b.distances.metro.walk} min`);
       }
     } catch (err) {
       console.warn(`error on ${b.name}: ${err.message}`);

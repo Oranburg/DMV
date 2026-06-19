@@ -51,9 +51,9 @@
     "squareFeetCeiling": 1600
   },
   "locations": [
-    { "key": "synagogue", "label": "Kemp Mill Synagogue" },
-    { "key": "berman", "label": "Berman Academy" },
-    { "key": "metro", "label": "Closest Metro" }
+    { "key": "metro", "label": "Closest Metro", "mode": "walk" },
+    { "key": "synagogue", "label": "Kemp Mill Synagogue", "mode": "drive" },
+    { "key": "berman", "label": "Berman Academy", "mode": "drive" }
   ],
   "filterDefaults": {
     "distanceMode": "walk"

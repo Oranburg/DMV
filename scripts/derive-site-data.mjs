@@ -212,9 +212,14 @@ async function main() {
     }
   }
 
-  const out = [...byKey.values()].sort((a, b) => a.name.localeCompare(b.name));
+  // Penny's call (2026-06-19): the far Pike & Rose / Rockville / North Bethesda / Takoma-DC group
+  // is too far (e.g., The Henri ~50 min). Keep Silver Spring, where her great choices are.
+  const KEEP = /silver spring/i;
+  const all = [...byKey.values()];
+  const out = all.filter((b) => KEEP.test(b.neighborhood || "")).sort((a, b) => a.name.localeCompare(b.name));
+  const dropped = all.length - out.length;
   await writeFile(OUT, JSON.stringify(out, null, 2) + "\n");
-  console.log(`derived ${out.length} unique buildings from ${files.length} verified files + ${GEMINI_SS.length} Gemini`);
+  console.log(`derived ${out.length} Silver Spring buildings (dropped ${dropped} out-of-area) from ${files.length} verified files + ${GEMINI_SS.length} Gemini`);
 }
 
 main().catch((e) => {

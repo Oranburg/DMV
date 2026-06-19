@@ -851,7 +851,7 @@ a {
   min-height: var(--tap-min);
   padding: 0 var(--sp-5);
   background: var(--c-good);
-  color: #fff;
+  color: var(--c-on-accent);
   font-weight: 700;
   font-size: var(--fs-base);
   border-radius: var(--radius-pill);
@@ -942,4 +942,56 @@ a {
   * {
     transition: none !important;
   }
+}
+
+/* ---------- dark mode ---------- */
+[data-theme="dark"] {
+  --c-bg: #14181a;
+  --c-surface: #1d2326;
+  --c-surface-sunk: #262d30;
+  --c-border: #333c40;
+  --c-ink: #eef2f0;
+  --c-ink-soft: #b6c0bb;
+  --c-ink-faint: #8a948f;
+  --c-accent: #5fb3c4;
+  --c-accent-press: #79c6d6;
+  --c-on-accent: #06161b;
+  --c-good: #6fcf97;
+  --c-good-bg: #1f3a2b;
+  --c-warn: #e0b35e;
+  --c-warn-bg: #3a3320;
+  --c-focus: #79c6d6;
+}
+
+html {
+  background: var(--c-bg);
+}
+
+/* header now holds the theme toggle on the right */
+.page-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.theme-toggle {
+  flex: none;
+  width: var(--tap-min);
+  height: var(--tap-min);
+  border-radius: 50%;
+  border: 1px solid var(--c-border);
+  background: var(--c-surface);
+  color: var(--c-ink);
+  font-size: var(--fs-lg);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-hint {
+  font-size: var(--fs-sm);
+  color: var(--c-ink-soft);
+  font-weight: 600;
 }

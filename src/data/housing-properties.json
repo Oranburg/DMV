@@ -25,7 +25,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 11,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -112,7 +112,7 @@
     "distances": {
       "metro": {
         "drive": 2,
-        "walk": null,
+        "walk": 5,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -196,14 +196,15 @@
     "walkToMetroMin": 8,
     "distances": {
       "metro": {
+        "drive": 3,
         "walk": 8,
-        "drive": null
+        "station": "Silver Spring"
       },
       "synagogue": {
-        "drive": 17
+        "drive": 11
       },
       "berman": {
-        "drive": null
+        "drive": 18
       }
     },
     "building": {
@@ -315,157 +316,6 @@
     ]
   },
   {
-    "id": "aurora-apartments",
-    "name": "Aurora Apartments",
-    "address": "5401 McGrath Blvd, North Bethesda, MD 20852",
-    "neighborhood": "North Bethesda (Pike District) / Rockville postal area",
-    "buildingType": "apartment",
-    "leasingUrl": "https://www.aurora-apts.com/",
-    "phone": null,
-    "photos": [
-      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/9f9ed377a34049854475147c37bb7d1b.jpg"
-    ],
-    "coords": [
-      39.0493198,
-      -77.1077795
-    ],
-    "scores": {
-      "walk": 79,
-      "transit": 66,
-      "bike": 56,
-      "wsLink": "https://www.walkscore.com/score/5401-McGrath-Blvd-North-Bethesda-MD-20852/lat=39.0493198/lng=-77.1077795/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 2,
-        "walk": null,
-        "station": "North Bethesda"
-      },
-      "synagogue": {
-        "drive": 15
-      },
-      "berman": {
-        "drive": 6
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": true,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "aurora-apartments-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": 997,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2494,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": [
-      "18-story LEED-certified high-rise built 2015; 341 units; on-site Starbucks, golf simulator, rooftop terrace, dog park, bike storage.",
-      "Concierge confirmed on-site; specific 24-hour staffing not documented. Management office hours posted (Mon/Wed-Fri 9-6, Sat 10-5, Sun 12-5, Tue closed) suggest coverage is not round-the-clock.",
-      "Select units; not universal.",
-      "Cats and dogs allowed; max 75 lbs each; limit 1 pet per unit; $75/mo pet rent; breed restrictions include pit bulls, German Shepherds, Huskies.",
-      "Package receiving confirmed as listed amenity.",
-      "Individual heating and AC control per unit confirmed.",
-      "Marketing copy calls it award-winning with pristine grounds. Resident reviews are mixed: some praise attentive staff; others cite elevator-hall lighting out for extended periods and slow maintenance responses. Insufficient independent evidence to confirm or deny.",
-      "Single rental building under central management (not individually owned condos)."
-    ]
-  },
-  {
-    "id": "bell-at-the-pike",
-    "name": "Bell at the Pike",
-    "address": "11550 Old Georgetown Road, North Bethesda, MD 20852",
-    "neighborhood": "North Bethesda, MD",
-    "buildingType": "apartment",
-    "leasingUrl": "https://bellatthepike.securecafe.com/onlineleasing/bell-at-the-pike/guestlogin.aspx",
-    "phone": null,
-    "photos": [
-      "https://www.bellatthepike.com/wp-content/uploads/sites/255/2026/04/shoootin-photo-18-2000x1331.jpg"
-    ],
-    "coords": [
-      39.048624,
-      -77.118894
-    ],
-    "scores": {
-      "walk": 90,
-      "transit": 63,
-      "bike": 66,
-      "wsLink": "https://www.walkscore.com/score/11550-Old-Georgetown-Road-North-Bethesda-MD-20852/lat=39.048624/lng=-77.118894/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 1,
-        "walk": null,
-        "station": "North Bethesda"
-      },
-      "synagogue": {
-        "drive": 16
-      },
-      "berman": {
-        "drive": 6
-      }
-    },
-    "building": {
-      "doorman": false,
-      "doormanStatus": "Daytime only",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": null,
-      "unitClimate": null,
-      "wellMaintained": false,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "bell-at-the-pike-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": null,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2698,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
     "id": "blair-east",
     "name": "Blair East",
     "address": "1220 East West Highway, Silver Spring, MD 20910",
@@ -491,7 +341,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 4,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -574,7 +424,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 8,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -633,148 +483,6 @@
     ]
   },
   {
-    "id": "blvd-ansel",
-    "name": "BLVD Ansel",
-    "address": "33 Monroe St, Rockville, MD 20850",
-    "neighborhood": "Rockville Town Center",
-    "buildingType": "apartment",
-    "leasingUrl": "https://blvdansel.com/floorplans/",
-    "phone": null,
-    "photos": [
-      "https://blvdansel.com/assets/images/cache/gallery_banner-a4efb048aa240778ec234dc1d5398061.jpg"
-    ],
-    "coords": [
-      39.0846014,
-      -77.1495636
-    ],
-    "scores": {
-      "walk": 93,
-      "transit": 72,
-      "bike": null,
-      "wsLink": "https://www.walkscore.com/score/33-Monroe-St-Rockville-MD-20850/lat=39.0846014/lng=-77.1495636/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 1,
-        "walk": null,
-        "station": "Rockville"
-      },
-      "synagogue": {
-        "drive": 20
-      },
-      "berman": {
-        "drive": 5
-      }
-    },
-    "building": {
-      "doorman": true,
-      "doormanStatus": "Confirmed 24h",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": null,
-      "wellMaintained": true,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "blvd-ansel-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": null,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 3163,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
-    "id": "blvd-forty-four",
-    "name": "BLVD Forty Four",
-    "address": "44 Maryland Ave, Rockville, MD 20850",
-    "neighborhood": "Downtown Rockville / Rockville Town Square",
-    "buildingType": "apartment",
-    "leasingUrl": "https://blvdfortyfour.com/floorplans/",
-    "phone": null,
-    "photos": [
-      "https://blvdfortyfour.com/assets/images/cache/new_rotator_2_blvd_forty_2832-24277cff6cbec0a492dc87a5946ee0ac.jpg"
-    ],
-    "coords": [
-      39.084944,
-      -77.150844
-    ],
-    "scores": {
-      "walk": 94,
-      "transit": 72,
-      "bike": 67,
-      "wsLink": "https://www.walkscore.com/score/44-Maryland-Ave-Rockville-MD-20850/lat=39.084944/lng=-77.150844/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 1,
-        "walk": null,
-        "station": "Rockville"
-      },
-      "synagogue": {
-        "drive": 20
-      },
-      "berman": {
-        "drive": 5
-      }
-    },
-    "building": {
-      "doorman": true,
-      "doormanStatus": "Confirmed 24h",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": null,
-      "wellMaintained": true,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "blvd-forty-four-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": null,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 3124,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
     "id": "central",
     "name": "Central",
     "address": "8455 Fenton St, Silver Spring, MD 20910",
@@ -800,7 +508,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 8,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -880,7 +588,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 10,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -963,7 +671,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 11,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -1046,14 +754,15 @@
     "walkToMetroMin": 2,
     "distances": {
       "metro": {
+        "drive": 2,
         "walk": 2,
-        "drive": null
+        "station": "Silver Spring"
       },
       "synagogue": {
-        "drive": 19
+        "drive": 11
       },
       "berman": {
-        "drive": null
+        "drive": 19
       }
     },
     "building": {
@@ -1105,361 +814,6 @@
     ]
   },
   {
-    "id": "fenestra-at-the-square",
-    "name": "Fenestra at The Square",
-    "address": "20 Maryland Ave, Rockville, MD 20850",
-    "neighborhood": "Rockville Town Square, Rockville, MD (near Pike & Rose / North Bethesda)",
-    "buildingType": "apartment",
-    "leasingUrl": "https://www.fenestraapts.com/",
-    "phone": null,
-    "photos": [
-      "https://img.zumpercdn.com/493053354/1280x960"
-    ],
-    "coords": [
-      39.0869613,
-      -77.1508527
-    ],
-    "scores": {
-      "walk": 94,
-      "transit": 71,
-      "bike": 64,
-      "wsLink": "https://www.walkscore.com/score/20-Maryland-Ave-Rockville-MD-20850/lat=39.0869613/lng=-77.1508527/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 2,
-        "walk": null,
-        "station": "Rockville"
-      },
-      "synagogue": {
-        "drive": 20
-      },
-      "berman": {
-        "drive": 6
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": true,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "fenestra-at-the-square-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": null,
-        "squareFeet": null,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2461,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
-    "id": "galvan-at-twinbrook",
-    "name": "Galvan at Twinbrook",
-    "address": "1801 Chapman Ave, Rockville, MD 20852",
-    "neighborhood": "Twinbrook",
-    "buildingType": "apartment",
-    "leasingUrl": "https://www.liveatgalvan.com/",
-    "phone": null,
-    "photos": [
-      "https://www.liveatgalvan.com/"
-    ],
-    "coords": [
-      39.0602905,
-      -77.1212841
-    ],
-    "scores": {
-      "walk": 82,
-      "transit": 66,
-      "bike": 63,
-      "wsLink": "https://www.walkscore.com/score/1801-Chapman-Ave-Rockville-MD-20852/lat=39.0602905/lng=-77.1212841/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 1,
-        "walk": null,
-        "station": "Twinbrook"
-      },
-      "synagogue": {
-        "drive": 16
-      },
-      "berman": {
-        "drive": 4
-      }
-    },
-    "building": {
-      "doorman": false,
-      "doormanStatus": "Daytime only",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": null,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "galvan-at-twinbrook-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": 912,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2438,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": [
-      "RAM (acquired from JBG SMITH); modern industrial mixed-use building above Safeway grocery; directly across from Twinbrook Metro (Red Line)",
-      "Concierge confirmed as named amenity with named staff (Manny, Dawn, Ethan, Linda cited in reviews). Reviewer reports indicate evening-only shifts (~5-11 PM for concierge); leasing office Mon-Fri 9am-6pm, Sat 10am-5pm, Sun 12pm-5pm. No evidence of 24-hour staffing. One review noted management did not renew concierge contract. Classified as Daytime only pending confirmation from building directly.",
-      "Juliet balconies listed in marketing copy for select units; patio/balcony listed as in-unit amenity across listings",
-      "Package receiving confirmed as listed amenity across multiple sources",
-      "No source specifies whether HVAC is unit-controlled or building-controlled. Multiple listings list air conditioning as an amenity but do not distinguish central building system from in-unit thermostats. Marked Unclear.",
-      "Elevator confirmed; reviewers note it goes out periodically, sometimes for 2+ weeks at a time",
-      "Cats and dogs welcome; specific fees and weight limits not found in scraped sources",
-      "Overall rating approximately 4.2/5 on maintenance surveys. Positive reviews cite prompt same-day or next-day maintenance response. Negative reviews cite recurring A/C disputes, elevator outages lasting weeks, and management quality decline after acquisition by RAM. Mixed picture; Unclear is the honest read.",
-      [
-        {
-          "plan": "B01",
-          "sqft": 912,
-          "baths": 2,
-          "startingRent": "$2,438/mo"
-        },
-        {
-          "plan": "B02",
-          "sqft": 937,
-          "baths": 2,
-          "startingRent": "$2,548/mo"
-        },
-        {
-          "plan": "B13",
-          "sqft": 1051,
-          "baths": 2,
-          "startingRent": "$2,629/mo"
-        },
-        {
-          "plan": "B08",
-          "sqft": 1026,
-          "baths": 2,
-          "startingRent": "$2,738/mo"
-        },
-        {
-          "plan": "B07",
-          "sqft": 1013,
-          "baths": 2,
-          "startingRent": "$2,777/mo"
-        },
-        {
-          "plan": "B17",
-          "sqft": 1109,
-          "baths": 2,
-          "startingRent": "$2,822/mo"
-        }
-      ],
-      [
-        {
-          "plan": "AD04 Den",
-          "sqft": 886,
-          "baths": 1,
-          "startingRent": "$2,639/mo"
-        }
-      ],
-      "Directly across from Twinbrook Metro Station (Red Line); Safeway in building",
-      "No parking available on-site",
-      "3-15 month lease terms",
-      "3x monthly rent in household income"
-    ]
-  },
-  {
-    "id": "grosvenor-park-i",
-    "name": "Grosvenor Park I",
-    "address": "10201 Grosvenor Place, North Bethesda, MD 20852",
-    "neighborhood": "North Bethesda (Grosvenor)",
-    "buildingType": "condo",
-    "leasingUrl": "https://rockvillerealestateexchange.com/grosvenor-park-i-condos-rent",
-    "phone": null,
-    "photos": [
-      "https://d2sa73fkuaa019.cloudfront.net/listings/bright/804930562852/photo_1.jpg"
-    ],
-    "coords": [
-      39.0251172,
-      -77.1056854
-    ],
-    "scores": {
-      "walk": 36,
-      "transit": 58,
-      "bike": 62,
-      "wsLink": "https://www.walkscore.com/score/10201-Grosvenor-Place-North-Bethesda-MD-20852/lat=39.0251172/lng=-77.1056854/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 3,
-        "walk": null,
-        "station": "Grosvenor-Strathmore"
-      },
-      "synagogue": {
-        "drive": 17
-      },
-      "berman": {
-        "drive": 11
-      }
-    },
-    "building": {
-      "doorman": true,
-      "doormanStatus": "Confirmed 24h",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": false,
-      "packageRoom": null,
-      "unitClimate": null,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "grosvenor-park-i-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": null,
-        "squareFeet": 1100,
-        "balcony": true,
-        "inUnitLaundry": false,
-        "view": null,
-        "pricing": {
-          "baseRent": 1890,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": [
-      "16-story condominium tower built 1964; 398 units; individually owned units rented by owners (not centrally managed rental building). Part of the larger Grosvenor Park complex. Walking distance to Grosvenor-Strathmore Metro (Red Line). On-site Grosvenor Market grocery store.",
-      "Condo: units are individually owned and rented privately. No single leasing office; listings appear on Zillow, Apartments.com, and through individual agents. The Rockville Real Estate Exchange site aggregates available rentals.",
-      "Multiple sources confirm 24/7 staffed front desk plus overnight security patrols 8pm-4am. The Zumper listing and RRREX both cite '24/7 concierge.' C21 listing confirms '24/7 concierge, overnight security (10 p.m.-6 a.m.).'",
-      "Present in many units but not universal. Multiple active listings explicitly mention balconies (e.g., unit 1009 has 'large northwest-facing balcony with sweeping sunset views'; unit 711 listed with 'balcony with water and lush greenery views'). Not guaranteed for every unit; verify by floor plan.",
-      "No in-unit washers or dryers. Building has communal laundry facilities (electronic card payment). Confirmed by Rockville Real Estate Exchange.",
-      "Cats permitted (case-by-case basis; some listings add fees). Dogs not allowed. Cage pets permitted within reason. Confirmed by multiple sources.",
-      "HOA condo fees for owners explicitly cover air conditioning, electricity, heat, gas, water, and sewer. For renters, whether utilities are bundled into rent depends on the individual owner-landlord. Many rental listings advertise 'all utilities included.' Whether the building controls HVAC centrally or each unit has individual control is not documented in available sources.",
-      "4.1-star aggregate rating (Birdeye, 73 reviews; sourced mostly from Google). C21 listing and Howard Hanna descriptions present renovated units with updated kitchens and baths. One older negative Superpages review cited basement odors and noise from window AC units, but dated ~17 years ago. Insufficient recent independent resident feedback to confirm current condition confidently.",
-      "Not mentioned in any source reviewed. Building has front desk staffing 24/7, which may handle packages informally, but no dedicated package room is documented.",
-      "Outdoor pool, tennis courts, fitness center/exercise room, rooftop lounge (rentable), garden room with kitchen, bicycle storage, rooftop courtyard, small library, grilling area, additional storage units (rentable). Underground and surface parking available.",
-      "Because this is a condo building with individual landlords, rent and included utilities vary unit to unit. Listings from 2025-2026 range from ~$1,890 (2BR/2BA, utilities included) to ~$3,100. Many landlords include all utilities in rent because their HOA fees already cover them."
-    ]
-  },
-  {
-    "id": "kite-house-at-the-parks",
-    "name": "Kite House at The Parks",
-    "address": "7175 12th Street NW, Washington, DC 20012",
-    "neighborhood": "The Parks at Walter Reed, Northwest Washington, DC (Shepherd Park / Brightwood / Takoma triangle)",
-    "buildingType": "condo",
-    "leasingUrl": "https://kitehousedc.com/",
-    "phone": null,
-    "photos": [
-      "https://kitehousedc.com/wp-content/uploads/Kitehousedc-2025-3-scaled.webp"
-    ],
-    "coords": [
-      38.9768386,
-      -77.0276325
-    ],
-    "scores": {
-      "walk": 86,
-      "transit": 74,
-      "bike": 63,
-      "wsLink": "https://www.walkscore.com/score/7175-12th-Street-NW-Washington-DC-20012/lat=38.9768386/lng=-77.0276325/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 3,
-        "walk": null,
-        "station": "Takoma"
-      },
-      "synagogue": {
-        "drive": 13
-      },
-      "berman": {
-        "drive": 21
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": true,
-      "pool": false,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": null,
-      "unitClimate": null,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "kite-house-at-the-parks-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": null,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 59000,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
     "id": "lenox-park",
     "name": "Lenox Park",
     "address": "1400 East West Highway, Silver Spring, MD 20910",
@@ -1484,14 +838,15 @@
     "walkToMetroMin": 4,
     "distances": {
       "metro": {
+        "drive": 3,
         "walk": 4,
-        "drive": null
+        "station": "Silver Spring"
       },
       "synagogue": {
-        "drive": 17
+        "drive": 12
       },
       "berman": {
-        "drive": null
+        "drive": 18
       }
     },
     "building": {
@@ -1541,148 +896,6 @@
     ]
   },
   {
-    "id": "pallas-at-pike-and-rose",
-    "name": "Pallas at Pike & Rose",
-    "address": "11550 Old Georgetown Road, North Bethesda, MD 20852",
-    "neighborhood": "North Bethesda, MD (Pike & Rose district)",
-    "buildingType": "apartment",
-    "leasingUrl": "https://www.bellatthepike.com/",
-    "phone": null,
-    "photos": [
-      "https://www.bellatthepike.com/wp-content/uploads/sites/255/2026/03/BellatthePike_TuscanUnitVirtualStaging_Mar2026_HighRes-4.jpg"
-    ],
-    "coords": [
-      39.048624,
-      -77.118894
-    ],
-    "scores": {
-      "walk": 90,
-      "transit": 63,
-      "bike": 66,
-      "wsLink": "https://www.walkscore.com/score/11550-Old-Georgetown-Road-North-Bethesda-MD-20852/lat=39.048624/lng=-77.118894/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 1,
-        "walk": null,
-        "station": "North Bethesda"
-      },
-      "synagogue": {
-        "drive": 16
-      },
-      "berman": {
-        "drive": 6
-      }
-    },
-    "building": {
-      "doorman": false,
-      "doormanStatus": "Daytime only",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": true,
-      "wellMaintained": true,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "pallas-at-pike-and-rose-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": null,
-        "squareFeet": 1596,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 3186,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
-    "id": "persei-at-pike-and-rose",
-    "name": "PerSei at Pike & Rose",
-    "address": "900 PerSei Place, North Bethesda, MD 20852",
-    "neighborhood": "North Bethesda, MD (Pike & Rose)",
-    "buildingType": "apartment",
-    "leasingUrl": "https://perseiapts.com/floorplans/",
-    "phone": null,
-    "photos": [
-      "https://perseiapts.com/assets/images/cache/Persei-JonahImages-header-kitchen1-10906d12709f59f388cc3c1eedbcd8e9.jpg"
-    ],
-    "coords": [
-      39.049925,
-      -77.11707
-    ],
-    "scores": {
-      "walk": 87,
-      "transit": 66,
-      "bike": 77,
-      "wsLink": "https://www.walkscore.com/score/900-PerSei-Place-North-Bethesda-MD-20852/lat=39.049925/lng=-77.11707/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 2,
-        "walk": null,
-        "station": "North Bethesda"
-      },
-      "synagogue": {
-        "drive": 16
-      },
-      "berman": {
-        "drive": 6
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": null,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "persei-at-pike-and-rose-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": 1177,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2983,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
     "id": "silver-spring-towers",
     "name": "Silver Spring Towers",
     "address": "816 Easley St, Silver Spring, MD 20910",
@@ -1708,7 +921,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 9,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -1795,7 +1008,7 @@
     "distances": {
       "metro": {
         "drive": 2,
-        "walk": null,
+        "walk": 3,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -1877,7 +1090,7 @@
     "distances": {
       "metro": {
         "drive": 2,
-        "walk": null,
+        "walk": 4,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -1955,7 +1168,7 @@
     "distances": {
       "metro": {
         "drive": 2,
-        "walk": null,
+        "walk": 5,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -2038,14 +1251,15 @@
     "walkToMetroMin": 6,
     "distances": {
       "metro": {
+        "drive": 3,
         "walk": 6,
-        "drive": null
+        "station": "Silver Spring"
       },
       "synagogue": {
-        "drive": 19
+        "drive": 11
       },
       "berman": {
-        "drive": null
+        "drive": 19
       }
     },
     "building": {
@@ -2100,89 +1314,6 @@
     ]
   },
   {
-    "id": "the-alaire-at-twinbrook-station",
-    "name": "The Alaire at Twinbrook Station",
-    "address": "1101 Higgins Pl, Rockville, MD 20852",
-    "neighborhood": "Twinbrook, Rockville",
-    "buildingType": "apartment",
-    "leasingUrl": "https://www.thealaire.com/",
-    "phone": null,
-    "photos": [
-      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/50fe2627951eefe8b79d8b467978afe9.jpg"
-    ],
-    "coords": [
-      39.064081,
-      -77.117481
-    ],
-    "scores": {
-      "walk": 78,
-      "transit": 66,
-      "bike": 52,
-      "wsLink": "https://www.walkscore.com/score/1101-Higgins-Pl-Rockville-MD-20852/lat=39.064081/lng=-77.117481/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 2,
-        "walk": null,
-        "station": "Twinbrook"
-      },
-      "synagogue": {
-        "drive": 16
-      },
-      "berman": {
-        "drive": 2
-      }
-    },
-    "building": {
-      "doorman": false,
-      "doormanStatus": "Daytime only",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": true,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "the-alaire-at-twinbrook-station-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": 1022,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 1968,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": [
-      "279-unit mid-rise built 2010; 5 stories; green-certified building",
-      "Concierge listed as amenity; confirmed office/concierge hours Mon-Fri 9am-6pm, Sat 10am-5pm. No source confirms 24-hour lobby staffing. Building has controlled-access entry. 24-hour emergency maintenance is separate from front-desk staffing.",
-      "Package receiving confirmed as listed amenity",
-      "Central air conditioning listed as a unit feature; described as in-unit climate control. No indication of building-controlled HVAC or shared systems.",
-      "Cats and dogs welcome, up to 2 pets each. Breed restrictions apply for dogs.",
-      "Full-sized patios and Juliet balconies both available depending on unit and floor.",
-      "Mixed resident feedback. Some long-term residents (10+ years) praise clean amenities and responsive staff. Others cite maintenance request delays, management responsiveness issues, and safety concerns in common areas. Green-certified building with modern construction. 'Unclear' is the honest read.",
-      "1BR, 1BR+den, 2BR, and two-story loft configurations available. 2BR units range 1,022-1,175 sq ft.",
-      "Steps from Twinbrook Metro Station (Red Line)",
-      "K!CK fitness center with cardio theater, treadmills, eSpinner, Nautilus, Smith machine, free weights",
-      "Eco-friendly saline swimming pool with water feature"
-    ]
-  },
-  {
     "id": "the-crescent",
     "name": "The Crescent",
     "address": "930 Wayne Ave, Silver Spring, MD 20910",
@@ -2208,7 +1339,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 6,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -2270,237 +1401,6 @@
     ]
   },
   {
-    "id": "the-hartley",
-    "name": "The Hartley",
-    "address": "7150 12th St NW, Washington, DC 20012",
-    "neighborhood": "Shepherd Park / Takoma, Washington DC (Parks at Walter Reed development)",
-    "buildingType": "apartment",
-    "leasingUrl": "https://thehartley.com/",
-    "phone": null,
-    "photos": [
-      "https://thehartley.com/assets/images/cache/TheHartley_Townhomes_a_10-7b6ee917b155c2ff06bad6ce6b0a8998.jpg"
-    ],
-    "coords": [
-      38.9765654,
-      -77.0283453
-    ],
-    "scores": {
-      "walk": 68,
-      "transit": 74,
-      "bike": 61,
-      "wsLink": "https://www.walkscore.com/score/7150-12th-St-NW-Washington-DC-20012/lat=38.9765654/lng=-77.0283453/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 4,
-        "walk": null,
-        "station": "Takoma"
-      },
-      "synagogue": {
-        "drive": 14
-      },
-      "berman": {
-        "drive": 21
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": null,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": true,
-      "wellMaintained": true,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "the-hartley-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": null,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2782,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
-  },
-  {
-    "id": "the-henri-at-pike-and-rose",
-    "name": "The Henri at Pike & Rose",
-    "address": "11870 Grand Park Avenue, North Bethesda, MD 20852",
-    "neighborhood": "North Bethesda, MD",
-    "buildingType": "apartment",
-    "leasingUrl": "https://livethehenri.com/",
-    "phone": null,
-    "photos": [
-      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/9a0b602aee09bc8f52a1bf34b09e0fdb.jpg"
-    ],
-    "coords": [
-      39.0502741,
-      -77.1174167
-    ],
-    "scores": {
-      "walk": 88,
-      "transit": 65,
-      "bike": 81,
-      "wsLink": "https://www.walkscore.com/score/11870-Grand-Park-Avenue-North-Bethesda-MD-20852/lat=39.0502741/lng=-77.1174167/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 2,
-        "walk": null,
-        "station": "North Bethesda"
-      },
-      "synagogue": {
-        "drive": 15
-      },
-      "berman": {
-        "drive": 6
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": true,
-      "wellMaintained": false,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "the-henri-at-pike-and-rose-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": 1661,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2723,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": [
-      "Managed by Greystar. Leasing office is frequently understaffed per reviews; residents report difficulty reaching management and slow maintenance response requiring multiple follow-up calls.",
-      "Multiple 2024-2025 reviews flag dirty hallway carpets consistently stained, urine in elevators, and reports that cleaning crews stopped vacuuming common areas regularly, leading to insect complaints.",
-      "Uses Variable Refrigerant Flow (VRF) system billed as a usage-based utility; at least one resident reported inability to get unit below 70 degrees and management blocking an HVAC inspection. In-unit thermostat control is standard but VRF issues have been reported.",
-      "A concierge/front desk exists and receives positive mentions in reviews (staff by name); one third-party listing (VeryApt) lists '24-Hour Front Desk' as an amenity, but no official source confirms 24-hour hours. Classified as Likely staffed.",
-      "Up to 2 pets per unit, cats and dogs, 70 lb limit each, $50/mo pet rent per pet; breed restrictions apply (pit bulls, rottweilers, dobermans, chows, presa canarios, akitas, malamutes, wolf-hybrids).",
-      "12th-floor rooftop pool deck.",
-      "Studios, Jr. 1BR, 1BR, 1BR+den, 2BR (some with dens). 2BR sizes range 1,091-1,661 sq ft."
-    ]
-  },
-  {
-    "id": "the-met-rockville",
-    "name": "The Met Rockville",
-    "address": "255 N Washington St, Rockville, MD 20850",
-    "neighborhood": "Rockville Town Center",
-    "buildingType": "apartment",
-    "leasingUrl": "https://www.themetrockville.com/",
-    "phone": null,
-    "photos": [
-      "https://res.cloudinary.com/g5-assets-cld/image/upload/x_393,y_0,h_1333,w_1000,c_crop/q_auto,f_auto,fl_lossy,g_center,h_800,w_600/g5/g5-c-5cjpuxdo1-hercules-real-estate-services-multi/g5-cl-1mzxwcr4iu-hercules-real-estate-services-multi-rockville-md/uploads/041_255_NORTH_WASHINGTON_STREET__216612_300575_gb41fb.jpg"
-    ],
-    "coords": [
-      39.0874838,
-      -77.1529404
-    ],
-    "scores": {
-      "walk": 94,
-      "transit": 70,
-      "bike": 65,
-      "wsLink": "https://www.walkscore.com/score/255-N-Washington-St-Rockville-MD-20850/lat=39.0874838/lng=-77.1529404/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 2,
-        "walk": null,
-        "station": "Rockville"
-      },
-      "synagogue": {
-        "drive": 21
-      },
-      "berman": {
-        "drive": 6
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": true,
-      "pool": true,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": true,
-      "unitClimate": true,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "the-met-rockville-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": 925,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 2405,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": [
-      "Jefferson Apartment Group; 275-unit mid-rise built approximately 2018; 6 stories",
-      "Concierge confirmed as an amenity; leasing office hours Mon-Fri 10am-6pm, Sat 10am-5pm, Sun 12pm-5pm; no source confirms 24-hour staffing",
-      "Package receiving confirmed as listed amenity",
-      "Air conditioning listed as in-unit feature; no indication of building-controlled HVAC",
-      "Dogs and cats welcome; max 2 pets; $250 refundable deposit per pet; $50/mo pet rent per pet; on-site pet salon",
-      "Mixed signals: newer building with premium-finish marketing, but reviewer complaints about cheap laminate flooring with bubbling gaps, roach and mouse sightings, and inadequate hot water. Pest control reportedly comes only once weekly. Positive reviews cite responsive maintenance staff and clean common areas. 'Unclear' is the honest read.",
-      "Walking distance to Rockville Metro Station (Red Line)",
-      "4 months free parking if move-in by 6/30/26 (as of June 2026)",
-      "1BR and 2BR two-story loft configurations available in addition to standard flats"
-    ]
-  },
-  {
     "id": "the-pearl",
     "name": "The Pearl",
     "address": "180 High Park Lane, Silver Spring, MD 20910",
@@ -2525,14 +1425,15 @@
     "walkToMetroMin": 7,
     "distances": {
       "metro": {
+        "drive": 3,
         "walk": 7,
-        "drive": null
+        "station": "Silver Spring"
       },
       "synagogue": {
-        "drive": 21
+        "drive": 12
       },
       "berman": {
-        "drive": null
+        "drive": 18
       }
     },
     "building": {
@@ -2618,14 +1519,15 @@
     "walkToMetroMin": 5,
     "distances": {
       "metro": {
+        "drive": 3,
         "walk": 5,
-        "drive": null
+        "station": "Silver Spring"
       },
       "synagogue": {
-        "drive": 18
+        "drive": 12
       },
       "berman": {
-        "drive": null
+        "drive": 19
       }
     },
     "building": {
@@ -2705,7 +1607,7 @@
     "distances": {
       "metro": {
         "drive": 3,
-        "walk": null,
+        "walk": 4,
         "station": "Silver Spring"
       },
       "synagogue": {
@@ -2759,76 +1661,5 @@
       "Adjacent to Silver Spring Metro (Red Line); Walk Score 99",
       "Studio ~450 sqft, 1BR ~550 sqft, 2BR ~1,250 sqft"
     ]
-  },
-  {
-    "id": "victory-tower",
-    "name": "Victory Tower",
-    "address": "7051 Carroll Avenue, Takoma Park, MD 20912",
-    "neighborhood": "Takoma Park, MD (NOT Rockville)",
-    "buildingType": "apartment",
-    "leasingUrl": "https://www.qpmgmt.com/properties/victory-tower/",
-    "phone": null,
-    "photos": [
-      "unclear"
-    ],
-    "coords": [
-      38.9746803,
-      -77.0102089
-    ],
-    "scores": {
-      "walk": 89,
-      "transit": 71,
-      "bike": 73,
-      "wsLink": "https://www.walkscore.com/score/7051-Carroll-Avenue-Takoma-Park-MD-20912/lat=38.9746803/lng=-77.0102089/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "drive": 3,
-        "walk": null,
-        "station": "Takoma"
-      },
-      "synagogue": {
-        "drive": 15
-      },
-      "berman": {
-        "drive": 23
-      }
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": null,
-      "pool": false,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": null,
-      "unitClimate": true,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "victory-tower-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": null,
-        "squareFeet": null,
-        "balcony": null,
-        "inUnitLaundry": false,
-        "view": null,
-        "pricing": {
-          "baseRent": 0,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
   }
 ]
