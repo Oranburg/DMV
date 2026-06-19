@@ -1,0 +1,41 @@
+{
+  "_voiceCheck": "skip",
+  "name": "Atwell on Spring",
+  "address": "1260 Spring St (8787 Georgia Ave), Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.atwellonspring.com/",
+  "phone": "(240) 410-1808",
+  "photoUrl": "https://www.bozzuto.com/apartments-for-rent/md/silver-spring/atwell-on-spring/gallery/",
+  "approxRentRange": "$2,780-$4,296/mo (2BR); 1BR+den from ~$2,838/mo",
+  "doormanStatus": "Confirmed 24h",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Yes",
+  "bathroomsNote": "Unit count and bathroom configurations not confirmed from available sources; building has 375 units ranging from studios to 3BR plus townhouses.",
+  "notes": {
+    "doorman": "Multiple sources including ApartmentList and search results describe '24-hour concierge.' Bozzuto marketing materials and resident reviews reference around-the-clock concierge services. One reviewer named a concierge staff member by name and praised the team.",
+    "address": "The project is commonly described as '8787 Georgia Ave' (the block address) but the street address listed on leasing platforms is 1260 Spring St, Silver Spring, MD 20910.",
+    "packageRoom": "Package room exists with concierge accepting deliveries; at least one reviewer noted difficulty with the double-entrance/package room setup, so the feature exists but has had reported friction.",
+    "petFriendly": "ApartmentList explicitly lists dogs and cats as permitted. ApartmentSearch showed 'not allowed' but that site flagged the property as 'not in our system', so ApartmentList is the more reliable source.",
+    "unitClimate": "ApartmentList lists 'air conditioning' as an in-unit feature; Bozzuto positions units as full luxury with modern appliances. HVAC control per-unit (not building-controlled) is consistent with the luxury positioning and 2024 construction vintage but not explicitly confirmed from a lease document or resident statement.",
+    "wellMaintained": "ApartmentRatings.com summarized reviewer characterization as 'well-maintained, peaceful community with excellent management' with responsive maintenance staff. Building opened 2023-2024.",
+    "rent": "2BR range $2,780-$4,296/mo per ApartmentList (current as of search date June 2026). 1BR+den ~$2,838/mo. Studios from ~$1,752/mo.",
+    "photo": "Official gallery is at atwellonspring.com/gallery and bozzuto.com gallery page; og:image could not be retrieved due to 403 blocks on both domains."
+  },
+  "sources": [
+    "https://www.apartmentlist.com/md/silver-spring/atwell-on-spring",
+    "https://www.apartments.com/atwell-on-spring-silver-spring-md/yn6b8gr/",
+    "https://www.bozzuto.com/apartments-for-rent/md/silver-spring/atwell-on-spring",
+    "https://www.apartmentratings.com/md/silver-spring/atwell-on-spring_9199332346275211683/",
+    "https://www.sourceofthespring.com/silver-spring-news/2806874/downtown-apartment-complex-changes-name-to-atwell-on-spring/"
+  ],
+  "researchDate": "2026-06-19"
+}

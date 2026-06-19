@@ -1,0 +1,40 @@
+{
+  "name": "Thayer and Spring",
+  "address": "915 Silver Spring Ave, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "doormanStatus": "Likely staffed",
+  "elevator": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "petFriendly": "Yes",
+  "inUnitLaundry": "Yes",
+  "balcony": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Unclear",
+  "has2BRor1BRDen": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "2BR units have 2 baths; some units feature garden tubs or separate glass-wall showers; select units have twin-basin vanities",
+  "approxRentRange": "$2,510 to $3,516/month (2BR market rate; current promotion up to one month free on 12-month lease signed by 7/15/26)",
+  "leasingUrl": "https://rent.brookfieldproperties.com/property/thayer-and-spring/",
+  "phone": "(301) 895-9422",
+  "photoUrl": "https://rent.brookfieldproperties.com/wp-content/uploads/2024/06/Kitchen-3-scaled.jpg",
+  "notes": {
+    "doorman": "Brookfield's official listing calls it '24/7 Concierge' and resident reviews call staff professional; however multiple reviews note high concierge turnover and occasional unstaffed desk. Elevated to 'Likely staffed' rather than 'Confirmed 24h' because staffing gaps are documented.",
+    "elevator": "Building is 11 stories; elevators confirmed present but multiple reviews cite frequent breakdowns.",
+    "balcony": "Select units only. Floor plan names include '2E w/ Balcony,' '2F w/ Balcony,' '2M w/ Balcony'; also 'private patios or entrances' in some ground-level units. Not standard across all apartments.",
+    "inUnitLaundry": "In-home washer/dryer listed as a unit feature; RentCafe notes 'select apartments' for premium laundry configurations, but washer/dryer appears broadly standard.",
+    "petFriendly": "Cats and dogs welcome; on-site pet spa; breed restrictions apply per typical Brookfield policy.",
+    "packageRoom": "Secured package lockers plus concierge package acceptance.",
+    "unitClimate": "Air conditioning listed as a unit feature across multiple listing aggregators, but no source specifies whether thermostats are resident-controlled or building-controlled. Marked Unclear.",
+    "has2BRor1BRDen": "2BR floor plans confirmed. No 1BR+den floor plan found in any source.",
+    "wellMaintained": "Common areas described as clean; Brookfield is a large institutional operator (built 2019, 399 units). RentCafe aggregate rating 3.5/5 across 277 reviews. Recurring elevator reliability complaints pull against a 'Yes' rating.",
+    "buildingDetails": "Built 2019; 11 stories; 399 units; studios, 1BR, 2BR, and townhomes; managed by Brookfield Properties. MPDU and workforce housing units available alongside market-rate units.",
+    "sources": [
+      "https://rent.brookfieldproperties.com/property/thayer-and-spring/",
+      "https://www.rentcafe.com/apartments/md/silver-spring/thayer-and-spring/default.aspx",
+      "https://www.apartmentlist.com/md/silver-spring/thayer-spring",
+      "https://www.veryapt.com/ApartmentReview-a26015-thayer-spring-silver-spring"
+    ]
+  }
+}

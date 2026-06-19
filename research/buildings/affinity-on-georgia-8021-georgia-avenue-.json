@@ -1,0 +1,39 @@
+{
+  "name": "Affinity on Georgia",
+  "address": "8021 Georgia Avenue, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.affinityongeorgia.com/",
+  "phone": "(833) 941-0974",
+  "photoUrl": "https://www.affinityongeorgia.com/photogallery",
+  "doormanStatus": "Daytime only",
+  "elevator": "Yes",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "1BR units have 1 bath; 2BR units have 2 baths",
+  "approxRentRange": "$2,382-$2,757/mo (2BR, as of June 2026)",
+  "notes": {
+    "building": "9-story, 210-unit apartment community managed by Bozzuto. Built on the former National Institute of Dry Cleaning site; integrates renovation of two existing 1920s buildings. Developer: Foulger-Pratt; architect: The Preston Partnership. Delivered June 2024.",
+    "doorman": "Concierge service is listed as an amenity, but resident reviews specifically note the concierge 'is not staffed all night.' Leasing office hours are weekday daytime only. Classified as Daytime only pending direct confirmation.",
+    "gym": "Fitness center with golf simulator and massage area per UrbanTurf. Resident reviews note broken and missing equipment; condition described as inadequate by some reviewers.",
+    "maintenance": "Mixed reviews: some residents praise staff responsiveness; others report filthy hallways and unresponsive management. Not enough consensus to confirm well-maintained.",
+    "balcony": "ApartmentList lists patio/balcony as a standard unit amenity.",
+    "unitClimate": "Air conditioning listed as an in-unit feature, consistent with individual unit climate control.",
+    "floorPlans": "Studios (~640 sq ft), 1BR (708-836 sq ft), 1BR+Den (~860 sq ft), 2BR (1,029-1,228 sq ft), 2BR townhomes (1,179-1,228 sq ft).",
+    "rentRange": "Overall range $1,732-$3,151/mo per UrbanTurf; 2BR units $2,382-$2,757/mo per ApartmentList (June 2026).",
+    "sources": [
+      "https://www.apartmentlist.com/md/silver-spring/affinity-on-georgia",
+      "https://dc.urbanturf.com/pipeline/100/Affinity_on_Georgia",
+      "https://www.bozzuto.com/apartments-for-rent/md/silver-spring/affinity-on-georgia",
+      "https://www.apartmentratings.com/md/silver-spring/affinity-on-georgia_9199332346275146310/",
+      "https://silverspringdowntown.com/go/affinity-on-georgia"
+    ]
+  }
+}

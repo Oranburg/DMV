@@ -1,0 +1,39 @@
+{
+  "name": "Silver Spring Towers",
+  "address": "816 Easley St, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.southernmanagement.com/communities/silver-spring-towers/",
+  "phone": "(240) 681-2677",
+  "photoUrl": "https://www.southernmanagement.com/wp-content/uploads/2017/08/Silver-Spring-Towers_Living-Room_1.jpg",
+  "doormanStatus": "Confirmed 24h",
+  "elevator": "Yes",
+  "gym": "Yes",
+  "pool": "Yes",
+  "inUnitLaundry": "No",
+  "balcony": "Unclear",
+  "petFriendly": "Yes",
+  "packageRoom": "Unclear",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "has2BRor1BRDen": "Yes",
+  "approxRentRange": "$2,453 to $2,464/mo (2BR/1BA)",
+  "bathroomsNote": "All unit types (studio, 1BR, 2BR) have 1 bathroom only",
+  "notes": {
+    "petDetail": "Cats only per Southern Management official features page; $25/mo cat rent. Third-party listings conflict but operator site controls.",
+    "laundryDetail": "24-hour laundry rooms on each floor (shared); no in-unit washer/dryer. Residents pay per use.",
+    "balconyDetail": "One aggregator (ApartmentList) lists patio/balcony; official site and RentCafe are silent. Marked Unclear.",
+    "packageDetail": "No dedicated package room listed. 24-hour concierge handles package receipt per resident review. Marked Unclear for a dedicated room.",
+    "wellMaintainedDetail": "Management praised as responsive (VeryApt 8.2/10 overall). At least one reviewer called the building 'dated' (built 1966) and noted occasional false fire alarms from gas heating.",
+    "doormanDetail": "'24-Hour Concierge Service' stated on Southern Management and RentCafe. Search result quotes: 'each of the two buildings has 24 hour door staff' and 'concierge 24h picking up packages.'",
+    "elevatorDetail": "Confirmed: 15-story tower; elevator listed in VeryApt amenities.",
+    "climateDetail": "Central A/C listed as in-unit apartment feature on RentCafe. Unit thermostat control not explicitly confirmed.",
+    "sources": [
+      "https://www.southernmanagement.com/communities/silver-spring-towers/",
+      "https://www.southernmanagement.com/communities/silver-spring-towers/features/",
+      "https://www.rentcafe.com/apartments/md/silver-spring/silver-spring-towers/default.aspx",
+      "https://www.apartmentlist.com/md/silver-spring/silver-spring-towers",
+      "https://www.veryapt.com/ApartmentReview-a7182-silver-spring-towers-silver-spring"
+    ]
+  }
+}

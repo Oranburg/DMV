@@ -1,0 +1,39 @@
+{
+  "name": "Silver Spring Towers",
+  "address": "816 Easley Street, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.southernmanagement.com/communities/silver-spring-towers/",
+  "phone": "(240) 681-2677",
+  "photoUrl": "https://www.southernmanagement.com/wp-content/uploads/2017/08/Silver-Spring-Towers_Living-Room_1.jpg",
+  "doormanStatus": "Confirmed 24h",
+  "elevator": "Yes",
+  "gym": "Yes",
+  "pool": "Yes",
+  "inUnitLaundry": "No",
+  "balcony": "Unclear",
+  "petFriendly": "Yes",
+  "packageRoom": "Unclear",
+  "unitClimate": "Unclear",
+  "wellMaintained": "Unclear",
+  "has2BRor1BRDen": "Yes",
+  "approxRentRange": "$2,453 to $2,464/mo (2BR/1BA, 1,085 sq ft)",
+  "bathroomsNote": "All unit types (studio, 1BR, 2BR) share the same 1-bathroom configuration",
+  "notes": {
+    "petDetail": "Cats only per Southern Management's official features page; $25/mo cat rent. Some third-party listings indicate dogs allowed, but the operator site and RentCafe both say cats only.",
+    "laundryDetail": "24-hour shared laundry rooms on each floor; no in-unit washer/dryer. Residents pay per use.",
+    "balconyDetail": "Not mentioned on Southern Management features page or RentCafe. No resident reviews confirm balconies. Marked Unclear.",
+    "packageDetail": "No dedicated package room listed. 24-hour concierge handles package receipt per resident reviews on VeryApt. Marked Unclear for a dedicated room.",
+    "wellMaintainedDetail": "Management praised as responsive (VeryApt 8.2/10 management score). Some reviewers call the building dated (built 1966) and note occasional false fire alarms from gas heating systems. Mixed but leaning adequate.",
+    "doormanDetail": "'24-Hour Concierge Service' stated on Southern Management features page and RentCafe. VeryApt residents reference '24h front door people' and concierge package pickup. Confirmed 24h.",
+    "elevatorDetail": "15-story tower. Elevator confirmed via VeryApt amenity listing and standard high-rise expectation.",
+    "climateDetail": "Central A/C listed as an in-unit feature on RentCafe and the Southern Management features page. Whether the thermostat is individually controlled or building-controlled is not stated. Marked Unclear.",
+    "sources": [
+      "https://www.southernmanagement.com/communities/silver-spring-towers/",
+      "https://www.southernmanagement.com/communities/silver-spring-towers/features/",
+      "https://www.rentcafe.com/apartments/md/silver-spring/silver-spring-towers/default.aspx",
+      "https://www.veryapt.com/ApartmentReview-a7182-silver-spring-towers-silver-spring",
+      "https://www.padmapper.com/buildings/p13682/silver-spring-towers-apartments-at-816-easley-st-silver-spring-md-20910"
+    ]
+  }
+}

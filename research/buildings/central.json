@@ -1,0 +1,32 @@
+{
+  "name": "Central",
+  "address": "8455 Fenton St, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.centralsilverspring.com/",
+  "phone": "(301) 960-5426",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/77d73481b44b9cfc5e9272a9eaa2f074.jpg",
+  "approxRentRange": "$2,300-$3,100/mo (2BR/2BA; one live unit listed at $3,027; aggregators cite range up to ~$2,359 but that appears to reflect older or promotional pricing; contact property for current availability)",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "doormanStatus": "Confirmed 24h",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "Studios and 1BR units have 1 bath; 2BR units have 2 baths",
+  "notes": [
+    "243-unit mixed-use apartment building; 21,500 sq ft ground-floor retail",
+    "24-hour concierge confirmed across multiple listing sources",
+    "Dogs and cats allowed; dog grooming area and pet spa on site; cat deposit $300 + $30/mo",
+    "24-hour gym; outdoor pool; rooftop lounge",
+    "Package receiving confirmed",
+    "In-unit A/C listed as unit amenity, implying resident-controlled climate",
+    "Building opened as new construction (no substantial maintenance review data found)",
+    "Sources: apartmentlist.com, apartmentadvisor.com, apartmentfinder.com, web search aggregates June 2026"
+  ]
+}

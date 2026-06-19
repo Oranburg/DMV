@@ -1,0 +1,33 @@
+{
+  "name": "Atwell on Spring",
+  "address": "1260 Spring St, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.atwellonspring.com/",
+  "phone": "(240) 410-1808",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/aefce53a9dcfe548eebf21dd22e02928.jpg",
+  "doormanStatus": "Confirmed 24h",
+  "elevator": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "petFriendly": "Yes",
+  "inUnitLaundry": "Yes",
+  "balcony": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "has2BRor1BRDen": "Yes",
+  "bathroomsNote": "1-2 bathrooms depending on unit; 2BR units include 2-bath configurations",
+  "approxRentRange": "$2,780-$4,296/mo for 2BR (as of June 2026)",
+  "notes": {
+    "concierge": "Multiple independent listing sources (apartmentlist.com, search summaries) explicitly state 24/7 concierge; official atwellonspring.com/services page was inaccessible. Leasing office hours are weekday/weekend daytime only, but concierge staffing appears separate and 24-hour per resident-facing descriptions.",
+    "petPolicy": "Dogs and cats welcome; max 2 per unit; $300 deposit; $50/month fee for cats; dogs subject to breed restrictions and must provide vaccination records",
+    "climate": "Air conditioning listed as a unit feature across multiple sources; treated as in-unit controlled",
+    "wellMaintained": "Building is new (opened 2024) and generally described as well-maintained physically; concierge praised in early reviews. One resident reported a rodent issue in late summer 2025. Insufficient review volume to call definitively.",
+    "unitCount": "375 units, 6 stories",
+    "management": "Bozzuto",
+    "built": "2024",
+    "transit": "Downtown Silver Spring; walkable to Silver Spring Metro (Red Line)",
+    "den": "1BR+Den floor plan confirmed (B1.1 Den, 866 sq ft, from ~$2,838/mo)"
+  }
+}

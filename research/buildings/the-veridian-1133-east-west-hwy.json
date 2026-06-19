@@ -1,0 +1,39 @@
+{
+  "name": "The Veridian",
+  "address": "1133 East-West Highway, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.equityapartments.com/maryland/silver-spring/the-veridian-apartments",
+  "phone": "(240) 641-0650",
+  "photoUrl": "https://static.apartmentadvisor.com/i/2ed5dfb21e776112504c80489475c831_652_416.jpeg",
+  "approxRentRange": "$2,475-$3,424/month (2BR; 1,086-1,227 sq ft)",
+  "has2BRor1BRDen": "Yes",
+  "doormanStatus": "Likely staffed",
+  "elevator": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "Studios and 1BR units: 1 bath. 2BR units: 2 baths. 1BR+den floor plans (910-949 sq ft) carry 1 bath.",
+  "notes": {
+    "doormanDetail": "Marketed by Equity Residential as '24-hour concierge.' Multiple listing sources and resident summaries confirm 24-hour concierge language. However, at least one older resident review reported that the East-side front desk concierge position was reduced or eliminated while the 24h marketing language continued. Current search results cite named concierge staff and positive service reviews, consistent with staffed front desk. Rated 'Likely staffed' rather than 'Confirmed 24h' because no independently verified post-2024 account confirms overnight staffing on both sides.",
+    "has2BRor1BRDen": "2BR/2BA floor plans confirmed at 1,086-1,227 sq ft. 1BR+den floor plans confirmed at 910-949 sq ft with 1 bath.",
+    "building": "457-unit rental apartment building built 2009, managed by Equity Residential. Art Deco architecture, eco-friendly green roof, two towers soaring 15 stories, steps from Silver Spring Metro (Red Line) and MARC.",
+    "amenities": "Rooftop pool and sundeck, two fitness centers with cardio theater and free weights, resident pub, conference and dining rooms, private study room, e-lounge, guest suite, on-site convenience store, controlled-access entry, covered garage parking.",
+    "pets": "Dogs and cats permitted. Up to 3 of each. Monthly pet rent: $65/dog, $50/cat. One-time deposit: $300/pet. Restricted breeds policy applies.",
+    "maintenanceNote": "Building described as 'beautiful' and well-maintained in most reviews. Gym equipment flagged as worn in at least one review (broken machinery, tears in wall/rug). Maintenance response times mixed; some residents report slow follow-up without communication. Rated 'Unclear' pending more recent consistent data.",
+    "noiseNote": "Units near WMATA/CSX tracks experience train noise; residents report adapting. Interior building described as 'pretty quiet' with 'decently thick' walls.",
+    "sources": [
+      "https://www.equityapartments.com/maryland/silver-spring/the-veridian-apartments",
+      "https://www.zumper.com/apartment-buildings/p12798/the-veridian-silver-spring-md",
+      "https://www.apartmentadvisor.com/details/1133-east-west-hwy-silver-spring-md-20910",
+      "https://www.veryapt.com/ApartmentReview-a1766-the-veridian-silver-spring",
+      "https://silverspringdowntown.com/go/veridian-apartments",
+      "https://www.apartmentlist.com/md/silver-spring/the-veridian"
+    ]
+  }
+}

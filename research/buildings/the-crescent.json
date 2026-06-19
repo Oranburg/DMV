@@ -1,0 +1,39 @@
+{
+  "name": "The Crescent",
+  "address": "930 Wayne Ave, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "condo",
+  "leasingUrl": "http://www.crescentcondo.com",
+  "phone": "(301) 608-8030",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/f96a44ec1bcd446f5db8027a35eb17bb.jpg",
+  "approxRentRange": "$2,190-$2,400/month (2BR/2BA, ~963 sq ft; individual units rented by owners vary)",
+  "has2BRor1BRDen": "Yes",
+  "doormanStatus": "Likely staffed",
+  "elevator": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "pool": "No",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "1BR units: 1 bath (~800-805 sq ft). 2BR units: 2 baths (~963 sq ft). No 1BR+den floor plan confirmed.",
+  "notes": {
+    "doormanDetail": "Multiple sources confirm concierge service 7 days/week. No source specifies 24-hour staffing hours, so rated 'Likely staffed' rather than 'Confirmed 24h.'",
+    "buildingDetail": "14-story condominium building completed 2006/occupancy March 2007, with 143 units in Downtown Silver Spring (Fenton Village). Units are individually owned and some are rented out, so lease terms and finishes vary by owner.",
+    "amenities": "Fitness center, billiard room, resident lounge, shared patio/courtyard with outdoor seating and grilling station, game room, conference/meeting room, bike storage, assigned underground garage parking. No pool.",
+    "wellMaintained": "One Yelp review from a former long-term resident cited safety concerns, cockroaches, a 15-day gas outage, and water damage. No corroborating reviews found to confirm or contradict. Building last updated on Yelp April 2026.",
+    "pets": "Pet-friendly; specific breed/weight restrictions not confirmed in reviewed sources.",
+    "climate": "Air conditioning and heat confirmed; at least one source notes heat included in rent/HOA. Individual unit control implied by standard condo arrangement.",
+    "rentNote": "Building is condominiums; rental units are owner-listed individually. VeryApt shows 1BR from $1,780 and 2BR from $2,190; Compass and ApartmentList show 2BR at $2,400/month. Prices reflect individual owner decisions and vary.",
+    "sources": [
+      "https://www.veryapt.com/ApartmentReview-a17958-the-crescent-silver-spring",
+      "https://www.compass.com/building/the-crescent-condo-silver-spring-md/817327378493146461/",
+      "https://www.apartmentlist.com/md/silver-spring/930-wayne-ave--1",
+      "https://silverspringdowntown.com/go/the-crescent",
+      "https://www.yelp.com/biz/crescent-condominium-silver-spring",
+      "https://www.apartments.com/the-crescent-silver-spring-md/pm3b4ft/"
+    ]
+  }
+}

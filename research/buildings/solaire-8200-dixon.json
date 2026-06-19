@@ -1,0 +1,30 @@
+{
+  "name": "Solaire 8200 Dixon",
+  "address": "8200 Dixon Ave, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.solaire8200.com/floor-plans",
+  "phone": "(240) 558-0082",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/1a2150deca99d278fd8e8f1143b6630a.jpg",
+  "doormanStatus": "Likely staffed",
+  "elevator": "Yes",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "1-2 baths depending on unit; specific bath count per floor plan not confirmed from public sources",
+  "approxRentRange": "$2,840 to $4,311/month for 2BR (1,090-1,247 sq ft); per ApartmentList and Rentable, June 2026",
+  "notes": {
+    "doorman": "Multiple listing sources (Trulia, ApartmentList search snippet) cite a doorman and concierge with 24-hour concierge and package service; however, the building's own amenities page lists only 'Concierge Package Room & Lockers' without staffing hours. One review noted concierge staff quality has declined. Classified as 'Likely staffed' rather than 'Confirmed 24h' because the official site does not state 24-hour staffing explicitly.",
+    "building": "27-story, 403-unit high-rise opened November 2022; described as Silver Spring's tallest building at time of opening.",
+    "petPolicy": "Dogs and cats allowed; restricted breeds include pit bulls, rottweilers, and German Shepherds; $250 pet fee plus $50/month pet rent per Rentable.",
+    "wellMaintained": "4.1 stars from 52 Yelp reviews as of June 2026; reviews note visually appealing modern finishes but some mention declining concierge quality; no major maintenance complaints surfaced but sample is small.",
+    "unitClimate": "Air conditioning listed as a unit amenity across multiple listing platforms; thermostat/HVAC type (central vs. in-unit mini-split) not confirmed from public sources, but air conditioning is in-unit rather than building-controlled based on listing language.",
+    "1BRDen": "No 1BR+den floor plan found on ApartmentList or Rentable listings; only studio, 1BR, and 2BR configurations listed."
+  }
+}

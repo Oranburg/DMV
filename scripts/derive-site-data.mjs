@@ -147,15 +147,23 @@ function fromGemini(g) {
 
 async function main() {
   // Preserve already-computed enrichment (coords, scores, distances) across re-derives.
+  // Verify agents often appended the street address to the name, so the same
+  // building landed under several slugs. Strip a trailing "<number> ... <street suffix>"
+  // and merge variants. Keep the best record per canonical name.
+  const STREET = /\s+\d{2,5}\s+(?:[a-z0-9]+\s+){0,3}?(?:st|street|ave|avenue|rd|road|ln|lane|hwy|highway|blvd|boulevard|dr|drive|pl|place|ct|court|cir|circle|way|pkwy|parkway)\b.*$/i;
+  const cleanName = (name) => String(name).replace(/\(.*?\)/g, " ").replace(STREET, "").replace(/\s+/g, " ").trim();
+  const canon = (name) => cleanName(name).toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, " ").trim();
+  const key = (name) => slug(canon(name)) || slug(name);
+
   const prior = new Map();
   try {
     const existing = JSON.parse(await readFile(OUT, "utf8"));
-    for (const b of existing) prior.set(b.id, b);
+    for (const b of existing) prior.set(key(b.name), b);
   } catch {
     /* first derive */
   }
   const carry = (rec) => {
-    const p = prior.get(rec.id);
+    const p = prior.get(key(rec.name));
     if (!p) return rec;
     if (p.coords) rec.coords = p.coords;
     if (p.scores && p.scores.walk != null) rec.scores = p.scores;
@@ -165,28 +173,48 @@ async function main() {
     return rec;
   };
 
-  const byId = new Map();
-  // Gemini first so verified records win on dedupe.
-  for (const g of GEMINI_SS) byId.set(slug(g.name), carry(fromGemini(g)));
+  const known = (v) => v !== null && v !== undefined && v !== "";
+  const completeness = (r) => {
+    const b = r.building, u = r.units[0] || {};
+    return [b.doorman, b.elevator, b.pool, b.gym, b.petFriendly, b.packageRoom, b.unitClimate, b.wellMaintained, u.bathrooms, u.squareFeet, u.balcony, u.inUnitLaundry, r.phone, r.address].filter(known).length + (r.photos.length ? 1 : 0);
+  };
+  const dRank = (r) => (r.building.doorman === true ? 2 : r.building.doorman === false ? 0 : 1);
+  const better = (a, b) => {
+    const av = a.source.startsWith("verified") ? 1 : 0, bv = b.source.startsWith("verified") ? 1 : 0;
+    if (av !== bv) return av > bv ? a : b;
+    if (dRank(a) !== dRank(b)) return dRank(a) > dRank(b) ? a : b;
+    return completeness(a) >= completeness(b) ? a : b;
+  };
 
+  const byKey = new Map();
+  const add = (rec) => {
+    rec.name = cleanName(rec.name);
+    const k = key(rec.name);
+    rec.id = k;
+    if (rec.units[0]) rec.units[0].id = `${k}-2br`;
+    const cur = byKey.get(k);
+    byKey.set(k, carry(cur ? better(cur, rec) : rec));
+  };
+
+  for (const g of GEMINI_SS) add(fromGemini(g));
   let files = [];
   try {
     files = (await readdir(RESEARCH)).filter((f) => f.endsWith(".json"));
   } catch {
-    /* no research/buildings yet */
+    /* none yet */
   }
   for (const f of files) {
     try {
       const r = JSON.parse(await readFile(new URL(f, RESEARCH), "utf8"));
-      if (r && r.name) byId.set(slug(r.name), carry(fromVerified(r)));
+      if (r && r.name) add(fromVerified(r));
     } catch (e) {
       console.warn(`skip ${f}: ${e.message}`);
     }
   }
 
-  const out = [...byId.values()].sort((a, b) => a.name.localeCompare(b.name));
+  const out = [...byKey.values()].sort((a, b) => a.name.localeCompare(b.name));
   await writeFile(OUT, JSON.stringify(out, null, 2) + "\n");
-  console.log(`derived ${out.length} buildings (${files.length} verified + ${GEMINI_SS.length} Gemini) -> src/data/housing-properties.json`);
+  console.log(`derived ${out.length} unique buildings from ${files.length} verified files + ${GEMINI_SS.length} Gemini`);
 }
 
 main().catch((e) => {

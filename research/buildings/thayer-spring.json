@@ -1,0 +1,40 @@
+{
+  "name": "Thayer & Spring",
+  "address": "915 Silver Spring Ave, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://rent.brookfieldproperties.com/property/thayer-and-spring/",
+  "phone": "(301) 895-9422",
+  "photoUrl": "https://rent.brookfieldproperties.com/wp-content/uploads/2024/06/Kitchen-3-scaled.jpg",
+  "approxRentRange": "$2,510-$3,516 (2BR/2BA; some plans show balcony; townhome 2BR at ~$3,340)",
+  "doormanStatus": "Confirmed 24h",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "2BR units are 2BA; 1BR units are 1BA",
+  "notes": {
+    "doorman": "Brookfield property page and RentCafe both list '24/7 concierge service'; one review source noted high concierge turnover and occasional gaps at the desk, but the advertised service level is 24h",
+    "balcony": "Most 2BR floor plans on RentCafe are listed 'w/ Balcony'; at least one plan (2R) is not labeled as such",
+    "inUnitLaundry": "Brookfield page says 'select units'; RentCafe lists in-home washer/dryer as a standard in-unit amenity",
+    "wellMaintained": "Brookfield maintenance rating 3.5/5 (277 reviews); one search result noted elevator reliability complaints; insufficient resident review data to confirm or deny",
+    "unitClimate": "RentCafe amenity list explicitly states 'individual climate control'",
+    "petFriendly": "No weight limit; breed restrictions apply (Pit Bulls, Huskies, Rottweilers prohibited); two pets per apartment",
+    "buildYear": 2019,
+    "stories": 11,
+    "totalUnits": 399,
+    "manager": "Brookfield Properties"
+  },
+  "sources": [
+    "https://rent.brookfieldproperties.com/property/thayer-and-spring/",
+    "https://www.rentcafe.com/apartments/md/silver-spring/thayer-and-spring/default.aspx",
+    "https://www.veryapt.com/ApartmentReview-a26015-thayer-spring-silver-spring"
+  ],
+  "researchDate": "2026-06-19"
+}

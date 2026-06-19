@@ -1,0 +1,33 @@
+{
+  "name": "Twin Towers",
+  "neighborhood": "Silver Spring",
+  "address": "1110 Fidler Lane, Silver Spring, MD 20910",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.southernmanagement.com/communities/twin-towers/",
+  "photoUrl": "https://www.southernmanagement.com/wp-content/uploads/2022/09/Twin-Towers_Living-Room_1.jpg",
+  "phone": "(240) 681-2774",
+  "approxRentRange": "$2,483-$2,645/month for 2BR (sources vary; range as of mid-2026)",
+  "doormanStatus": "Confirmed 24h",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Unclear",
+  "inUnitLaundry": "No",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Unclear",
+  "unitClimate": "No",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "2BR units have 2 baths (1,250 sqft); studios and 1BR units have 1 bath. Building is 15 stories.",
+  "notes": {
+    "management": "Southern Management Corporation",
+    "petPolicy": "Up to 2 pets; dogs up to 80 lbs each; $25/month pet rent per pet",
+    "laundry": "Shared coin-op laundry rooms in basement (two per tower); no in-unit W/D confirmed by features page and resident reviews despite a data error on the main marketing page",
+    "climate": "Single-duct building HVAC converted seasonally (cooling in summer, heat in winter); residents cannot control both modes independently; some reviews note poor AC performance",
+    "balcony": "ApartmentList lists patio/balcony as a unit feature; official Southern Management site and RentCafe do not mention balconies; unconfirmed",
+    "maintenance": "Reviews split: majority call building reasonably clean and well-maintained with responsive staff; some describe amenities as outdated",
+    "utilities": "All utilities included in rent",
+    "location": "Adjacent to Silver Spring Metro (Red Line); Walk Score 99",
+    "unitSizes": "Studio ~450 sqft, 1BR ~550 sqft, 2BR ~1,250 sqft"
+  }
+}

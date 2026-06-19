@@ -1,0 +1,41 @@
+{
+  "name": "Lenox Park",
+  "address": "1400 East West Highway, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.lenoxparkliving.com",
+  "phone": "(301) 857-4354",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/5432fe2ea3fa6e4b8be908def0ef8ebd.jpg",
+  "doormanStatus": "Confirmed 24h",
+  "elevator": "Yes",
+  "gym": "Yes",
+  "pool": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "has2BRor1BRDen": "Yes",
+  "wellMaintained": "Unclear",
+  "approxRentRange": "$2,320-$2,638/mo (2BR)",
+  "bathroomsNote": "2BR units come with 2 baths; 1BR units have 1 bath",
+  "notes": {
+    "doormanEvidence": "Multiple sources confirm 24-hour front desk: RentCafe lists '24/7 concierge,' ApartmentList lists '24-hour front desk,' and the Silver Spring Downtown directory explicitly states '24-hour lobby attendant.'",
+    "balconyNote": "Balconies/patios listed as an amenity on multiple sources, but described as available in 'select homes' on some listings; not every unit guaranteed.",
+    "inUnitLaundryNote": "Listed as in-home washer/dryer on all major sources, but one source qualifies it as 'select homes.'",
+    "wellMaintainedNote": "Reviews are mixed: hallways and common areas described as clean by some residents; at least one review cites a roach problem. Insufficient recent verified reviews to call clearly.",
+    "packageRoomSource": "RentCafe lists 'package acceptance' as an amenity; one aggregated search result names a 'package room' explicitly.",
+    "unitClimateSource": "Multiple sources cite 'individual climate-control' as a unit feature.",
+    "has2BRNote": "2BR floor plans confirmed (Blair-G, Elsworth-DA series); no 1BR+den specifically listed, but the overall unit range goes up to 2,200 sqft across 1-3BR layouts.",
+    "buildingStats": "407 units, built 1991, 3 to 16 stories",
+    "management": "Bernstein Management Corporation",
+    "petPolicy": "Up to 2 pets (cats and dogs); $300 one-time fee + $25/mo per pet"
+  },
+  "sources": [
+    "https://www.rentcafe.com/apartments/md/silver-spring/lenox-park-0/default.aspx",
+    "https://silverspringdowntown.com/go/lenox-park-apartments",
+    "https://www.lenoxparkliving.com/amenities",
+    "https://www.veryapt.com/ApartmentReview-a7173-lenox-park-apartments-silver-spring"
+  ],
+  "lastResearched": "2026-06-19"
+}

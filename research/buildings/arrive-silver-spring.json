@@ -1,0 +1,32 @@
+{
+  "name": "Arrive Silver Spring",
+  "address": "8750 Georgia Ave, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://arrivesilverspring.prospectportal.com/silver-spring/arrive-silver-spring/conventional/",
+  "phone": "(301) 830-8667",
+  "photoUrl": "https://arrivesilverspring.com/wp-content/uploads/2024/01/Logo-ArrvSlvrSprng_Wide-Low-2.png",
+  "doormanStatus": "Likely staffed",
+  "elevator": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "petFriendly": "Yes",
+  "inUnitLaundry": "Yes",
+  "balcony": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "has2BRor1BRDen": "Yes",
+  "bathroomsNote": "2BR units: Bristol (1,108 sq ft) has 1+ baths; Concord (1,170 sq ft) and Chesapeake (1,300 sq ft) are 2 bed/2 bath",
+  "approxRentRange": "$2,000-$2,575/mo for 2BR (as of June 2026)",
+  "notes": {
+    "concierge": "Concierge desk confirmed; described in multiple sources as 24-hour service, but leasing office hours are Mon-Fri 9am-6pm, Sat 10am-5pm, Sun 12pm-5pm. No explicit documentation of 24-hour staffing found on official site.",
+    "inUnitLaundry": "In-unit washer/dryer in select/renovated units; some units may rely on shared laundry facilities",
+    "petPolicy": "$25/month per pet, max 2 pets, no deposit required; breed restrictions apply (pit bulls, rottweilers, German shepherds, others)",
+    "climate": "Central A/C and forced air heat listed; treated as in-unit controlled",
+    "wellMaintained": "Reviews are mixed: some residents report clean hallways and responsive maintenance; others cite chipped floors, dirty elevators, and slow repair response times. Unclear overall.",
+    "unitCount": "891 total units (high-rise)",
+    "management": "Trinity Property Consultants",
+    "transit": "Red Line Metro (Silver Spring station) approximately 2 blocks away"
+  }
+}

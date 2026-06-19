@@ -1,0 +1,36 @@
+{
+  "name": "The Veridian",
+  "address": "1133 East-West Highway, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.equityapartments.com/maryland/silver-spring/the-veridian-apartments",
+  "phone": "(240) 641-0650",
+  "photoUrl": "https://img.zumpercdn.com/238061871/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+  "approxRentRange": "$2,475-$2,817/month (2BR; 2BR/2BA, 1,086-1,227 sq ft)",
+  "has2BRor1BRDen": "Yes",
+  "doormanStatus": "Likely staffed",
+  "elevator": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "Studios and 1BR units: 1 bath. 2BR units: 2 baths. 1BR+den floor plans (910-949 sq ft) carry 1 bath.",
+  "notes": {
+    "doormanDetail": "Marketed by Equity Residential as '24-hour concierge.' At least one resident review source reported that Equity removed the East-side front desk concierge while continuing to advertise 24h service. Confirmed physical front desk/concierge presence; actual 24h staffing not independently verified, so rated 'Likely staffed' rather than 'Confirmed 24h.'",
+    "has2BRor1BRDen": "2BR/2BA floor plans confirmed at 1,086-1,227 sq ft. 1BR+den floor plans confirmed at 910-949 sq ft with 1 bath.",
+    "building": "457-unit apartment building built 2009, managed by Equity Residential. Art Deco architecture, eco-friendly green roof, steps from Silver Spring Metro.",
+    "amenities": "Rooftop pool and sundeck, two fitness centers with cardio theater, resident pub, conference and dining rooms, guest suite, controlled-access entry, garage parking.",
+    "pets": "Dogs and cats permitted. Up to 3 of each. Dogs up to 75 lbs. Monthly pet rent: $65/dog, $50/cat. One-time deposit: $300/pet.",
+    "sources": [
+      "https://www.equityapartments.com/maryland/silver-spring/the-veridian-apartments",
+      "https://www.zumper.com/apartment-buildings/p12798/the-veridian-silver-spring-md",
+      "https://www.rentable.co/silver-spring-md/the-veridian",
+      "https://silverspringdowntown.com/go/veridian-apartments",
+      "https://www.apartmentadvisor.com/details/1133-east-west-hwy-silver-spring-md-20910"
+    ]
+  }
+}

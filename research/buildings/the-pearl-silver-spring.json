@@ -1,0 +1,41 @@
+{
+  "name": "The Pearl (Silver Spring)",
+  "address": "180 High Park Lane, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.liveatthepearl.com/",
+  "phone": "(681) 246-0832",
+  "photoUrl": "https://www.liveatthepearl.com/images/exterior.jpg",
+  "approxRentRange": "$2,900-$3,763/month (2BR; multiple sources converge on this range; 2BR starts ~$3,172 for available units as of mid-2026)",
+  "has2BRor1BRDen": "Yes",
+  "doormanStatus": "Confirmed 24h",
+  "elevator": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "2BR units carry 2 baths per multiple listing sources. Units feature double vanities and bathtubs. Exact bath counts for 1BR units unconfirmed.",
+  "notes": {
+    "doormanDetail": "Multiple independent sources describe 24-hour concierge and security, including the building's own marketing via RentCafe and third-party listing sites. The liveatthepearl.com FAQ and amenities pages list '24-hour concierge' as a stated feature. Rated 'Confirmed 24h' based on consistent corroboration across sources.",
+    "building": "LEED-certified luxury high-rise, 14 stories, 284 units, built 2017 by The Tower Companies. First Fitwel-certified multifamily building in the world. Located in The Blairs District, 0.4 miles from Silver Spring Metro (Red Line).",
+    "amenities": "Rooftop saltwater pool (Aquaterra) with cabanas and wellness kitchen, two-story fitness center with free weekly classes, WiFi-enabled Worklab co-working space, on-site urban farm, exhibition kitchen, event space, outdoor courtyard, dog park and pet spa, bike room, private storage, EV charging, Zipcar car sharing, guest suite, valet dry cleaning, package lockers, controlled access.",
+    "balconyDetail": "Private balconies available on select units; floor plans vary (standard, long, double, penthouse balcony types listed). Not all units have a balcony.",
+    "inUnitLaundryDetail": "In-unit washer/dryer confirmed across multiple resident review sources and listing sites.",
+    "unitClimateDetail": "Central air conditioning and heating listed as unit feature; individual unit climate control confirmed by listing data.",
+    "pets": "Dogs and cats welcome. Up to 2 pets per home. Weight limit 100 lbs. Breed restrictions apply. One-time fee and monthly pet rent apply (amounts not confirmed in scraped data).",
+    "wellMaintainedDetail": "Property is luxury-positioned and recently built (2017); no negative maintenance signals found in available data, but resident review sites (ApartmentRatings, Yelp) returned 403 errors, so resident-sourced maintenance quality could not be assessed.",
+    "sources": [
+      "https://www.liveatthepearl.com/",
+      "https://www.liveatthepearl.com/amenities.aspx",
+      "https://www.rentcafe.com/apartments/md/silver-spring/the-pearl-2/default.aspx",
+      "https://www.rentable.co/silver-spring-md/the-pearl",
+      "https://www.veryapt.com/ApartmentReview-a20664-the-pearl-silver-spring",
+      "https://www.apartmentratings.com/md/silver-spring/the-pearl_9199332346275175631/",
+      "https://www.forrent.com/md/silver-spring/the-pearl/jhr24s7"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Solaire 8250 Georgia",
+  "address": "8250 Georgia Ave, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.solaire8250.com/",
+  "phone": "(301) 969-9711",
+  "photoUrl": "https://lirp.cdn-website.com/6c02be5d/dms3rep/multi/opt/1Solaire+8250_ext+e-1920w.jpg",
+  "doormanStatus": "Likely staffed",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Yes",
+  "bathroomsNote": "2BR units come with 2 baths across all listed floor plans (B2, B6a, B4).",
+  "approxRentRange": "$2,405-$2,930/month for 2BR (as of early 2026)",
+  "notes": {
+    "doormanDetail": "Property advertises '24-hour concierge service' and a 'Mobile Doorman App.' Leasing office hours are Mon-Fri 9am-6pm, Sat 10am-5pm, Sun 12pm-5pm. Whether a physical concierge is staffed overnight is not confirmed in available sources; classified as 'Likely staffed' rather than 'Confirmed 24h.'",
+    "balconyDetail": "Private balconies available on select units only, not standard across all homes.",
+    "packageDetail": "Package Concierge Locker Service available; resident reviews note packages are secure.",
+    "unitClimateDetail": "Air conditioning listed as an in-unit amenity; specific thermostat/HVAC control type (in-unit vs. building-controlled) not confirmed in sources, but modern luxury apartment context and in-unit AC listing indicate resident-controlled.",
+    "wellMaintainedDetail": "Majority of reviews describe the building as clean and well-kept; maintenance team responsive to requests. One source noted grounds rated below average. Overall assessment is positive.",
+    "sources": [
+      "https://www.solaire8250.com/amenities",
+      "https://www.apartmentlist.com/md/silver-spring/solaire-8250-georgia",
+      "https://www.veryapt.com/ApartmentReview-a38980-solaire-8250-georgia-silver-spring",
+      "https://www.yelp.com/biz/solaire-8250-georgia-silver-spring"
+    ],
+    "retrievedDate": "2026-06-19"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Lenox Park",
+  "neighborhood": "Silver Spring",
+  "address": "1400 East West Highway, Silver Spring, MD 20910",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.lenoxparkliving.com/",
+  "photoUrl": "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/5432fe2ea3fa6e4b8be908def0ef8ebd.jpg",
+  "approxRentRange": "$2,293-$2,638/month (2BR, 12-month lease, as of mid-2026; 1.5 months free special on select units)",
+  "phone": "(301) 857-4354",
+  "doormanStatus": "Likely staffed",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "2BR units come with 1 or 2 baths depending on floor plan (e.g., Blair and Elsworth plans); 1088 sq ft 2BR/2BA confirmed listed",
+  "notes": [
+    "407-unit high-rise, 16 stories, built 1991-1992; managed by Bernstein Management Corporation.",
+    "RentCafe lists '24/7 concierge'; ApartmentList confirms '24-hour front desk.' Leasing office hours are Tue-Fri 9AM-6PM, Sat 10AM-6PM; front desk/concierge staffing is likely separate from leasing. Hours for the front desk are not independently confirmed as 24/7, so doormanStatus is 'Likely staffed' rather than 'Confirmed 24h'.",
+    "Resident reviews on Yelp and ApartmentRatings describe the concierge as present but inconsistent in helpfulness; security sign-in policy enforced.",
+    "In-unit washer/dryer listed as standard; some listings note 'select homes' (may not be universal across all units). Verify at tour.",
+    "Balconies/patios listed as available on select units; not all units have one.",
+    "Pet policy: up to 2 pets; $300 deposit, $25/month per pet; breed restrictions (German Shepherd, Pit Bull, Rottweiler, and others).",
+    "Individual climate control confirmed in unit listings.",
+    "One block from Silver Spring Metro (Red Line).",
+    "No 1BR+den floor plan specifically confirmed; 'has2BRor1BRDen' reflects confirmed 2BR availability."
+  ]
+}

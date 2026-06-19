@@ -1,13 +1,187 @@
 [
   {
-    "id": "arrive-silver-spring",
-    "name": "Arrive Silver Spring",
-    "address": "Arrive Silver Spring, Silver Spring, MD",
+    "id": "affinity-on-georgia",
+    "name": "Affinity on Georgia",
+    "address": "8021 Georgia Avenue, Silver Spring, MD 20910",
     "neighborhood": "Silver Spring",
     "buildingType": "apartment",
-    "leasingUrl": "https://www.arriveon-georgiaave.com",
-    "phone": null,
-    "photos": [],
+    "leasingUrl": "https://www.affinityongeorgia.com/",
+    "phone": "(833) 941-0974",
+    "photos": [
+      "https://www.affinityongeorgia.com/photogallery"
+    ],
+    "coords": [
+      38.9877823,
+      -77.0256436
+    ],
+    "scores": {
+      "walk": 95,
+      "transit": 83,
+      "bike": 86,
+      "wsLink": "https://www.walkscore.com/score/8021-Georgia-Avenue-Silver-Spring-MD-20910/lat=38.9877823/lng=-77.0256436/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": false,
+      "doormanStatus": "Daytime only",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "affinity-on-georgia-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 2382,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "9-story, 210-unit apartment community managed by Bozzuto. Built on the former National Institute of Dry Cleaning site; integrates renovation of two existing 1920s buildings. Developer: Foulger-Pratt; architect: The Preston Partnership. Delivered June 2024.",
+      "Concierge service is listed as an amenity, but resident reviews specifically note the concierge 'is not staffed all night.' Leasing office hours are weekday daytime only. Classified as Daytime only pending direct confirmation.",
+      "Fitness center with golf simulator and massage area per UrbanTurf. Resident reviews note broken and missing equipment; condition described as inadequate by some reviewers.",
+      "Mixed reviews: some residents praise staff responsiveness; others report filthy hallways and unresponsive management. Not enough consensus to confirm well-maintained.",
+      "ApartmentList lists patio/balcony as a standard unit amenity.",
+      "Air conditioning listed as an in-unit feature, consistent with individual unit climate control.",
+      "Studios (~640 sq ft), 1BR (708-836 sq ft), 1BR+Den (~860 sq ft), 2BR (1,029-1,228 sq ft), 2BR townhomes (1,179-1,228 sq ft).",
+      "Overall range $1,732-$3,151/mo per UrbanTurf; 2BR units $2,382-$2,757/mo per ApartmentList (June 2026).",
+      [
+        "https://www.apartmentlist.com/md/silver-spring/affinity-on-georgia",
+        "https://dc.urbanturf.com/pipeline/100/Affinity_on_Georgia",
+        "https://www.bozzuto.com/apartments-for-rent/md/silver-spring/affinity-on-georgia",
+        "https://www.apartmentratings.com/md/silver-spring/affinity-on-georgia_9199332346275146310/",
+        "https://silverspringdowntown.com/go/affinity-on-georgia"
+      ]
+    ]
+  },
+  {
+    "id": "alexander-house-at-elizabeth-square",
+    "name": "Alexander House at Elizabeth Square",
+    "address": "8560 2nd Ave, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.apartments.com/alexander-house-at-elizabeth-square-silver-spring-md/023hjg2/",
+    "phone": "(240) 624-7311",
+    "photos": [
+      "Unclear"
+    ],
+    "coords": [
+      38.9964865,
+      -77.0324526
+    ],
+    "scores": {
+      "walk": 97,
+      "transit": 87,
+      "bike": 79,
+      "wsLink": "https://www.walkscore.com/score/8560-2nd-Ave-Silver-Spring-MD-20910/lat=38.9964865/lng=-77.0324526/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 2,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": null,
+      "doormanStatus": "Likely staffed",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": null,
+      "packageRoom": null,
+      "unitClimate": null,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "alexander-house-at-elizabeth-square-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": null,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 1535,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Multiple listing aggregators and an ApartmentRatings.com summary describe '24-hour concierge'; a lobby redesign with controlled access and on-site security is confirmed. Hours not explicitly stated on any property-managed page; 'Likely staffed' is the honest call absent first-party confirmation of 24h staffing",
+      "One resident review explicitly listed 'washer and dryer in the unit' as a key amenity; the Ascend Apartments listing also notes in-unit laundry. Listed as Yes but not confirmed across all floor plans",
+      "Resident reviews mention 'a very nice swimming pool with a lifeguard every day'; confirmed",
+      "Resident review and Ascend Apartments listing both confirm balconies as a unit feature",
+      "Ascend Apartments listing confirms a 'state-of-the-art fitness center'",
+      "Zumper shows 'not allowed'; other listing sources (Ascend) show 'cat friendly' and 'dog friendly'. Conflict between sources; verify directly with leasing office",
+      "No explicit mention of a package room or package lockers; building has controlled access and concierge who may handle packages but this is unconfirmed",
+      "No source specifies whether heat/AC is tenant-controlled by thermostat or switched seasonally by building management; unclear",
+      "ApartmentRatings.com has 101 reviews with mixed sentiment; some reviewers note helpful staff and updated lobby, others cite maintenance delays and management concerns; insufficient data to call this Yes or No",
+      "16-story high-rise; 305 units; built 1992; managed by Pratumco (property manager Alexis King); owned/operated in partnership with the Housing Opportunities Commission (HOC) of Montgomery County; approximately 40% affordable units; part of Elizabeth Square development alongside Elizabeth House III and Elizabeth House IV",
+      "(301) 587-4277 | alexis.king@pratumco.com",
+      "One month free rent on select homes (as of June 2026); Saturday open houses 10 AM-2 PM",
+      "(301) 781-7567 (Ascend listing)"
+    ]
+  },
+  {
+    "id": "arrive-silver-spring",
+    "name": "Arrive Silver Spring",
+    "address": "8750 Georgia Ave, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://arrivesilverspring.prospectportal.com/silver-spring/arrive-silver-spring/conventional/",
+    "phone": "(301) 830-8667",
+    "photos": [
+      "https://arrivesilverspring.com/wp-content/uploads/2024/01/Logo-ArrvSlvrSprng_Wide-Low-2.png"
+    ],
     "coords": [
       38.9985661,
       -77.0313194
@@ -36,14 +210,14 @@
       "doorman": null,
       "doormanStatus": "Likely staffed",
       "elevator": true,
-      "pool": null,
-      "gym": null,
+      "pool": true,
+      "gym": true,
       "playground": null,
-      "petFriendly": null,
-      "packageRoom": null,
-      "unitClimate": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
       "wellMaintained": null,
-      "noise": 3
+      "noise": null
     },
     "units": [
       {
@@ -51,22 +225,93 @@
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
-        "bathrooms": null,
-        "squareFeet": 1204,
+        "bathrooms": 2,
+        "squareFeet": 1108,
         "balcony": true,
         "inUnitLaundry": true,
         "view": null,
         "pricing": {
-          "baseRent": 2866,
+          "baseRent": 2000,
           "parking": 0,
           "utilities": {},
           "mandatoryFees": 0
         }
       }
     ],
-    "source": "gemini-csv (low confidence, verify)",
+    "source": "verified",
     "notes": [
-      "Formerly The Cameron; responsive management; straight drive to Kemp Mill down Georgia Ave."
+      "Concierge desk confirmed; described in multiple sources as 24-hour service, but leasing office hours are Mon-Fri 9am-6pm, Sat 10am-5pm, Sun 12pm-5pm. No explicit documentation of 24-hour staffing found on official site.",
+      "In-unit washer/dryer in select/renovated units; some units may rely on shared laundry facilities",
+      "$25/month per pet, max 2 pets, no deposit required; breed restrictions apply (pit bulls, rottweilers, German shepherds, others)",
+      "Central A/C and forced air heat listed; treated as in-unit controlled",
+      "Reviews are mixed: some residents report clean hallways and responsive maintenance; others cite chipped floors, dirty elevators, and slow repair response times. Unclear overall.",
+      "891 total units (high-rise)",
+      "Trinity Property Consultants",
+      "Red Line Metro (Silver Spring station) approximately 2 blocks away"
+    ]
+  },
+  {
+    "id": "atwell-on-spring",
+    "name": "Atwell on Spring",
+    "address": "1260 Spring St (8787 Georgia Ave), Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.atwellonspring.com/",
+    "phone": "(240) 410-1808",
+    "photos": [
+      "https://www.bozzuto.com/apartments-for-rent/md/silver-spring/atwell-on-spring/gallery/"
+    ],
+    "coords": null,
+    "scores": {
+      "walk": null,
+      "transit": null,
+      "bike": null,
+      "wsLink": null
+    },
+    "walkToMetroMin": null,
+    "distances": null,
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": true,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "atwell-on-spring-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": null,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 2780,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Multiple sources including ApartmentList and search results describe '24-hour concierge.' Bozzuto marketing materials and resident reviews reference around-the-clock concierge services. One reviewer named a concierge staff member by name and praised the team.",
+      "The project is commonly described as '8787 Georgia Ave' (the block address) but the street address listed on leasing platforms is 1260 Spring St, Silver Spring, MD 20910.",
+      "Package room exists with concierge accepting deliveries; at least one reviewer noted difficulty with the double-entrance/package room setup, so the feature exists but has had reported friction.",
+      "ApartmentList explicitly lists dogs and cats as permitted. ApartmentSearch showed 'not allowed' but that site flagged the property as 'not in our system', so ApartmentList is the more reliable source.",
+      "ApartmentList lists 'air conditioning' as an in-unit feature; Bozzuto positions units as full luxury with modern appliances. HVAC control per-unit (not building-controlled) is consistent with the luxury positioning and 2024 construction vintage but not explicitly confirmed from a lease document or resident statement.",
+      "ApartmentRatings.com summarized reviewer characterization as 'well-maintained, peaceful community with excellent management' with responsive maintenance staff. Building opened 2023-2024.",
+      "2BR range $2,780-$4,296/mo per ApartmentList (current as of search date June 2026). 1BR+den ~$2,838/mo. Studios from ~$1,752/mo.",
+      "Official gallery is at atwellonspring.com/gallery and bozzuto.com gallery page; og:image could not be retrieved due to 403 blocks on both domains."
     ]
   },
   {
@@ -221,6 +466,173 @@
     "notes": []
   },
   {
+    "id": "blair-east",
+    "name": "Blair East",
+    "address": "1220 East West Highway, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.blairapartments.com/featuredfloorplans/blair-east",
+    "phone": "(301) 495-6001",
+    "photos": [
+      "https://cdngeneral.rentcafe.com/dmslivecafe/2/82739/2_82739_2043088.jpg"
+    ],
+    "coords": [
+      38.9913073,
+      -77.0301247
+    ],
+    "scores": {
+      "walk": 94,
+      "transit": 88,
+      "bike": 85,
+      "wsLink": "https://www.walkscore.com/score/1220-East-West-Highway-Silver-Spring-MD-20910/lat=38.9913073/lng=-77.0301247/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 12
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": null,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": null,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "blair-east-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": null,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": null,
+        "view": null,
+        "pricing": {
+          "baseRent": 2181,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "17-story LEED Platinum certified high-rise, built 2012, 394 units",
+      "24-hour front desk/concierge confirmed across multiple sources",
+      "Laundry situation is conflicting: one source says in-unit washer/dryer, another says washer/dryer connections only (hookups), a third says shared laundry on every floor; verify on tour",
+      "Balcony confirmed as unit amenity; described as private balcony or patio",
+      "Pool listed in some aggregator summaries but not in per-listing amenity details; not confirmed",
+      "Fitness center with yoga room confirmed; dog grooming area and pet park on site",
+      "Package lockers confirmed",
+      "Climate control details (in-unit thermostat vs building-controlled) not found in any source",
+      "Pets allowed; max 2 pets, $250 deposit per pet, $45/month per pet, breed restrictions apply, 100 lb weight limit",
+      "Steps from Silver Spring Metro (Red Line); Giant supermarket in building",
+      "Rent range sourced from RentCafe ($2,181-$2,930 for 2BR, 1,044-1,135 sq ft) and Rentable ($2,288-$2,829)"
+    ]
+  },
+  {
+    "id": "blair-house",
+    "name": "Blair House",
+    "address": "8201 16th Street, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.blairapartments.com/featuredfloorplans/blair-house",
+    "phone": "(301) 495-6001",
+    "photos": [
+      "https://cdngeneral.rentcafe.com/dmslivecafe/2/82739/2_82739_2043126.jpg"
+    ],
+    "coords": [
+      38.9924674,
+      -77.0365999
+    ],
+    "scores": {
+      "walk": 88,
+      "transit": 85,
+      "bike": 68,
+      "wsLink": "https://www.walkscore.com/score/8201-16th-Street-Silver-Spring-MD-20910/lat=38.9924674/lng=-77.0365999/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 12
+      },
+      "berman": {
+        "drive": 18
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": false,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": null,
+      "wellMaintained": true,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "blair-house-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": null,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": false,
+        "view": null,
+        "pricing": {
+          "baseRent": 1920,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "24-hour concierge confirmed on RentCafe and official blairapartments.com listing",
+      "24-hour security patrol also listed",
+      "Laundry facilities on every floor, NOT in-unit per RentCafe; some listings mention washer/dryer connections so individual units may vary",
+      "No pool found in any amenity list across multiple sources",
+      "Elevator confirmed by web search aggregation (high-rise building)",
+      "Balcony available on select units, confirmed across multiple listing sources",
+      "Pets allowed: dogs and cats, max 2 at 100 lbs each, $350 deposit + $45/month per pet, breed restrictions apply",
+      "Package lockers confirmed",
+      "Fitness center with yoga room confirmed",
+      "Unit climate control (AC/heat) not explicitly stated as in-unit or building-controlled in any source reviewed",
+      "Overall RentCafe rating 4.0/5 (29 reviews); maintenance rated 4.0/5; one review mentions mouse problem; staff rated 4.5/5",
+      "Part of the Blairs district, LEED platinum certified, managed by Tower Construction Group"
+    ]
+  },
+  {
     "id": "blvd-ansel",
     "name": "BLVD Ansel",
     "address": "33 Monroe St, Rockville, MD 20850",
@@ -363,14 +775,263 @@
     "notes": []
   },
   {
+    "id": "central",
+    "name": "Central",
+    "address": "8455 Fenton St, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.centralsilverspring.com/",
+    "phone": "(301) 960-5426",
+    "photos": [
+      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/77d73481b44b9cfc5e9272a9eaa2f074.jpg"
+    ],
+    "coords": [
+      38.9950791,
+      -77.0239474
+    ],
+    "scores": {
+      "walk": 99,
+      "transit": 86,
+      "bike": 85,
+      "wsLink": "https://www.walkscore.com/score/8455-Fenton-St-Silver-Spring-MD-20910/lat=38.9950791/lng=-77.0239474/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 12
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "central-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 2300,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "243-unit mixed-use apartment building; 21,500 sq ft ground-floor retail",
+      "24-hour concierge confirmed across multiple listing sources",
+      "Dogs and cats allowed; dog grooming area and pet spa on site; cat deposit $300 + $30/mo",
+      "24-hour gym; outdoor pool; rooftop lounge",
+      "Package receiving confirmed",
+      "In-unit A/C listed as unit amenity, implying resident-controlled climate",
+      "Building opened as new construction (no substantial maintenance review data found)",
+      "Sources: apartmentlist.com, apartmentadvisor.com, apartmentfinder.com, web search aggregates June 2026"
+    ]
+  },
+  {
+    "id": "cole-spring-plaza",
+    "name": "Cole Spring Plaza",
+    "address": "1001 Spring St, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.colespringplaza.com/",
+    "phone": "(844) 696-4935",
+    "photos": [
+      "https://img.zumpercdn.com/901285280/1280x960?fit=crop&h=360&w=392"
+    ],
+    "coords": [
+      38.9996088,
+      -77.0265189
+    ],
+    "scores": {
+      "walk": 96,
+      "transit": 84,
+      "bike": 79,
+      "wsLink": "https://www.walkscore.com/score/1001-Spring-St-Silver-Spring-MD-20910/lat=38.9996088/lng=-77.0265189/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 10
+      },
+      "berman": {
+        "drive": 18
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": null,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": null,
+      "wellMaintained": true,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "cole-spring-plaza-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": null,
+        "squareFeet": 1348,
+        "balcony": true,
+        "inUnitLaundry": false,
+        "view": null,
+        "pricing": {
+          "baseRent": 2499,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Multiple independent listing sources (RentCafe, ApartmentList, PadMapper, Zumper) consistently describe a '24-hour front desk' plus concierge service. Leasing office hours are Mon-Fri 9am-6pm, Sat 10am-5pm; front desk is separately confirmed as 24-hour.",
+      "PadMapper and Zumper describe a 'neighboring swimming pool,' implying the pool is adjacent but possibly shared or external. One Zumper review noted the pool was closed both summers the reviewer lived there. RentCafe does not list pool as an on-site amenity. Honest call is Unclear pending direct confirmation.",
+      "All sources consistently list shared on-site laundry only; no in-unit washer/dryer mentioned anywhere.",
+      "Private patios/balconies confirmed as a unit feature across RentCafe, ApartmentList, PadMapper, and Zumper. Availability may vary by unit and floor.",
+      "Cats only; up to 2 per household; $250 refundable deposit per cat; $25/month pet rent per cat. No dogs mentioned as permitted in any source.",
+      "Air conditioning is listed as a unit amenity. However, 'most utilities included in rent' (per RentCafe) suggests heat may be building-supplied. Unit-level control over both heat and AC not confirmed; marked Unclear.",
+      "RentCafe shows a 4.0/5 rating (10 reviews) with residents praising 'professionalism and care' over 25+ years and describing 'top-notch management and maintenance.' ApartmentList reviews cite cleanliness. Built 1967, 10-12 stories, 273 units.",
+      "2BR floor plans confirmed (1,348 sq ft, 2BA). No 1BR+den floor plan identified; sources list studio, 1BR, and 2BR only.",
+      "Residential rental apartment building managed by Ross Companies. Not a condo ownership building.",
+      "Package receiving/package service confirmed across RentCafe, Zumper, and search aggregators.",
+      "Fitness center confirmed across RentCafe, ApartmentList, and Zumper photos."
+    ]
+  },
+  {
+    "id": "colesville-towers",
+    "name": "Colesville Towers",
+    "address": "8811 Colesville Road, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.colesvilletowers.com/",
+    "phone": "(844) 334-4393",
+    "photos": [
+      "https://img.zumpercdn.com/563111744/1280x960?dpr=1&fit=crop&h=542&q=76&w=991"
+    ],
+    "coords": [
+      38.9996121,
+      -77.02479
+    ],
+    "scores": {
+      "walk": 96,
+      "transit": 83,
+      "bike": 75,
+      "wsLink": "https://www.walkscore.com/score/8811-Colesville-Road-Silver-Spring-MD-20910/lat=38.9996121/lng=-77.02479/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 10
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": false,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "colesville-towers-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": null,
+        "squareFeet": 1162,
+        "balcony": true,
+        "inUnitLaundry": false,
+        "view": null,
+        "pricing": {
+          "baseRent": 2125,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Explicitly described as '24-hour attended front desk' across RentCafe, PadMapper, Zumper, and the building's own search-result snippet. Treated as Confirmed 24h.",
+      "Heat and AC are controlled on a building-wide seasonal schedule tied to county requirements: AC runs mid-May through early October, heat from October through April. Residents cannot switch independently. Marked No (building-controlled).",
+      "All listing sources describe an on-site laundry center (shared/common area). No source confirms in-unit washer/dryer. Some review snippets note machines are sometimes out of order.",
+      "Listed as 'large patio/balcony' at the unit level across multiple sources, described as a standard feature with city and park views.",
+      "Mixed reviews: some residents praise prompt maintenance (issues resolved within 24 hours); others cite aging AC/pipe systems and grounds that appear neglected. ApartmentRatings overall ~4.1/5 from 385+ reviews; maintenance sub-rating ~3.7/5. Marked Unclear.",
+      "Package service is listed as a building amenity. Front desk handles packages; some resident reviews note occasional theft concerns and lack of floor-level security cameras.",
+      "Cats and dogs allowed, max 2 pets per unit; $250 refundable deposit + $25/month per pet. Breed restrictions: pit bulls, rottweilers, chows prohibited. No weight limit.",
+      "2BR/1BA and 2BR/2BA floor plans confirmed. No 1BR+den plan identified in any source.",
+      "Mid-rise apartment, 11 stories, ~260-275 units, built 1966. Managed by ROSS Companies (Ross Management Services). Most utilities included in rent. Garage and street parking. Additional amenities: bike storage, billiards room, grilling area, sun deck, business center, his-and-hers saunas noted in some sources.",
+      "(833) 358-4212 (RentCafe listing); ext. 4685 on the (844) number per Zumper",
+      "leasing.colesville@rossmgtservices.com",
+      "As of June 2026: 1 month free on select units; $1,000 off if you apply within 72 hours of touring (move-in by 06/30/2026)"
+    ]
+  },
+  {
     "id": "eleven55-ripley",
     "name": "Eleven55 Ripley",
-    "address": "Eleven55 Ripley, Silver Spring, MD",
+    "address": "1155 Ripley St, Silver Spring, MD 20910",
     "neighborhood": "Silver Spring",
     "buildingType": "apartment",
     "leasingUrl": "https://www.udr.com/washington-dc-apartments/silver-spring/eleven55-ripley/",
-    "phone": null,
-    "photos": [],
+    "phone": "(301) 756-5529",
+    "photos": [
+      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/d1663c449e561cd8a6ea308d7ed1ebfc.jpg"
+    ],
     "coords": [
       38.9926958,
       -77.0285158
@@ -396,17 +1057,17 @@
       }
     },
     "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
       "elevator": true,
-      "pool": null,
-      "gym": null,
+      "pool": true,
+      "gym": true,
       "playground": null,
-      "petFriendly": null,
-      "packageRoom": null,
-      "unitClimate": null,
-      "wellMaintained": null,
-      "noise": 2
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": false,
+      "noise": null
     },
     "units": [
       {
@@ -414,22 +1075,33 @@
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
-        "bathrooms": null,
-        "squareFeet": 886,
+        "bathrooms": 2,
+        "squareFeet": 1285,
         "balcony": true,
         "inUnitLaundry": true,
         "view": null,
         "pricing": {
-          "baseRent": 2472,
+          "baseRent": 2377,
           "parking": 0,
           "utilities": {},
           "mandatoryFees": 0
         }
       }
     ],
-    "source": "gemini-csv (low confidence, verify)",
+    "source": "verified",
     "notes": [
-      "Closest to the train tracks; train-facing units are noisy. Ask for high floors on the street side."
+      "UDR property page, UDR amenities page, UDR community FAQ, ApartmentList, VeryApt resident reviews",
+      "UDR FAQ states concierge is 'open 24 hours every day.' Resident reviews are mixed: some praise front desk screening, others note inconsistent enforcement.",
+      "Rooftop pool on Sky Deck; open 11am to 9pm daily; closed September through April; unheated.",
+      "Fitness center with yoga room; open 24 hours.",
+      "Parcel Pending lockers; 24/7 resident access; $20 setup fee + $8/month.",
+      "Listed as 'Patio/Balcony' unit amenity on ApartmentList; resident reviews mention private balconies with DMV views. UDR's own amenity page does not list private balconies explicitly; not available in all units.",
+      "Multiple resident reviews cite elevator outages (4 elevators with frequent 1+ down at a time), a multi-month roach infestation, and a long-term resident summary that 'the building has declined on everything.' VeryApt overall rating 6.3/10.",
+      "Cats and dogs allowed; specific weight/breed limits not confirmed from sources reviewed.",
+      "Individual air conditioning and ceiling fans listed as in-unit amenities, indicating resident-controlled climate.",
+      "2014",
+      "21",
+      "Adjacent to Silver Spring Metro Station (Red Line)"
     ]
   },
   {
@@ -790,12 +1462,14 @@
   {
     "id": "lenox-park",
     "name": "Lenox Park",
-    "address": "Lenox Park, Silver Spring, MD",
+    "address": "1400 East West Highway, Silver Spring, MD 20910",
     "neighborhood": "Silver Spring",
     "buildingType": "apartment",
-    "leasingUrl": "https://www.lenoxparkliving.com/",
-    "phone": null,
-    "photos": [],
+    "leasingUrl": "https://www.lenoxparkliving.com",
+    "phone": "(301) 857-4354",
+    "photos": [
+      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/5432fe2ea3fa6e4b8be908def0ef8ebd.jpg"
+    ],
     "coords": [
       38.9936971,
       -77.0333345
@@ -821,17 +1495,17 @@
       }
     },
     "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
       "elevator": true,
-      "pool": null,
-      "gym": null,
+      "pool": true,
+      "gym": true,
       "playground": null,
-      "petFriendly": null,
-      "packageRoom": null,
-      "unitClimate": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
       "wellMaintained": null,
-      "noise": 3
+      "noise": null
     },
     "units": [
       {
@@ -839,27 +1513,36 @@
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
-        "bathrooms": null,
-        "squareFeet": 1037,
+        "bathrooms": 2,
+        "squareFeet": null,
         "balcony": true,
         "inUnitLaundry": true,
         "view": null,
         "pricing": {
-          "baseRent": 2293,
+          "baseRent": 2320,
           "parking": 0,
           "utilities": {},
           "mandatoryFees": 0
         }
       }
     ],
-    "source": "gemini-csv (low confidence, verify)",
+    "source": "verified",
     "notes": [
-      "High-rise right next to Metro; strong 2BR space-to-rent ratio; pet-friendly."
+      "Multiple sources confirm 24-hour front desk: RentCafe lists '24/7 concierge,' ApartmentList lists '24-hour front desk,' and the Silver Spring Downtown directory explicitly states '24-hour lobby attendant.'",
+      "Balconies/patios listed as an amenity on multiple sources, but described as available in 'select homes' on some listings; not every unit guaranteed.",
+      "Listed as in-home washer/dryer on all major sources, but one source qualifies it as 'select homes.'",
+      "Reviews are mixed: hallways and common areas described as clean by some residents; at least one review cites a roach problem. Insufficient recent verified reviews to call clearly.",
+      "RentCafe lists 'package acceptance' as an amenity; one aggregated search result names a 'package room' explicitly.",
+      "Multiple sources cite 'individual climate-control' as a unit feature.",
+      "2BR floor plans confirmed (Blair-G, Elsworth-DA series); no 1BR+den specifically listed, but the overall unit range goes up to 2,200 sqft across 1-3BR layouts.",
+      "407 units, built 1991, 3 to 16 stories",
+      "Bernstein Management Corporation",
+      "Up to 2 pets (cats and dogs); $300 one-time fee + $25/mo per pet"
     ]
   },
   {
-    "id": "pallas-at-pike-rose-now-bell-at-the-pike",
-    "name": "Pallas at Pike & Rose (now Bell at the Pike)",
+    "id": "pallas-at-pike-and-rose",
+    "name": "Pallas at Pike & Rose",
     "address": "11550 Old Georgetown Road, North Bethesda, MD 20852",
     "neighborhood": "North Bethesda, MD (Pike & Rose district)",
     "buildingType": "apartment",
@@ -908,7 +1591,7 @@
     },
     "units": [
       {
-        "id": "pallas-at-pike-rose-now-bell-at-the-pike-2br",
+        "id": "pallas-at-pike-and-rose-2br",
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
@@ -929,7 +1612,7 @@
     "notes": []
   },
   {
-    "id": "persei-at-pike-rose",
+    "id": "persei-at-pike-and-rose",
     "name": "PerSei at Pike & Rose",
     "address": "900 PerSei Place, North Bethesda, MD 20852",
     "neighborhood": "North Bethesda, MD (Pike & Rose)",
@@ -979,7 +1662,7 @@
     },
     "units": [
       {
-        "id": "persei-at-pike-rose-2br",
+        "id": "persei-at-pike-and-rose-2br",
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
@@ -1000,14 +1683,347 @@
     "notes": []
   },
   {
-    "id": "thayer-spring",
-    "name": "Thayer & Spring",
-    "address": "Thayer & Spring, Silver Spring, MD",
+    "id": "silver-spring-towers",
+    "name": "Silver Spring Towers",
+    "address": "816 Easley St, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.southernmanagement.com/communities/silver-spring-towers/",
+    "phone": "(240) 681-2677",
+    "photos": [
+      "https://www.southernmanagement.com/wp-content/uploads/2017/08/Silver-Spring-Towers_Living-Room_1.jpg"
+    ],
+    "coords": [
+      38.9939595,
+      -77.0224946
+    ],
+    "scores": {
+      "walk": 96,
+      "transit": 84,
+      "bike": 81,
+      "wsLink": "https://www.walkscore.com/score/816-Easley-St-Silver-Spring-MD-20910/lat=38.9939595/lng=-77.0224946/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": null,
+      "unitClimate": true,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "silver-spring-towers-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 1,
+        "squareFeet": null,
+        "balcony": null,
+        "inUnitLaundry": false,
+        "view": null,
+        "pricing": {
+          "baseRent": 2453,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Cats only per Southern Management official features page; $25/mo cat rent. Third-party listings conflict but operator site controls.",
+      "24-hour laundry rooms on each floor (shared); no in-unit washer/dryer. Residents pay per use.",
+      "One aggregator (ApartmentList) lists patio/balcony; official site and RentCafe are silent. Marked Unclear.",
+      "No dedicated package room listed. 24-hour concierge handles package receipt per resident review. Marked Unclear for a dedicated room.",
+      "Management praised as responsive (VeryApt 8.2/10 overall). At least one reviewer called the building 'dated' (built 1966) and noted occasional false fire alarms from gas heating.",
+      "'24-Hour Concierge Service' stated on Southern Management and RentCafe. Search result quotes: 'each of the two buildings has 24 hour door staff' and 'concierge 24h picking up packages.'",
+      "Confirmed: 15-story tower; elevator listed in VeryApt amenities.",
+      "Central A/C listed as in-unit apartment feature on RentCafe. Unit thermostat control not explicitly confirmed.",
+      [
+        "https://www.southernmanagement.com/communities/silver-spring-towers/",
+        "https://www.southernmanagement.com/communities/silver-spring-towers/features/",
+        "https://www.rentcafe.com/apartments/md/silver-spring/silver-spring-towers/default.aspx",
+        "https://www.apartmentlist.com/md/silver-spring/silver-spring-towers",
+        "https://www.veryapt.com/ApartmentReview-a7182-silver-spring-towers-silver-spring"
+      ]
+    ]
+  },
+  {
+    "id": "solaire-1150-ripley",
+    "name": "Solaire 1150 Ripley",
+    "address": "1150 Ripley St, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.solaire1150.com/",
+    "phone": "(301) 637-8887",
+    "photos": [
+      "https://lirp.cdn-website.com/c7d3bd98/dms3rep/multi/opt/Ripley+Lobby-444w.jpg"
+    ],
+    "coords": [
+      38.992205,
+      -77.0284825
+    ],
+    "scores": {
+      "walk": 99,
+      "transit": 88,
+      "bike": 89,
+      "wsLink": "https://www.walkscore.com/score/1150-Ripley-St-Silver-Spring-MD-20910/lat=38.992205/lng=-77.0284825/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 2,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": true,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "solaire-1150-ripley-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 2530,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "24/7 concierge confirmed by multiple resident reviews and listing sites; leasing office hours are Mon-Fri 9am-6pm, Sat 10am-5pm, Sun 12pm-5pm",
+      "Confirmed by resident reviews on ApartmentRatings and by the developer (Washington Property Company) site; not listed on official amenities page but multiple reviewers mention it specifically",
+      "LuxerOne 24/7 package locker service listed on official amenities page",
+      "Full-size, extra-large capacity washer and dryer in all units per official amenities page",
+      "Private balconies on select units only",
+      "Air conditioning listed as a unit feature on ApartmentList; in-unit control assumed but not explicitly confirmed on official site",
+      "17-story, 295-unit LEED Gold certified transit-oriented development completed May 2012; direct Metro access (Silver Spring station 700 ft away)",
+      "Studios, 1BR, and 2BR confirmed; 1BR+den floor plan code A1D seen on ApartmentList suggesting den configuration",
+      "Consistent resident reviews praise maintenance responsiveness and cleanliness of amenities",
+      "ApartmentList shows B3 from $2,530, B4 from $2,605, B5 from $2,720 (June 2026); ApartmentList overall range tops at ~$2,800"
+    ]
+  },
+  {
+    "id": "solaire-8200-dixon",
+    "name": "Solaire 8200 Dixon",
+    "address": "8200 Dixon Ave, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.solaire8200.com/floor-plans",
+    "phone": "(240) 558-0082",
+    "photos": [
+      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/1a2150deca99d278fd8e8f1143b6630a.jpg"
+    ],
+    "coords": [
+      38.9916527,
+      -77.0282085
+    ],
+    "scores": {
+      "walk": 93,
+      "transit": 88,
+      "bike": 85,
+      "wsLink": "https://www.walkscore.com/score/8200-Dixon-Ave-Silver-Spring-MD-20910/lat=38.9916527/lng=-77.0282085/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 2,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": null,
+      "doormanStatus": "Likely staffed",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "solaire-8200-dixon-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1090,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 2840,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Multiple listing sources (Trulia, ApartmentList search snippet) cite a doorman and concierge with 24-hour concierge and package service; however, the building's own amenities page lists only 'Concierge Package Room & Lockers' without staffing hours. One review noted concierge staff quality has declined. Classified as 'Likely staffed' rather than 'Confirmed 24h' because the official site does not state 24-hour staffing explicitly.",
+      "27-story, 403-unit high-rise opened November 2022; described as Silver Spring's tallest building at time of opening.",
+      "Dogs and cats allowed; restricted breeds include pit bulls, rottweilers, and German Shepherds; $250 pet fee plus $50/month pet rent per Rentable.",
+      "4.1 stars from 52 Yelp reviews as of June 2026; reviews note visually appealing modern finishes but some mention declining concierge quality; no major maintenance complaints surfaced but sample is small.",
+      "Air conditioning listed as a unit amenity across multiple listing platforms; thermostat/HVAC type (central vs. in-unit mini-split) not confirmed from public sources, but air conditioning is in-unit rather than building-controlled based on listing language.",
+      "No 1BR+den floor plan found on ApartmentList or Rentable listings; only studio, 1BR, and 2BR configurations listed."
+    ]
+  },
+  {
+    "id": "solaire-8250-georgia",
+    "name": "Solaire 8250 Georgia",
+    "address": "8250 Georgia Ave, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.solaire8250.com/",
+    "phone": "(301) 969-9711",
+    "photos": [
+      "https://lirp.cdn-website.com/6c02be5d/dms3rep/multi/opt/1Solaire+8250_ext+e-1920w.jpg"
+    ],
+    "coords": [
+      38.9926807,
+      -77.0264886
+    ],
+    "scores": {
+      "walk": 100,
+      "transit": 88,
+      "bike": 88,
+      "wsLink": "https://www.walkscore.com/score/8250-Georgia-Ave-Silver-Spring-MD-20910/lat=38.9926807/lng=-77.0264886/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 2,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": null,
+      "doormanStatus": "Likely staffed",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": true,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "solaire-8250-georgia-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": null,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 2405,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Property advertises '24-hour concierge service' and a 'Mobile Doorman App.' Leasing office hours are Mon-Fri 9am-6pm, Sat 10am-5pm, Sun 12pm-5pm. Whether a physical concierge is staffed overnight is not confirmed in available sources; classified as 'Likely staffed' rather than 'Confirmed 24h.'",
+      "Private balconies available on select units only, not standard across all homes.",
+      "Package Concierge Locker Service available; resident reviews note packages are secure.",
+      "Air conditioning listed as an in-unit amenity; specific thermostat/HVAC control type (in-unit vs. building-controlled) not confirmed in sources, but modern luxury apartment context and in-unit AC listing indicate resident-controlled.",
+      "Majority of reviews describe the building as clean and well-kept; maintenance team responsive to requests. One source noted grounds rated below average. Overall assessment is positive.",
+      [
+        "https://www.solaire8250.com/amenities",
+        "https://www.apartmentlist.com/md/silver-spring/solaire-8250-georgia",
+        "https://www.veryapt.com/ApartmentReview-a38980-solaire-8250-georgia-silver-spring",
+        "https://www.yelp.com/biz/solaire-8250-georgia-silver-spring"
+      ],
+      "2026-06-19"
+    ]
+  },
+  {
+    "id": "thayer-and-spring",
+    "name": "Thayer and Spring",
+    "address": "915 Silver Spring Ave, Silver Spring, MD 20910",
     "neighborhood": "Silver Spring",
     "buildingType": "apartment",
     "leasingUrl": "https://rent.brookfieldproperties.com/property/thayer-and-spring/",
-    "phone": null,
-    "photos": [],
+    "phone": "(301) 895-9422",
+    "photos": [
+      "https://rent.brookfieldproperties.com/wp-content/uploads/2024/06/Kitchen-3-scaled.jpg"
+    ],
     "coords": [
       38.9924805,
       -77.0257348
@@ -1033,40 +2049,54 @@
       }
     },
     "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
       "elevator": true,
-      "pool": null,
-      "gym": null,
+      "pool": true,
+      "gym": true,
       "playground": null,
-      "petFriendly": null,
-      "packageRoom": null,
-      "unitClimate": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
       "wellMaintained": null,
-      "noise": 4
+      "noise": null
     },
     "units": [
       {
-        "id": "thayer-spring-2br",
+        "id": "thayer-and-spring-2br",
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
-        "bathrooms": null,
-        "squareFeet": 850,
+        "bathrooms": 2,
+        "squareFeet": null,
         "balcony": true,
         "inUnitLaundry": true,
         "view": null,
         "pricing": {
-          "baseRent": 2733,
+          "baseRent": 2510,
           "parking": 0,
           "utilities": {},
           "mandatoryFees": 0
         }
       }
     ],
-    "source": "gemini-csv (low confidence, verify)",
+    "source": "verified",
     "notes": [
-      "Quieter Fenton Village pocket; very visible front-desk team."
+      "24/7 concierge confirmed on Brookfield Properties official listing; handles visitor coordination and package acceptance",
+      "11-story building, elevators confirmed present; multiple reviews note elevators are unreliable and frequently out of service",
+      "Private patios or balconies in select units only, not standard across all apartments",
+      "In-home washer and dryer in all units per RentCafe listing",
+      "Up to two pets, cats and dogs, no weight limit; breed restrictions apply (13 restricted breeds); on-site pet spa",
+      "Secured package lockers plus concierge package acceptance",
+      "Air conditioning listed as in-unit feature across multiple sources; specific control type (unit thermostat vs building-controlled) not stated explicitly, but in-unit listing convention implies resident control",
+      "2BR units confirmed; no 1BR+den floor plan mentioned in any source ('Yes' reflects 2BR availability only)",
+      "Mixed signals: common areas described as clean by some residents, 3.5/5 rating on RentCafe (277 reviews), but elevator breakdowns cited in multiple reviews; managed by Brookfield Properties (large institutional operator)",
+      "Built 2019; 11 stories; 399 units; studios, 1BR, 2BR, and townhomes; Brookfield Properties management; MPDU and workforce housing units available alongside market rate",
+      [
+        "https://rent.brookfieldproperties.com/property/thayer-and-spring/",
+        "https://www.rentcafe.com/apartments/md/silver-spring/thayer-and-spring/default.aspx",
+        "https://www.veryapt.com/ApartmentReview-a26015-thayer-spring-silver-spring"
+      ]
     ]
   },
   {
@@ -1153,6 +2183,93 @@
     ]
   },
   {
+    "id": "the-crescent",
+    "name": "The Crescent",
+    "address": "930 Wayne Ave, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "condo",
+    "leasingUrl": "http://www.crescentcondo.com",
+    "phone": "(301) 608-8030",
+    "photos": [
+      "https://cdn.apartmentlist.com/image/upload/c_fill,dpr_auto,f_auto,g_center,h_415,q_auto,w_640/f96a44ec1bcd446f5db8027a35eb17bb.jpg"
+    ],
+    "coords": [
+      38.9945523,
+      -77.0252733
+    ],
+    "scores": {
+      "walk": 100,
+      "transit": 87,
+      "bike": 86,
+      "wsLink": "https://www.walkscore.com/score/930-Wayne-Ave-Silver-Spring-MD-20910/lat=38.9945523/lng=-77.0252733/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": null,
+      "doormanStatus": "Likely staffed",
+      "elevator": true,
+      "pool": false,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "the-crescent-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 963,
+        "balcony": true,
+        "inUnitLaundry": true,
+        "view": null,
+        "pricing": {
+          "baseRent": 2190,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Multiple sources confirm concierge service 7 days/week. No source specifies 24-hour staffing hours, so rated 'Likely staffed' rather than 'Confirmed 24h.'",
+      "14-story condominium building completed 2006/occupancy March 2007, with 143 units in Downtown Silver Spring (Fenton Village). Units are individually owned and some are rented out, so lease terms and finishes vary by owner.",
+      "Fitness center, billiard room, resident lounge, shared patio/courtyard with outdoor seating and grilling station, game room, conference/meeting room, bike storage, assigned underground garage parking. No pool.",
+      "One Yelp review from a former long-term resident cited safety concerns, cockroaches, a 15-day gas outage, and water damage. No corroborating reviews found to confirm or contradict. Building last updated on Yelp April 2026.",
+      "Pet-friendly; specific breed/weight restrictions not confirmed in reviewed sources.",
+      "Air conditioning and heat confirmed; at least one source notes heat included in rent/HOA. Individual unit control implied by standard condo arrangement.",
+      "Building is condominiums; rental units are owner-listed individually. VeryApt shows 1BR from $1,780 and 2BR from $2,190; Compass and ApartmentList show 2BR at $2,400/month. Prices reflect individual owner decisions and vary.",
+      [
+        "https://www.veryapt.com/ApartmentReview-a17958-the-crescent-silver-spring",
+        "https://www.compass.com/building/the-crescent-condo-silver-spring-md/817327378493146461/",
+        "https://www.apartmentlist.com/md/silver-spring/930-wayne-ave--1",
+        "https://silverspringdowntown.com/go/the-crescent",
+        "https://www.yelp.com/biz/crescent-condominium-silver-spring",
+        "https://www.apartments.com/the-crescent-silver-spring-md/pm3b4ft/"
+      ]
+    ]
+  },
+  {
     "id": "the-hartley",
     "name": "The Hartley",
     "address": "7150 12th St NW, Washington, DC 20012",
@@ -1224,7 +2341,7 @@
     "notes": []
   },
   {
-    "id": "the-henri-at-pike-rose",
+    "id": "the-henri-at-pike-and-rose",
     "name": "The Henri at Pike & Rose",
     "address": "11870 Grand Park Avenue, North Bethesda, MD 20852",
     "neighborhood": "North Bethesda, MD",
@@ -1274,7 +2391,7 @@
     },
     "units": [
       {
-        "id": "the-henri-at-pike-rose-2br",
+        "id": "the-henri-at-pike-and-rose-2br",
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
@@ -1386,12 +2503,14 @@
   {
     "id": "the-pearl",
     "name": "The Pearl",
-    "address": "The Pearl, Silver Spring, MD",
+    "address": "180 High Park Lane, Silver Spring, MD 20910",
     "neighborhood": "Silver Spring",
     "buildingType": "apartment",
     "leasingUrl": "https://www.liveatthepearl.com/",
-    "phone": null,
-    "photos": [],
+    "phone": "(301) 587-3275",
+    "photos": [
+      "https://www.liveatthepearl.com/images/exterior.jpg"
+    ],
     "coords": [
       38.9911752,
       -77.0343434
@@ -1417,17 +2536,17 @@
       }
     },
     "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
       "elevator": true,
-      "pool": null,
-      "gym": null,
+      "pool": true,
+      "gym": true,
       "playground": null,
-      "petFriendly": null,
-      "packageRoom": null,
-      "unitClimate": null,
-      "wellMaintained": null,
-      "noise": 4
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
+      "wellMaintained": true,
+      "noise": null
     },
     "units": [
       {
@@ -1435,39 +2554,66 @@
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
-        "bathrooms": null,
-        "squareFeet": 950,
+        "bathrooms": 1,
+        "squareFeet": null,
         "balcony": true,
         "inUnitLaundry": true,
         "view": null,
         "pricing": {
-          "baseRent": 3200,
+          "baseRent": 3172,
           "parking": 0,
           "utilities": {},
           "mandatoryFees": 0
         }
       }
     ],
-    "source": "gemini-csv (low confidence, verify)",
+    "source": "verified",
     "notes": [
-      "Premium building with hotel-standard concierge; set back from traffic, quietest option."
+      "Multiple listing sources (RentCafe, Zumper, VeryApt, ApartmentAdvisor) explicitly list '24 Hour Concierge Service.' Leasing office hours (Mon-Sat 9am-6pm, Sun 12pm-5pm) are separate from concierge staffing. Resident reviews on ApartmentRatings name specific overnight concierge staff as consistently present. Rated Confirmed 24h.",
+      "LEED-certified luxury high-rise, 14 stories, 284 units, built 2017 by The Tower Companies. First Fitwel-certified multifamily building in the world. Winner of Best New Apartment 2017 (DC/MD). Located in The Blairs District, approximately 0.4 miles from Silver Spring Metro (Red Line). Walk Score 83, Transit Score 88.",
+      "Aquaterra rooftop saltwater pool with cabanas; two-story fitness center with free weekly classes; wellness kitchen; WorkLab WiFi co-working lounge; on-site urban farm; dog park and pet spa; EV charging; Zipcar car sharing; package lockers; reservable guest suite; valet dry cleaning; bike room; residents lounge; TV lounge; onsite retail; controlled access.",
+      "Private balconies available on select units across multiple configurations: standard, long, double, and penthouse double balcony. Terraces also available on some units. Not every unit includes a balcony; presence depends on specific unit selection.",
+      "2BR floor plans confirmed: Hawthorn (2/2, 1,064-1,119 sq ft, $3,172-$3,633/mo) and Olympia (2/2, 1,124 sq ft, $3,368-$3,741/mo). No 1BR+den plan found in available sources; 1BR plans are Bayberry and Duxbury. Absence of a named den plan does not rule one out, but none confirmed.",
+      "In-unit washer/dryer confirmed across multiple listing sources (Interim Homes, VeryApt, ApartmentRatings reviews) and resident reviews. One source listed 'washer/dryer connections' only; majority of sources confirm full in-unit machines. Verify with leasing for specific unit.",
+      "Air conditioning listed as a unit feature on multiple sources. Individual thermostat control vs. building-managed chilled water system not confirmed explicitly. Rated Yes (in-unit control assumed for a luxury 2017 building with this profile, but verify with leasing to confirm independently controlled thermostats).",
+      "Cats and dogs welcome. Up to 2 pets per home. Weight limit approximately 100 lbs. Breed restrictions apply (Pit Bulls, Rottweilers, Huskies, German Shepherds listed). $500 refundable deposit per pet and $45/month pet rent per RentCafe. Dog park and pet grooming station on-site.",
+      "Rated 4.5/5 across 202 resident reviews on ApartmentRatings and 7.6/10 on Zumper. Reviewers consistently describe professional, responsive staff and 24-hour emergency maintenance. Main recurring complaint is power outages during storms.",
+      "Primary leasing phone (301) 587-3275. Secondary numbers seen: (227) 238-1838 and (844) 432-0208 ext. 8735 on RentCafe and Zumper respectively; may be call-center or third-party lines.",
+      [
+        "https://www.liveatthepearl.com/",
+        "https://www.liveatthepearl.com/floorplans/",
+        "https://www.rentcafe.com/apartments/md/silver-spring/the-pearl-2/default.aspx",
+        "https://www.rentable.co/silver-spring-md/the-pearl",
+        "https://www.zumper.com/apartment-buildings/p283565/the-pearl-silver-spring-md",
+        "https://www.veryapt.com/ApartmentReview-a20664-the-pearl-silver-spring",
+        "https://www.apartmentratings.com/md/silver-spring/the-pearl_9199332346275175631/",
+        "https://www.apartmentadvisor.com/details/180-high-park-ln-silver-spring-md-20910",
+        "https://interimhomes.com/properties/the-pearl/",
+        "https://www.yelp.com/biz/the-pearl-silver-spring-2"
+      ]
     ]
   },
   {
     "id": "the-veridian",
     "name": "The Veridian",
-    "address": "The Veridian, Silver Spring, MD",
+    "address": "1133 East-West Highway, Silver Spring, MD 20910",
     "neighborhood": "Silver Spring",
     "buildingType": "apartment",
     "leasingUrl": "https://www.equityapartments.com/maryland/silver-spring/the-veridian-apartments",
-    "phone": null,
-    "photos": [],
-    "coords": null,
+    "phone": "(240) 641-0650",
+    "photos": [
+      "https://static.apartmentadvisor.com/i/2ed5dfb21e776112504c80489475c831_652_416.jpeg"
+    ],
+    "coords": [
+      38.9891588,
+      -77.0277617
+    ],
     "scores": {
-      "walk": null,
-      "transit": null,
-      "bike": null,
-      "wsLink": null
+      "walk": 95,
+      "transit": 86,
+      "bike": 82,
+      "wsLink": "https://www.walkscore.com/score/1133-East.dash.West-Highway-Silver-Spring-MD-20910/lat=38.9891588/lng=-77.0277617/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
     },
     "walkToMetroMin": 5,
     "distances": {
@@ -1486,14 +2632,14 @@
       "doorman": null,
       "doormanStatus": "Likely staffed",
       "elevator": true,
-      "pool": null,
-      "gym": null,
+      "pool": true,
+      "gym": true,
       "playground": null,
-      "petFriendly": null,
-      "packageRoom": null,
-      "unitClimate": null,
+      "petFriendly": true,
+      "packageRoom": true,
+      "unitClimate": true,
       "wellMaintained": null,
-      "noise": 2
+      "noise": null
     },
     "units": [
       {
@@ -1501,22 +2647,117 @@
         "label": "2BR",
         "bedrooms": 2,
         "den": false,
-        "bathrooms": null,
+        "bathrooms": 2,
         "squareFeet": 1086,
         "balcony": true,
         "inUnitLaundry": true,
         "view": null,
         "pricing": {
-          "baseRent": 2487,
+          "baseRent": 2475,
           "parking": 0,
           "utilities": {},
           "mandatoryFees": 0
         }
       }
     ],
-    "source": "gemini-csv (low confidence, verify)",
+    "source": "verified",
     "notes": [
-      "Train noise significant in the East building; request the West building."
+      "Marketed by Equity Residential as '24-hour concierge.' Multiple listing sources and resident summaries confirm 24-hour concierge language. However, at least one older resident review reported that the East-side front desk concierge position was reduced or eliminated while the 24h marketing language continued. Current search results cite named concierge staff and positive service reviews, consistent with staffed front desk. Rated 'Likely staffed' rather than 'Confirmed 24h' because no independently verified post-2024 account confirms overnight staffing on both sides.",
+      "2BR/2BA floor plans confirmed at 1,086-1,227 sq ft. 1BR+den floor plans confirmed at 910-949 sq ft with 1 bath.",
+      "457-unit rental apartment building built 2009, managed by Equity Residential. Art Deco architecture, eco-friendly green roof, two towers soaring 15 stories, steps from Silver Spring Metro (Red Line) and MARC.",
+      "Rooftop pool and sundeck, two fitness centers with cardio theater and free weights, resident pub, conference and dining rooms, private study room, e-lounge, guest suite, on-site convenience store, controlled-access entry, covered garage parking.",
+      "Dogs and cats permitted. Up to 3 of each. Monthly pet rent: $65/dog, $50/cat. One-time deposit: $300/pet. Restricted breeds policy applies.",
+      "Building described as 'beautiful' and well-maintained in most reviews. Gym equipment flagged as worn in at least one review (broken machinery, tears in wall/rug). Maintenance response times mixed; some residents report slow follow-up without communication. Rated 'Unclear' pending more recent consistent data.",
+      "Units near WMATA/CSX tracks experience train noise; residents report adapting. Interior building described as 'pretty quiet' with 'decently thick' walls.",
+      [
+        "https://www.equityapartments.com/maryland/silver-spring/the-veridian-apartments",
+        "https://www.zumper.com/apartment-buildings/p12798/the-veridian-silver-spring-md",
+        "https://www.apartmentadvisor.com/details/1133-east-west-hwy-silver-spring-md-20910",
+        "https://www.veryapt.com/ApartmentReview-a1766-the-veridian-silver-spring",
+        "https://silverspringdowntown.com/go/veridian-apartments",
+        "https://www.apartmentlist.com/md/silver-spring/the-veridian"
+      ]
+    ]
+  },
+  {
+    "id": "twin-towers",
+    "name": "Twin Towers",
+    "address": "1110 Fidler Lane, Silver Spring, MD 20910",
+    "neighborhood": "Silver Spring",
+    "buildingType": "apartment",
+    "leasingUrl": "https://www.southernmanagement.com/communities/twin-towers/",
+    "phone": "(240) 681-2774",
+    "photos": [
+      "https://www.southernmanagement.com/wp-content/uploads/2022/09/Twin-Towers_Living-Room_1.jpg"
+    ],
+    "coords": [
+      38.9963037,
+      -77.0291384
+    ],
+    "scores": {
+      "walk": 99,
+      "transit": 88,
+      "bike": 82,
+      "wsLink": "https://www.walkscore.com/score/1110-Fidler-Lane-Silver-Spring-MD-20910/lat=38.9963037/lng=-77.0291384/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
+      "fetchedOn": "2026-06-19"
+    },
+    "walkToMetroMin": null,
+    "distances": {
+      "metro": {
+        "drive": 3,
+        "walk": null,
+        "station": "Silver Spring"
+      },
+      "synagogue": {
+        "drive": 11
+      },
+      "berman": {
+        "drive": 19
+      }
+    },
+    "building": {
+      "doorman": true,
+      "doormanStatus": "Confirmed 24h",
+      "elevator": true,
+      "pool": true,
+      "gym": true,
+      "playground": null,
+      "petFriendly": true,
+      "packageRoom": null,
+      "unitClimate": false,
+      "wellMaintained": null,
+      "noise": null
+    },
+    "units": [
+      {
+        "id": "twin-towers-2br",
+        "label": "2BR",
+        "bedrooms": 2,
+        "den": false,
+        "bathrooms": 2,
+        "squareFeet": 1250,
+        "balcony": null,
+        "inUnitLaundry": false,
+        "view": null,
+        "pricing": {
+          "baseRent": 2483,
+          "parking": 0,
+          "utilities": {},
+          "mandatoryFees": 0
+        }
+      }
+    ],
+    "source": "verified",
+    "notes": [
+      "Southern Management Corporation",
+      "Up to 2 pets; dogs up to 80 lbs each; $25/month pet rent per pet",
+      "Shared coin-op laundry rooms in basement (two per tower); no in-unit W/D confirmed by features page and resident reviews despite a data error on the main marketing page",
+      "Single-duct building HVAC converted seasonally (cooling in summer, heat in winter); residents cannot control both modes independently; some reviews note poor AC performance",
+      "ApartmentList lists patio/balcony as a unit feature; official Southern Management site and RentCafe do not mention balconies; unconfirmed",
+      "Reviews split: majority call building reasonably clean and well-maintained with responsive staff; some describe amenities as outdated",
+      "All utilities included in rent",
+      "Adjacent to Silver Spring Metro (Red Line); Walk Score 99",
+      "Studio ~450 sqft, 1BR ~550 sqft, 2BR ~1,250 sqft"
     ]
   },
   {

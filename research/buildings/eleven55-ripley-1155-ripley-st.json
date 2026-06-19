@@ -1,0 +1,38 @@
+{
+  "name": "Eleven55 Ripley",
+  "address": "1155 Ripley St, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://www.udr.com/washington-dc-apartments/silver-spring/eleven55-ripley/",
+  "phone": "(301) 756-5529",
+  "photoUrl": "https://www.udr.com/globalassets/communities/eleven55-ripley/images/eleven55_header_logo.jpg",
+  "doormanStatus": "Confirmed 24h",
+  "elevator": "Yes",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "Yes",
+  "wellMaintained": "Unclear",
+  "bathroomsNote": "2BR units come with 2 or 2.5 baths depending on layout (B2A/B2B/B2C/B2ED = 2 bath; B2.5B = 2.5 bath)",
+  "approxRentRange": "$2,377-$2,727/mo (2BR, as of June 2026; multiple layouts 886-1,285 sq ft)",
+  "notes": {
+    "doorman": "UDR amenities page lists '24-hour Concierge services' explicitly. Resident reviews note inconsistent staffing turnover but confirmed a front-desk presence that screens entry.",
+    "wellMaintained": "Mixed reviews (aggregate ~3.3/5 across 270 reviews, 6.3/10 on VeryApt). Complaints include elevator outages, building leaks in heavy rain, past roach infestation (resolved over ~4 months), and AC failures. Maintenance response praised by some residents. Building is relatively new (high-rise, tallest in Silver Spring at opening) but reviews indicate deferred upkeep on amenities and equipment.",
+    "balcony": "Resident reviews specifically mention private balconies with DMV views; UDR amenity page does not list balcony as a universal feature (may be unit-specific).",
+    "floorPlans": "No 1BR+den layout listed on the UDR floor plans page. Only Studio, 1BR, and 2BR offered.",
+    "pool": "Rooftop pool on the Sky Deck with panoramic Metro DC views; also a 21st-floor Sky Lounge.",
+    "petPolicy": "Pet-friendly for cats and dogs; specific breed/size restrictions not published on the amenities page.",
+    "sources": [
+      "https://www.udr.com/washington-dc-apartments/silver-spring/eleven55-ripley/",
+      "https://www.udr.com/washington-dc-apartments/silver-spring/eleven55-ripley/amenities/",
+      "https://www.udr.com/washington-dc-apartments/silver-spring/eleven55-ripley/floor-plans/",
+      "https://www.veryapt.com/ApartmentReview-a726-eleven55-ripley-silver-spring",
+      "https://www.yelp.com/biz/eleven55-ripley-silver-spring"
+    ],
+    "retrievedDate": "2026-06-19"
+  }
+}

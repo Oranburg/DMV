@@ -1,0 +1,43 @@
+{
+  "name": "Arrive Silver Spring",
+  "address": "8750 Georgia Ave, Silver Spring, MD 20910",
+  "neighborhood": "Silver Spring",
+  "buildingType": "apartment",
+  "leasingUrl": "https://arrivesilverspring.com/",
+  "phone": "(301) 844-6604",
+  "photoUrl": "https://arrivesilverspring.com/wp-content/uploads/2024/01/Logo-ArrvSlvrSprng_Wide-Low-2.png",
+  "approxRentRange": "$2,000-$2,575 (2BR/1BA at $2,000-$2,275; 2BR/2BA at $2,100-$2,575 depending on size)",
+  "doormanStatus": "Likely staffed",
+  "has2BRor1BRDen": "Yes",
+  "balcony": "Yes",
+  "inUnitLaundry": "Unclear",
+  "elevator": "Yes",
+  "petFriendly": "Yes",
+  "pool": "Yes",
+  "gym": "Yes",
+  "packageRoom": "Yes",
+  "unitClimate": "No",
+  "wellMaintained": "No",
+  "bathroomsNote": "2BR plans range from 1BA (1,108 sq ft) to 2BA (1,170-1,300 sq ft); studio and 1BR are 1BA",
+  "notes": {
+    "doorman": "Multiple listing sources describe a 'fully staffed concierge desk' and at least one search summary cites 24/7 concierge; however, veryapt reviews note 'door security inconsistent' and the property's own site does not explicitly state 24-hour hours; 'Likely staffed' is the honest call",
+    "inUnitLaundry": "Rentable lists in-unit washer/dryer; Rentable also says 'select units'; veryapt reviewers mention floor-level laundry rooms as a building feature rather than in-unit appliances; availability per unit is not confirmed across all plans",
+    "unitClimate": "veryapt reviewers explicitly state residents cannot individually control heat/AC; the building switches systems seasonally",
+    "balcony": "Rentable and listing sites list 'private patios/balconies' as a unit feature; availability varies by unit",
+    "wellMaintained": "Apartmentratings.com (1,349 reviews) and veryapt (6.2/10, 13 reviews) both show mixed-to-negative trends: reports of rodent/roach infestations, maintenance requests requiring 4-5 follow-ups, cabinets deteriorating, and a significant ratings drop since new management and renovations began; some residents report responsive maintenance",
+    "petFriendly": "$25/month per pet (max 2 pets); no deposit required; breed restrictions apply (pit bulls, rottweilers, German shepherds, and mixes prohibited)",
+    "packageRoom": "Front desk handles package receipt; some reviewer complaints about occasional misplacement",
+    "has2BRor1BRDen": "2BR floor plans confirmed; no 1BR+den plan found on floor plan pages (site lists studio, 1BR, 2BR only)",
+    "buildingDetails": "16-story high-rise; 891 units; managed by Trinity Property Consultants",
+    "currentSpecials": "6 weeks free on 12+ month leases (as of June 2026)",
+    "otherPhone": "(301) 637-0084 (Yelp listing)"
+  },
+  "sources": [
+    "https://arrivesilverspring.com/",
+    "https://www.rentable.co/silver-spring-md/arrive-silver-spring",
+    "https://www.veryapt.com/ApartmentReview-a6649-arrive-silver-spring-silver-spring",
+    "https://www.apartmentratings.com/md/silver-spring/arrive-silver-spring_301587390020910/",
+    "https://www.yelp.com/biz/arrive-silver-spring-silver-spring"
+  ],
+  "researchDate": "2026-06-19"
+}
