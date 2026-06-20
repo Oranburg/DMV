@@ -35,3 +35,6 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the Astr
 
 - `design-notes.md` is the full mobile design specification the UI is built from.
 - `legacy/` holds the previous single-file vanilla dashboard, kept for reference. The original family-relocation scoring factors are preserved in the `legacyFactors` block of the config, hidden from the UI but available to switch back on.
+
+## Status
+This project is complete and inactive: the relocation housing search it supported is over. It is slated for archiving on GitHub. See the wiki Decision-2026-06-20 page.
