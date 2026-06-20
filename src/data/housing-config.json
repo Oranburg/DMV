@@ -217,30 +217,6 @@
         "on": true,
         "weight": 15
       }
-    },
-    {
-      "key": "gym",
-      "label": "Good exercise room",
-      "kind": "feature",
-      "level": "building",
-      "rule": "triBool",
-      "path": "building.gym",
-      "default": {
-        "on": false,
-        "weight": 15
-      }
-    },
-    {
-      "key": "view",
-      "label": "Nice view (lower priority)",
-      "kind": "feature",
-      "level": "unit",
-      "rule": "triBool",
-      "path": "view",
-      "default": {
-        "on": false,
-        "weight": 10
-      }
     }
   ],
   "mustValue": 101,
