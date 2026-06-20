@@ -148,11 +148,13 @@ async function main() {
         }
         await sleep(300);
       }
-      if (b.coords && (!b.distances || b.distances.synagogue?.drive == null || b.distances.berman?.drive == null || !b.distances.metro?.station)) {
+      // Google-sourced distances (scripts/google-distances.mjs) are the cached source of
+      // truth for KMS/Berman drives and walk-to-Metro; never overwrite them with OSRM.
+      if (b.coords && b.distances?.source !== "google" && (!b.distances || b.distances.synagogue?.drive == null || b.distances.berman?.drive == null || !b.distances.metro?.station)) {
         b.distances = await routeDistances(b);
         console.log(`routed ${b.name} -> metro ${b.distances.metro.drive}m drive (${b.distances.metro.station}), KMS ${b.distances.synagogue.drive}m, Berman ${b.distances.berman.drive}m`);
       }
-      if (b.coords && b.distances && b.distances.metro && b.distances.metro.walk == null) {
+      if (b.coords && b.distances?.source !== "google" && b.distances && b.distances.metro && b.distances.metro.walk == null) {
         const st = nearestStation(b.coords);
         b.distances.metro.walk = Math.max(1, Math.round(haversineMi(b.coords, st.c) * 22));
         console.log(`metro walk estimate ${b.name} -> ${b.distances.metro.walk} min`);
