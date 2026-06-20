@@ -488,7 +488,7 @@
       "unitClimate": null,
       "wellMaintained": false,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 2015
     },
     "units": [
       {
@@ -655,7 +655,7 @@
       "unitClimate": null,
       "wellMaintained": true,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 1959
     },
     "units": [
       {
@@ -820,7 +820,7 @@
       "unitClimate": null,
       "wellMaintained": true,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 2015
     },
     "units": [
       {
@@ -1333,7 +1333,7 @@
       "unitClimate": null,
       "wellMaintained": null,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 2015
     },
     "units": [
       {
@@ -1649,7 +1649,7 @@
       "unitClimate": true,
       "wellMaintained": true,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 2015
     },
     "units": [
       {
@@ -1728,7 +1728,7 @@
       "unitClimate": null,
       "wellMaintained": null,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 2014
     },
     "units": [
       {
@@ -2072,7 +2072,7 @@
       "unitClimate": true,
       "wellMaintained": true,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 2019
     },
     "units": [
       {
@@ -2521,7 +2521,7 @@
       "unitClimate": true,
       "wellMaintained": false,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 2017
     },
     "units": [
       {
@@ -2894,7 +2894,7 @@
       "unitClimate": false,
       "wellMaintained": null,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 1967
     },
     "units": [
       {
@@ -2981,7 +2981,7 @@
       "unitClimate": true,
       "wellMaintained": null,
       "noise": null,
-      "yearBuilt": null
+      "yearBuilt": 1971
     },
     "units": [
       {

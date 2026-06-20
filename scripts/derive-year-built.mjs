@@ -19,6 +19,22 @@ const DATA = new URL("src/data/housing-properties.json", ROOT);
 
 const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
 
+// Build years confirmed by web lookup for buildings whose research notes carry no
+// construction year. Used only as a fallback when extraction finds nothing.
+// Each year is the ORIGINAL construction, not a renovation.
+const MANUAL_YEARS = {
+  bellatthepike: 2015, // apartmentfinder/zillow listings, "Built 2015"
+  blairhouse: 1959, // rentable.co, 8201 16th St (Tower Companies); medium confidence, pre-SDAT
+  blvdfortyfour: 2015, // opened as "The Upton" (Bozzuto), renamed after Comstock's 2021 buy
+  galvanattwinbrook: 2015, // DAVIS Construction project page
+  pallasatpikerose: 2015, // UrbanTurf, first move-ins Spring 2015
+  perseiatpikerose: 2014, // Bethesda Magazine, first Pike & Rose residential building, May 2014
+  solaire8250georgia: 2019, // Washington Property Company site, "completed spring of 2019"
+  thehenriatpikerose: 2017, // resident reviews + 2017 pre-leasing (ignore the 2022 copyright artifact)
+  twintowers: 1967, // RentCafe building details, "constructed in 1967" (Southern Management)
+  victorytower: 1971, // AGM Financial, "Built in 1971 and renovated 2004/2005" (original year)
+};
+
 // Years tied to original construction. Renovation verbs are excluded on purpose.
 function buildYears(blob) {
   const re = /(?:built|opened|completed|delivered|constructed|construction|new construction|builtyear)\D{0,18}(19\d\d|20[0-2]\d)/gi;
@@ -57,7 +73,7 @@ async function main() {
       }
     }
     const years = blob ? buildYears(blob) : [];
-    const year = years.length ? years[0] : null; // earliest = original construction
+    const year = years.length ? years[0] : MANUAL_YEARS[nm] ?? null; // notes first, then verified lookup
     b.building = b.building || {};
     b.building.yearBuilt = year;
     if (year) filled++;
