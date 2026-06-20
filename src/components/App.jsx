@@ -68,9 +68,11 @@ function scalarSub(rule, building, unit, S) {
       return clamp01((S.costCeiling - unitAllIn(unit)) / (S.costCeiling - S.costFloor));
     case "metroWalk":
       return lin(distanceFor(building, "metro", "walk"), S.metroWalkBest, S.metroWalkWorst);
-    case "quiet": {
-      const n = building.building && building.building.noise;
-      return n == null ? null : clamp01((n - S.quietWorst) / (S.quietBest - S.quietWorst));
+    case "newness": {
+      // Newer building scores higher, by original construction year. Renovations
+      // are ignored. Unknown year stays null so it neither helps nor hurts.
+      const y = building.building && building.building.yearBuilt;
+      return y == null ? null : linUp(y, S.newnessWorst, S.newnessBest);
     }
     case "distanceSynagogue":
       return lin(distanceFor(building, "synagogue", "drive"), S.synagogueDriveBest, S.synagogueDriveWorst);
@@ -375,6 +377,7 @@ function BuildingCard({ entry, rank, mustFeatures, locations, expanded, onToggle
             {building.distances?.metro?.station ? `${building.distances.metro.station} Metro` : building.neighborhood}
           </div>
         )}
+        {building.building?.yearBuilt && <div className="built-year">Built {building.building.yearBuilt}</div>}
         <div className="rent-range tnum">{rentLabel}</div>
 
         <WalkScores building={building} />

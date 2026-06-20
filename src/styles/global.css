@@ -786,6 +786,12 @@ a {
 }
 
 /* ---------- metro chip ---------- */
+.built-year {
+  font-size: var(--fs-sm);
+  color: var(--c-text-muted);
+  margin-top: var(--sp-1);
+}
+
 .metro-chip {
   display: inline-flex;
   align-items: center;
