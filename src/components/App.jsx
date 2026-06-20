@@ -329,6 +329,7 @@ const TYPE_LABEL = { apartment: "Apartment", condo: "Condo" };
 function BuildingCard({ entry, rank, mustFeatures, locations, expanded, onToggle, onFeedback }) {
   const { building, score, bestUnit } = entry;
   const photos = building.photos || [];
+  const [photoOk, setPhotoOk] = useState(true);
   const qualifying = entry.qualifyingUnits;
   const allIns = qualifying.map(unitAllIn).filter((n) => n > 0);
   const lo = allIns.length ? Math.min(...allIns) : null;
@@ -345,8 +346,15 @@ function BuildingCard({ entry, rank, mustFeatures, locations, expanded, onToggle
   return (
     <article className="card">
       <div className="card-photo-wrap">
-        {photos.length ? (
-          <img className="card-photo" src={photos[0]} alt={`Exterior of ${building.name}`} loading={rank === 1 ? "eager" : "lazy"} decoding="async" />
+        {photos.length && photoOk ? (
+          <img
+            className="card-photo"
+            src={photos[0]}
+            alt={`Exterior of ${building.name}`}
+            loading={rank === 1 ? "eager" : "lazy"}
+            decoding="async"
+            onError={() => setPhotoOk(false)}
+          />
         ) : (
           <PhotoFallback name={building.name} />
         )}

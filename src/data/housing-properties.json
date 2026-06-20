@@ -7,9 +7,7 @@
     "buildingType": "apartment",
     "leasingUrl": "https://www.affinityongeorgia.com/",
     "phone": "(833) 941-0974",
-    "photos": [
-      "https://www.affinityongeorgia.com/photogallery"
-    ],
+    "photos": [],
     "coords": [
       38.9877823,
       -77.0256436
@@ -94,9 +92,7 @@
     "buildingType": "apartment",
     "leasingUrl": "https://www.apartments.com/alexander-house-at-elizabeth-square-silver-spring-md/023hjg2/",
     "phone": "(240) 624-7311",
-    "photos": [
-      "Unclear"
-    ],
+    "photos": [],
     "coords": [
       38.9964865,
       -77.0324526
@@ -179,9 +175,7 @@
     "buildingType": "apartment",
     "leasingUrl": "https://arrivesilverspring.prospectportal.com/silver-spring/arrive-silver-spring/conventional/",
     "phone": "(301) 830-8667",
-    "photos": [
-      "https://arrivesilverspring.com/wp-content/uploads/2024/01/Logo-ArrvSlvrSprng_Wide-Low-2.png"
-    ],
+    "photos": [],
     "coords": [
       38.9985661,
       -77.0313194
@@ -259,9 +253,7 @@
     "buildingType": "apartment",
     "leasingUrl": "https://www.atwellonspring.com/",
     "phone": "(240) 410-1808",
-    "photos": [
-      "https://www.bozzuto.com/apartments-for-rent/md/silver-spring/atwell-on-spring/gallery/"
-    ],
+    "photos": [],
     "coords": [
       39.0003073,
       -77.0299713
@@ -1201,9 +1193,7 @@
     "buildingType": "apartment",
     "leasingUrl": "https://www.liveatgalvan.com/",
     "phone": null,
-    "photos": [
-      "https://www.liveatgalvan.com/"
-    ],
+    "photos": [],
     "coords": [
       39.0602905,
       -77.1212841
@@ -1405,77 +1395,6 @@
       "Outdoor pool, tennis courts, fitness center/exercise room, rooftop lounge (rentable), garden room with kitchen, bicycle storage, rooftop courtyard, small library, grilling area, additional storage units (rentable). Underground and surface parking available.",
       "Because this is a condo building with individual landlords, rent and included utilities vary unit to unit. Listings from 2025-2026 range from ~$1,890 (2BR/2BA, utilities included) to ~$3,100. Many landlords include all utilities in rent because their HOA fees already cover them."
     ]
-  },
-  {
-    "id": "kite-house-at-the-parks",
-    "name": "Kite House at The Parks",
-    "address": "7175 12th Street NW, Washington, DC 20012",
-    "neighborhood": "The Parks at Walter Reed, Northwest Washington, DC (Shepherd Park / Brightwood / Takoma triangle)",
-    "buildingType": "condo",
-    "leasingUrl": "https://kitehousedc.com/",
-    "phone": null,
-    "photos": [
-      "https://kitehousedc.com/wp-content/uploads/Kitehousedc-2025-3-scaled.webp"
-    ],
-    "coords": [
-      38.9768386,
-      -77.0276325
-    ],
-    "scores": {
-      "walk": 86,
-      "transit": 74,
-      "bike": 63,
-      "wsLink": "https://www.walkscore.com/score/7175-12th-Street-NW-Washington-DC-20012/lat=38.9768386/lng=-77.0276325/?utm_source=oranburg.law&utm_medium=ws_api&utm_campaign=ws_api",
-      "fetchedOn": "2026-06-19"
-    },
-    "walkToMetroMin": null,
-    "distances": {
-      "metro": {
-        "walk": 21,
-        "station": "Takoma"
-      },
-      "synagogue": {
-        "drive": 22
-      },
-      "berman": {
-        "drive": 30
-      },
-      "source": "google"
-    },
-    "building": {
-      "doorman": null,
-      "doormanStatus": "Likely staffed",
-      "elevator": true,
-      "pool": false,
-      "gym": true,
-      "playground": null,
-      "petFriendly": true,
-      "packageRoom": null,
-      "unitClimate": null,
-      "wellMaintained": null,
-      "noise": null
-    },
-    "units": [
-      {
-        "id": "kite-house-at-the-parks-2br",
-        "label": "2BR",
-        "bedrooms": 2,
-        "den": false,
-        "bathrooms": 2,
-        "squareFeet": null,
-        "balcony": true,
-        "inUnitLaundry": true,
-        "view": null,
-        "pricing": {
-          "baseRent": 59000,
-          "parking": 0,
-          "utilities": {},
-          "mandatoryFees": 0
-        }
-      }
-    ],
-    "source": "verified",
-    "notes": []
   },
   {
     "id": "lenox-park",
@@ -2790,9 +2709,7 @@
     "buildingType": "apartment",
     "leasingUrl": "https://www.qpmgmt.com/properties/victory-tower/",
     "phone": null,
-    "photos": [
-      "unclear"
-    ],
+    "photos": [],
     "coords": [
       38.9746803,
       -77.0102089
