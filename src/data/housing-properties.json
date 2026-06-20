@@ -39,7 +39,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -82,7 +82,14 @@
         "https://www.apartmentratings.com/md/silver-spring/affinity-on-georgia_9199332346275146310/",
         "https://silverspringdowntown.com/go/affinity-on-georgia"
       ]
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Jesup Blair Park",
+        "metres": 351
+      }
+    }
   },
   {
     "id": "alexander-house-at-elizabeth-square",
@@ -124,7 +131,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": null,
       "packageRoom": null,
       "unitClimate": null,
@@ -165,7 +172,14 @@
       "(301) 587-4277 | alexis.king@pratumco.com",
       "One month free rent on select homes (as of June 2026); Saturday open houses 10 AM-2 PM",
       "(301) 781-7567 (Ascend listing)"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Woodside Urban Park",
+        "metres": 346
+      }
+    }
   },
   {
     "id": "arrive-silver-spring",
@@ -207,7 +221,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -243,7 +257,14 @@
       "891 total units (high-rise)",
       "Trinity Property Consultants",
       "Red Line Metro (Silver Spring station) approximately 2 blocks away"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Woodside Urban Park",
+        "metres": 176
+      }
+    }
   },
   {
     "id": "atwell-on-spring",
@@ -285,7 +306,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -321,7 +342,14 @@
       "ApartmentRatings.com summarized reviewer characterization as 'well-maintained, peaceful community with excellent management' with responsive maintenance staff. Building opened 2023-2024.",
       "2BR range $2,780-$4,296/mo per ApartmentList (current as of search date June 2026). 1BR+den ~$2,838/mo. Studios from ~$1,752/mo.",
       "Official gallery is at atwellonspring.com/gallery and bozzuto.com gallery page; og:image could not be retrieved due to 403 blocks on both domains."
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Fairview Road Urban Park",
+        "metres": 81
+      }
+    }
   },
   {
     "id": "aurora-apartments",
@@ -365,7 +393,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -401,7 +429,11 @@
       "Individual heating and AC control per unit confirmed.",
       "Marketing copy calls it award-winning with pristine grounds. Resident reviews are mixed: some praise attentive staff; others cite elevator-hall lighting out for extended periods and slow maintenance responses. Insufficient independent evidence to confirm or deny.",
       "Single rental building under central management (not individually owned condos)."
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "bell-at-the-pike",
@@ -445,7 +477,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": null,
       "unitClimate": null,
@@ -472,7 +504,14 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Wall Local Park",
+        "metres": 317
+      }
+    }
   },
   {
     "id": "blair-east",
@@ -516,7 +555,7 @@
       "elevator": true,
       "pool": null,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": null,
@@ -555,7 +594,11 @@
       "Pets allowed; max 2 pets, $250 deposit per pet, $45/month per pet, breed restrictions apply, 100 lb weight limit",
       "Steps from Silver Spring Metro (Red Line); Giant supermarket in building",
       "Rent range sourced from RentCafe ($2,181-$2,930 for 2BR, 1,044-1,135 sq ft) and Rentable ($2,288-$2,829)"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "blair-house",
@@ -599,7 +642,7 @@
       "elevator": true,
       "pool": false,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": null,
@@ -639,7 +682,11 @@
       "Unit climate control (AC/heat) not explicitly stated as in-unit or building-controlled in any source reviewed",
       "Overall RentCafe rating 4.0/5 (29 reviews); maintenance rated 4.0/5; one review mentions mouse problem; staff rated 4.5/5",
       "Part of the Blairs district, LEED platinum certified, managed by Tower Construction Group"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "blvd-ansel",
@@ -683,7 +730,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": null,
@@ -710,7 +757,11 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "blvd-forty-four",
@@ -754,7 +805,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": null,
@@ -781,7 +832,11 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "central",
@@ -825,7 +880,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -861,7 +916,14 @@
       "In-unit A/C listed as unit amenity, implying resident-controlled climate",
       "Building opened as new construction (no substantial maintenance review data found)",
       "Sources: apartmentlist.com, apartmentadvisor.com, apartmentfinder.com, web search aggregates June 2026"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Bullis Park Playground",
+        "metres": 341
+      }
+    }
   },
   {
     "id": "cole-spring-plaza",
@@ -905,7 +967,7 @@
       "elevator": true,
       "pool": null,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": null,
@@ -944,7 +1006,14 @@
       "Residential rental apartment building managed by Ross Companies. Not a condo ownership building.",
       "Package receiving/package service confirmed across RentCafe, Zumper, and search aggregators.",
       "Fitness center confirmed across RentCafe, ApartmentList, and Zumper photos."
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Ellsworth Park and Dog Park",
+        "metres": 166
+      }
+    }
   },
   {
     "id": "colesville-towers",
@@ -988,7 +1057,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": false,
@@ -1028,7 +1097,14 @@
       "(833) 358-4212 (RentCafe listing); ext. 4685 on the (844) number per Zumper",
       "leasing.colesville@rossmgtservices.com",
       "As of June 2026: 1 month free on select units; $1,000 off if you apply within 72 hours of touring (move-in by 06/30/2026)"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Ellsworth Park and Dog Park",
+        "metres": 113
+      }
+    }
   },
   {
     "id": "eleven55-ripley",
@@ -1072,7 +1148,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -1112,7 +1188,14 @@
       "2014",
       "21",
       "Adjacent to Silver Spring Metro Station (Red Line)"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Bullis Park Playground",
+        "metres": 786
+      }
+    }
   },
   {
     "id": "fenestra-at-the-square",
@@ -1156,7 +1239,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -1183,7 +1266,11 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "galvan-at-twinbrook",
@@ -1225,7 +1312,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": null,
@@ -1311,7 +1398,11 @@
       "No parking available on-site",
       "3-15 month lease terms",
       "3x monthly rent in household income"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "grosvenor-park-i",
@@ -1355,7 +1446,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": false,
       "packageRoom": null,
       "unitClimate": null,
@@ -1394,7 +1485,14 @@
       "Not mentioned in any source reviewed. Building has front desk staffing 24/7, which may handle packages informally, but no dedicated package room is documented.",
       "Outdoor pool, tennis courts, fitness center/exercise room, rooftop lounge (rentable), garden room with kitchen, bicycle storage, rooftop courtyard, small library, grilling area, additional storage units (rentable). Underground and surface parking available.",
       "Because this is a condo building with individual landlords, rent and included utilities vary unit to unit. Listings from 2025-2026 range from ~$1,890 (2BR/2BA, utilities included) to ~$3,100. Many landlords include all utilities in rent because their HOA fees already cover them."
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Fleming Local Park",
+        "metres": 790
+      }
+    }
   },
   {
     "id": "lenox-park",
@@ -1438,7 +1536,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -1476,7 +1574,14 @@
       "407 units, built 1991, 3 to 16 stories",
       "Bernstein Management Corporation",
       "Up to 2 pets (cats and dogs); $300 one-time fee + $25/mo per pet"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Woodside Urban Park",
+        "metres": 655
+      }
+    }
   },
   {
     "id": "pallas-at-pike-and-rose",
@@ -1520,7 +1625,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -1547,7 +1652,14 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Wall Local Park",
+        "metres": 317
+      }
+    }
   },
   {
     "id": "persei-at-pike-and-rose",
@@ -1591,7 +1703,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": null,
@@ -1618,7 +1730,14 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Wall Local Park",
+        "metres": 478
+      }
+    }
   },
   {
     "id": "silver-spring-towers",
@@ -1662,7 +1781,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": null,
       "unitClimate": true,
@@ -1705,7 +1824,14 @@
         "https://www.apartmentlist.com/md/silver-spring/silver-spring-towers",
         "https://www.veryapt.com/ApartmentReview-a7182-silver-spring-towers-silver-spring"
       ]
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Bullis Park Playground",
+        "metres": 255
+      }
+    }
   },
   {
     "id": "solaire-1150-ripley",
@@ -1749,7 +1875,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -1787,7 +1913,11 @@
       "Studios, 1BR, and 2BR confirmed; 1BR+den floor plan code A1D seen on ApartmentList suggesting den configuration",
       "Consistent resident reviews praise maintenance responsiveness and cleanliness of amenities",
       "ApartmentList shows B3 from $2,530, B4 from $2,605, B5 from $2,720 (June 2026); ApartmentList overall range tops at ~$2,800"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "solaire-8200-dixon",
@@ -1831,7 +1961,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -1865,7 +1995,11 @@
       "4.1 stars from 52 Yelp reviews as of June 2026; reviews note visually appealing modern finishes but some mention declining concierge quality; no major maintenance complaints surfaced but sample is small.",
       "Air conditioning listed as a unit amenity across multiple listing platforms; thermostat/HVAC type (central vs. in-unit mini-split) not confirmed from public sources, but air conditioning is in-unit rather than building-controlled based on listing language.",
       "No 1BR+den floor plan found on ApartmentList or Rentable listings; only studio, 1BR, and 2BR configurations listed."
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "solaire-8250-georgia",
@@ -1909,7 +2043,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -1949,7 +2083,14 @@
         "https://www.yelp.com/biz/solaire-8250-georgia-silver-spring"
       ],
       "2026-06-19"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Bullis Park Playground",
+        "metres": 626
+      }
+    }
   },
   {
     "id": "thayer-and-spring",
@@ -1993,7 +2134,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2036,7 +2177,14 @@
         "https://www.rentcafe.com/apartments/md/silver-spring/thayer-and-spring/default.aspx",
         "https://www.veryapt.com/ApartmentReview-a26015-thayer-spring-silver-spring"
       ]
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Bullis Park Playground",
+        "metres": 580
+      }
+    }
   },
   {
     "id": "the-alaire-at-twinbrook-station",
@@ -2080,7 +2228,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": false,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2119,7 +2267,11 @@
       "Steps from Twinbrook Metro Station (Red Line)",
       "K!CK fitness center with cardio theater, treadmills, eSpinner, Nautilus, Smith machine, free weights",
       "Eco-friendly saline swimming pool with water feature"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": null
+    }
   },
   {
     "id": "the-crescent",
@@ -2163,7 +2315,7 @@
       "elevator": true,
       "pool": false,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2206,7 +2358,14 @@
         "https://www.yelp.com/biz/crescent-condominium-silver-spring",
         "https://www.apartments.com/the-crescent-silver-spring-md/pm3b4ft/"
       ]
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Bullis Park Playground",
+        "metres": 461
+      }
+    }
   },
   {
     "id": "the-hartley",
@@ -2250,7 +2409,7 @@
       "elevator": null,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2277,7 +2436,14 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Playground at the Parks DC",
+        "metres": 312
+      }
+    }
   },
   {
     "id": "the-henri-at-pike-and-rose",
@@ -2321,7 +2487,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2356,7 +2522,14 @@
       "Up to 2 pets per unit, cats and dogs, 70 lb limit each, $50/mo pet rent per pet; breed restrictions apply (pit bulls, rottweilers, dobermans, chows, presa canarios, akitas, malamutes, wolf-hybrids).",
       "12th-floor rooftop pool deck.",
       "Studios, Jr. 1BR, 1BR, 1BR+den, 2BR (some with dens). 2BR sizes range 1,091-1,661 sq ft."
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Wall Local Park",
+        "metres": 509
+      }
+    }
   },
   {
     "id": "the-met-rockville",
@@ -2400,7 +2573,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2437,7 +2610,14 @@
       "Walking distance to Rockville Metro Station (Red Line)",
       "4 months free parking if move-in by 6/30/26 (as of June 2026)",
       "1BR and 2BR two-story loft configurations available in addition to standard flats"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Welsh park playground",
+        "metres": 770
+      }
+    }
   },
   {
     "id": "the-pearl",
@@ -2481,7 +2661,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2531,7 +2711,14 @@
         "https://interimhomes.com/properties/the-pearl/",
         "https://www.yelp.com/biz/the-pearl-silver-spring-2"
       ]
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Shepherd Park",
+        "metres": 770
+      }
+    }
   },
   {
     "id": "the-veridian",
@@ -2575,7 +2762,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": true,
       "unitClimate": true,
@@ -2618,7 +2805,14 @@
         "https://silverspringdowntown.com/go/veridian-apartments",
         "https://www.apartmentlist.com/md/silver-spring/the-veridian"
       ]
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Jesup Blair Park",
+        "metres": 560
+      }
+    }
   },
   {
     "id": "twin-towers",
@@ -2662,7 +2856,7 @@
       "elevator": true,
       "pool": true,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": null,
       "unitClimate": false,
@@ -2699,7 +2893,14 @@
       "All utilities included in rent",
       "Adjacent to Silver Spring Metro (Red Line); Walk Score 99",
       "Studio ~450 sqft, 1BR ~550 sqft, 2BR ~1,250 sqft"
-    ]
+    ],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Woodside Urban Park",
+        "metres": 488
+      }
+    }
   },
   {
     "id": "victory-tower",
@@ -2741,7 +2942,7 @@
       "elevator": null,
       "pool": false,
       "gym": true,
-      "playground": null,
+      "playground": true,
       "petFriendly": true,
       "packageRoom": null,
       "unitClimate": true,
@@ -2768,6 +2969,13 @@
       }
     ],
     "source": "verified",
-    "notes": []
+    "notes": [],
+    "playgroundMeta": {
+      "source": "google",
+      "nearest": {
+        "name": "Takoma Urban Park",
+        "metres": 70
+      }
+    }
   }
 ]
