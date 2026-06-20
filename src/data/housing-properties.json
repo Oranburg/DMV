@@ -2995,7 +2995,7 @@
         "inUnitLaundry": false,
         "view": null,
         "pricing": {
-          "baseRent": 0,
+          "baseRent": null,
           "parking": 0,
           "utilities": {},
           "mandatoryFees": 0
