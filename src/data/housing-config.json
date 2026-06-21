@@ -219,6 +219,20 @@
       }
     }
   ],
+  "penny": {
+    "updatedOn": "2026-06-21",
+    "toggleLabel": "Penny's notes",
+    "toggleHelpOn": "Showing what Penny learned. Places she ruled out are hidden.",
+    "toggleHelpOff": "Showing every building, with no notes.",
+    "excludeNeighborhoods": ["North Bethesda", "Rockville", "Twinbrook"],
+    "verdictLabels": {
+      "rejected": "Ruled out",
+      "backup": "Backup",
+      "caution": "Be careful",
+      "interested": "Worth a look",
+      "note": "Penny's note"
+    }
+  },
   "mustValue": 101,
   "scoreScales": {
     "costFloor": 1500,

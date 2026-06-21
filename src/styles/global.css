@@ -1007,3 +1007,65 @@ html {
   color: var(--c-ink-soft);
   font-weight: 600;
 }
+
+/* ---------- Penny's notes (toggle + verdict blocks) ---------- */
+
+.penny-toggle-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin: 0 0 var(--sp-4);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-inner);
+  box-shadow: var(--shadow-card);
+}
+.penny-toggle-text {
+  display: flex;
+  flex-direction: column;
+}
+.penny-toggle-label {
+  font-weight: 600;
+  font-size: var(--fs-base);
+  color: var(--c-ink);
+}
+.penny-toggle-help {
+  font-size: var(--fs-xs);
+  color: var(--c-ink-faint);
+  line-height: 1.35;
+}
+
+.penny-block {
+  margin: var(--sp-3) 0;
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius-inner);
+  border-left: 4px solid var(--c-ink-faint);
+  background: var(--c-surface-sunk);
+}
+.penny-block.v-backup { border-left-color: var(--c-mark-metro); }
+.penny-block.v-caution { border-left-color: var(--c-warn); background: var(--c-warn-bg); }
+.penny-block.v-interested { border-left-color: var(--c-good); background: var(--c-good-bg); }
+
+.penny-chip {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--c-ink);
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  margin-bottom: var(--sp-2);
+}
+.penny-text {
+  font-size: var(--fs-sm);
+  color: var(--c-ink-soft);
+  line-height: var(--lh-body);
+  margin: var(--sp-1) 0 0;
+}
+.penny-text.penny-pref {
+  font-style: italic;
+  color: var(--c-ink);
+}

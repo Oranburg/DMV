@@ -43,6 +43,26 @@ function unitFactorState(factor, unit) {
   return triState(getByPath(unit, factor.path));
 }
 
+/* ---------- Penny's notes (her verdicts + the areas she ruled out) ---------- */
+
+function pennyExcludedArea(building, config) {
+  const list = (config.penny && config.penny.excludeNeighborhoods) || [];
+  const n = (building.neighborhood || "").toLowerCase();
+  return list.find((area) => n.includes(area.toLowerCase())) || null;
+}
+
+// What Penny thinks of a building: her note (if any), and whether it is ruled
+// out either by her explicit "rejected" verdict or by being in an area she
+// excluded. Ruled-out buildings are hidden while her notes are on.
+function pennyStatus(building, config) {
+  const note = building.pennyNote || null;
+  const area = pennyExcludedArea(building, config);
+  const ruledOut = (note && note.verdict === "rejected") || !!area;
+  let ruledReason = null;
+  if (ruledOut) ruledReason = area ? `Penny ruled out ${area}` : (note && note.learned) || "Penny ruled this out";
+  return { note, area, ruledOut, ruledReason };
+}
+
 /* ---------- distances (honest: only real data, never guessed) ---------- */
 
 const ANCHOR_COORDS = {
@@ -328,7 +348,19 @@ function UnitRow({ unit }) {
 
 const TYPE_LABEL = { apartment: "Apartment", condo: "Condo" };
 
-function BuildingCard({ entry, rank, mustFeatures, locations, expanded, onToggle, onFeedback }) {
+function PennyBlock({ penny, labels }) {
+  if (!penny || !penny.note) return null;
+  const v = penny.note.verdict || "note";
+  return (
+    <div className={`penny-block v-${v}`}>
+      <span className="penny-chip">{(labels && labels[v]) || "Penny's note"}</span>
+      {penny.note.learned && <p className="penny-text">{penny.note.learned}</p>}
+      {penny.note.preferenceUpdate && <p className="penny-text penny-pref">“{penny.note.preferenceUpdate}”</p>}
+    </div>
+  );
+}
+
+function BuildingCard({ entry, rank, mustFeatures, locations, expanded, onToggle, onFeedback, penny, pennyLabels }) {
   const { building, score, bestUnit } = entry;
   const photos = building.photos || [];
   const [photoOk, setPhotoOk] = useState(true);
@@ -379,6 +411,8 @@ function BuildingCard({ entry, rank, mustFeatures, locations, expanded, onToggle
         )}
         {building.building?.yearBuilt && <div className="built-year">Built {building.building.yearBuilt}</div>}
         <div className="rent-range tnum">{rentLabel}</div>
+
+        <PennyBlock penny={penny} labels={pennyLabels} />
 
         <WalkScores building={building} />
 
@@ -619,6 +653,19 @@ export default function App({ config, buildings }) {
   const [expandedId, setExpandedId] = useState(null);
   const [feedback, setFeedback] = useState(null); // null = closed; string = open, prefilled place
 
+  const penny = config.penny || {};
+  const pennyLabels = penny.verdictLabels || {};
+  const [showPenny, setShowPenny] = useState(() => {
+    if (typeof localStorage === "undefined") return true;
+    const v = localStorage.getItem("dmv-penny");
+    return v === null ? true : v === "1";
+  });
+  useEffect(() => {
+    try {
+      localStorage.setItem("dmv-penny", showPenny ? "1" : "0");
+    } catch {}
+  }, [showPenny]);
+
   const [factorState, setFactorState] = useState(() => {
     const init = {};
     for (const f of factors) {
@@ -648,7 +695,12 @@ export default function App({ config, buildings }) {
       .sort((a, b) => b.score - a.score);
   }, [buildings, factors, factorState, typeState, mustUnit, scales]);
 
-  const count = ranked.length;
+  const visible = useMemo(
+    () => (showPenny ? ranked.filter((e) => !pennyStatus(e.building, config).ruledOut) : ranked),
+    [ranked, showPenny, config]
+  );
+  const count = visible.length;
+  const hiddenByPenny = ranked.length - count;
   const title = (config.appText && config.appText.title) || "Apartments";
 
   return (
@@ -657,7 +709,10 @@ export default function App({ config, buildings }) {
         <header className="page-head">
           <div>
             <h1 className="page-title">{title}</h1>
-            <p className="match-count" aria-live="polite">{count} building{count === 1 ? "" : "s"} match</p>
+            <p className="match-count" aria-live="polite">
+              {count} building{count === 1 ? "" : "s"} match
+              {showPenny && hiddenByPenny > 0 ? ` · Penny ruled out ${hiddenByPenny}` : ""}
+            </p>
           </div>
           <button
             className="theme-toggle"
@@ -668,11 +723,25 @@ export default function App({ config, buildings }) {
           </button>
         </header>
 
+        <div className="penny-toggle-row">
+          <Switch
+            checked={showPenny}
+            onChange={setShowPenny}
+            label={`${penny.toggleLabel || "Penny's notes"}, ${showPenny ? "on" : "off"}`}
+          />
+          <div className="penny-toggle-text">
+            <span className="penny-toggle-label">{penny.toggleLabel || "Penny's notes"}</span>
+            <span className="penny-toggle-help">
+              {showPenny ? penny.toggleHelpOn : penny.toggleHelpOff}
+            </span>
+          </div>
+        </div>
+
         {count === 0 ? (
           <div className="empty">No buildings match right now. Loosen a Must have in Refine, or wait for more buildings to be added.</div>
         ) : (
           <div className="card-list">
-            {ranked.map((entry, i) => (
+            {visible.map((entry, i) => (
               <BuildingCard
                 key={entry.building.id}
                 entry={entry}
@@ -682,6 +751,8 @@ export default function App({ config, buildings }) {
                 expanded={expandedId === entry.building.id}
                 onToggle={() => setExpandedId((cur) => (cur === entry.building.id ? null : entry.building.id))}
                 onFeedback={() => setFeedback(entry.building.name)}
+                penny={showPenny ? pennyStatus(entry.building, config) : null}
+                pennyLabels={pennyLabels}
               />
             ))}
           </div>

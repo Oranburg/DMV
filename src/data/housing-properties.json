@@ -438,6 +438,13 @@
     "playgroundMeta": {
       "source": "google",
       "nearest": null
+    },
+    "pennyNote": {
+      "verdict": "rejected",
+      "learned": "I don't want to be in North Besthesda Location",
+      "preferenceUpdate": "how_to_reach_me  :",
+      "updatedOn": "2026-06-20",
+      "source": "penny-note"
     }
   },
   {
@@ -846,6 +853,13 @@
     "playgroundMeta": {
       "source": "google",
       "nearest": null
+    },
+    "pennyNote": {
+      "verdict": "rejected",
+      "learned": "I don't want to be in Rockville",
+      "preferenceUpdate": "how_to_reach_me  :",
+      "updatedOn": "2026-06-20",
+      "source": "penny-note"
     }
   },
   {
@@ -1209,6 +1223,13 @@
         "name": "Bullis Park Playground",
         "metres": 786
       }
+    },
+    "pennyNote": {
+      "verdict": "backup",
+      "learned": "being on the top floor is not good since there is a lot of activity for the lounge and noise in hallways and tying up elevators. Also, the 4 apts available now on other floors do not have balconies.",
+      "preferenceUpdate": "We should keep this as a back up if I am not doing anything soon",
+      "updatedOn": "2026-06-21",
+      "source": "penny-note"
     }
   },
   {
@@ -1757,6 +1778,13 @@
         "name": "Wall Local Park",
         "metres": 478
       }
+    },
+    "pennyNote": {
+      "verdict": "rejected",
+      "learned": "I don't want to be in North Bethesda",
+      "preferenceUpdate": "how_to_reach_me  :",
+      "updatedOn": "2026-06-20",
+      "source": "penny-note"
     }
   },
   {
@@ -1939,6 +1967,13 @@
     "playgroundMeta": {
       "source": "google",
       "nearest": null
+    },
+    "pennyNote": {
+      "verdict": "caution",
+      "learned": "1. The Train - Yes if you are looking to move into the solaire you are probably wondering if you can hear the train going by. In short, yes you can hear the train, you definitely will not be sleeping with your window open at night, because you'll be listening to Amtraks greatest hits featuring The Union Pacific Railroad Company.\n\n2. Homeless Shelter - No, you'll notice older reviews mention a homeless shelter next door. They moved that place further down Georgia Avenue. Nothing to worry about there\n\n3. Rent Increase - So one thing I've noticed about the Solaire is that you REALLY want to read over the paperwork they have you sign and you get your bill and something doesn't look right bring it up to them. I've had two occasions where I was charged more than what my original rent paperwork had said I would be charged. However, they did not give me a hard time getting these two instances fixed, so kudos for that.",
+      "preferenceUpdate": "many complaints about noise everywhere",
+      "updatedOn": "2026-06-20",
+      "source": "penny-note"
     }
   },
   {
@@ -2558,6 +2593,13 @@
         "name": "Wall Local Park",
         "metres": 509
       }
+    },
+    "pennyNote": {
+      "verdict": "rejected",
+      "learned": "I don't want to be in a North Bethesda location",
+      "preferenceUpdate": "how_to_reach_me  :",
+      "updatedOn": "2026-06-20",
+      "source": "penny-note"
     }
   },
   {
@@ -2844,6 +2886,13 @@
         "name": "Jesup Blair Park",
         "metres": 560
       }
+    },
+    "pennyNote": {
+      "verdict": "interested",
+      "learned": "Must be on West or North side.",
+      "preferenceUpdate": "Where is the corner apt they have available?",
+      "updatedOn": "2026-06-19",
+      "source": "penny-note"
     }
   },
   {
