@@ -54,7 +54,7 @@
       "path": "balcony",
       "default": {
         "on": true,
-        "must": true
+        "weight": 30
       }
     },
     {
@@ -90,7 +90,7 @@
       "path": "building.petFriendly",
       "default": {
         "on": true,
-        "weight": 45
+        "weight": 90
       }
     },
     {
@@ -125,7 +125,7 @@
       "rule": "cost",
       "default": {
         "on": true,
-        "weight": 70
+        "weight": 90
       }
     },
     {
@@ -191,7 +191,7 @@
       "rule": "bathrooms",
       "default": {
         "on": true,
-        "weight": 25
+        "weight": 55
       }
     },
     {
@@ -225,6 +225,7 @@
     "toggleHelpOn": "Showing what Penny learned. Places she ruled out are hidden.",
     "toggleHelpOff": "Showing every building, with no notes.",
     "excludeNeighborhoods": ["North Bethesda", "Rockville", "Twinbrook"],
+    "excludeBuildings": ["arrive-silver-spring", "alexander-house-at-elizabeth-square"],
     "verdictLabels": {
       "rejected": "Ruled out",
       "backup": "Backup",
@@ -236,7 +237,7 @@
   "mustValue": 101,
   "scoreScales": {
     "costFloor": 1500,
-    "costCeiling": 6000,
+    "costCeiling": 4500,
     "metroWalkBest": 2,
     "metroWalkWorst": 20,
     "synagogueDriveBest": 4,

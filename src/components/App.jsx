@@ -57,9 +57,15 @@ function pennyExcludedArea(building, config) {
 function pennyStatus(building, config) {
   const note = building.pennyNote || null;
   const area = pennyExcludedArea(building, config);
-  const ruledOut = (note && note.verdict === "rejected") || !!area;
+  const excludedList = (config.penny && config.penny.excludeBuildings) || [];
+  const excludedById = excludedList.includes(building.id);
+  const ruledOut = (note && note.verdict === "rejected") || !!area || excludedById;
   let ruledReason = null;
-  if (ruledOut) ruledReason = area ? `Penny ruled out ${area}` : (note && note.learned) || "Penny ruled this out";
+  if (ruledOut) {
+    if (excludedById) ruledReason = "Penny removed this from the list";
+    else if (area) ruledReason = `Penny ruled out ${area}`;
+    else ruledReason = (note && note.learned) || "Penny ruled this out";
+  }
   return { note, area, ruledOut, ruledReason };
 }
 
