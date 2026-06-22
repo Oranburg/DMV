@@ -1069,3 +1069,7 @@ html {
   font-style: italic;
   color: var(--c-ink);
 }
+.penny-text.penny-comparing {
+  font-weight: 600;
+  color: var(--c-ink);
+}

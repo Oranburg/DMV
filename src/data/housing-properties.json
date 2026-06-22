@@ -355,10 +355,15 @@
       }
     },
     "pennyNote": {
-      "verdict": "note",
-      "learned": "possibility although YOUNG professionals with activities.",
-      "preferenceUpdate": "how_to_reach_me  :",
-      "updatedOn": "2026-06-21",
+      "verdict": "interested",
+      "learned": "Possibility, although it skews to young professionals with activities. Now a finalist: Penny is comparing four units side by side.",
+      "comparing": [
+        "553",
+        "416",
+        "115",
+        "739"
+      ],
+      "updatedOn": "2026-06-22",
       "source": "penny-note"
     }
   },
@@ -2903,9 +2908,17 @@
     },
     "pennyNote": {
       "verdict": "interested",
-      "learned": "Must be on West or North side.",
-      "preferenceUpdate": "Where is the corner apt they have available?",
-      "updatedOn": "2026-06-19",
+      "learned": "Must be on the west or north side. Now a finalist: Penny is comparing several units, and is asking which have a half bath, a second bath, and where the available corner apartment is.",
+      "preferenceUpdate": "Where is the corner apartment they have available?",
+      "comparing": [
+        "604",
+        "820",
+        "1320",
+        "1403",
+        "1429",
+        "13 (number unconfirmed)"
+      ],
+      "updatedOn": "2026-06-22",
       "source": "penny-note"
     }
   },

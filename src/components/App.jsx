@@ -362,6 +362,9 @@ function PennyBlock({ penny, labels }) {
       <span className="penny-chip">{(labels && labels[v]) || "Penny's note"}</span>
       {penny.note.learned && <p className="penny-text">{penny.note.learned}</p>}
       {penny.note.preferenceUpdate && <p className="penny-text penny-pref">“{penny.note.preferenceUpdate}”</p>}
+      {penny.note.comparing && penny.note.comparing.length > 0 && (
+        <p className="penny-text penny-comparing">Comparing units: {penny.note.comparing.join(", ")}</p>
+      )}
     </div>
   );
 }
